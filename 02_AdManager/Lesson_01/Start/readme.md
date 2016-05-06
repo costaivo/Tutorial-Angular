@@ -8,13 +8,13 @@
             //define the component 
             @Component({
                 selector:'my-app',
-                template:`<div ><h1>Hello World : {{pageTitle}}</h1>
+                template:`<div ><h1> {{pageTitle}} : Ad Manager</h1>
                 </div>`
             })
             
             //create class for the component
             export class AppComponent{
-                pageTitle:string = "Angular 2";
+                pageTitle:string = "Digital Ads ";
             }
 ```
 
