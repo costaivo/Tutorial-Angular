@@ -1,4 +1,4 @@
-# Lesson 01 -- Ad Manager Getting Started : Contents
+# Lesson 01 -- Ad Manager Getting Started 
 1.   Adding the root component
      * Add `app.component.ts`
 2. Bootstraping the application
