@@ -30,8 +30,8 @@
         //bootstrap the component
         bootstrap(AppComponent);
 ```
-#### 3. Call the directive in `index.html` file
-* Call the directive in html page
+#### 3. Call the `my-app` selector in `index.html` file
+* Call the `my-app` selector in html page
 ```html
 <body>
     <!--TODO: Add your component here-->
