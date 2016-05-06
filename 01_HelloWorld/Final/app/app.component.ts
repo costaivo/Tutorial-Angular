@@ -1,10 +1,10 @@
 //import component from angular core
-import {Component} from 'angular2/core'
+import {Component} from 'angular2/core';
 
 //define the component 
 @Component({
     selector:'my-app',
-    template:`<div><h1>Hello World : {{pageTitle}}</h1>
+    template:`<div ><h1>Hello World : {{pageTitle}}</h1>
     </div>`
 })
 
