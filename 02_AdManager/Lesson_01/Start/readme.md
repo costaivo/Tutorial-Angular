@@ -1,6 +1,7 @@
 # Lesson 01 -- Ad Manager Getting Started : Contents
+----------
 #### 1.  Adding the root component
- * Add `app.component.ts`
+ * Add `app.component.ts` file in the app folder
 ``` typescript
             //import component from angular core
             import {Component} from 'angular2/core';
@@ -13,6 +14,36 @@
             })
             
             //create class for the component
+            export class AppComponent{
+                pageTitle:string = "Digital Ads ";
+            }
+```
+----------
+##### Explanations 
+
+**Import**
+
+`import {Component} from 'angular2/core';`
+> when we need something from a module or library, it has to be imported using the import statement
+> In the current example we have imported the **Angular 2 core** so that our component code can have access to the @Component  decorator. 
+
+**@Component**
+``` typescript
+ @Component({
+      selector:'my-app',
+      template:`<div >
+      <h1> {{pageTitle}} : Ad Manager</h1>
+       </div>`
+     })
+```  
+> Component is a decorator function that takes metadata object as argument. The main objective of it is to add meta-data to the application that will tell **Angular 2** how to process a class. 
+
+> **selector :** defines the name of the HTML tag. whenever Angular encouters a `my-app` it will create and display an instance of AppComponent.
+
+> **template :** this part defines the html template. It tells Angular how to render the component view. 
+
+**Component Class**
+``` typescript
             export class AppComponent{
                 pageTitle:string = "Digital Ads ";
             }
