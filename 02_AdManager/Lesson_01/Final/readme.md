@@ -49,7 +49,7 @@
             }
 ```
 
-#### 2. Bootstraping the application
+#### 2. Bootstrapping the application
 * Add `main.ts` file
 ```typescript
         // import bootstrap 

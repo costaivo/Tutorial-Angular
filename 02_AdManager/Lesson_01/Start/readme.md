@@ -1,5 +1,14 @@
-# Lesson 01 -- Ad Manager Getting Started : Contents
+# Lesson 01 -- Ad Manager Getting Started : Building your first Component
 ----------
+#### Lesson Contents
+1.  Adding the root component
+2.  Bootstrapping the application
+3.  Call the `my-app` selector in `index.html` file
+4.  Running the application
+
+> Tip: To grasp the concepts properly, It is **strongly** recommended that you type out all the code instead of copy + pasting it. 
+
+
 #### 1.  Adding the root component
  * Add `app.component.ts` file in the app folder
 ``` typescript
@@ -49,7 +58,7 @@
             }
 ```
 
-#### 2. Bootstraping the application
+#### 2. Bootstrapping the application
 * Add `main.ts` file
 ```typescript
         // import bootstrap 
@@ -69,7 +78,8 @@
     <my-app>Loading...</my-app>
 </body>
 ```
-### 4. Open a command prompt in the project's root directory 
+### 4. Running the application
+Open a command prompt in the project's root directory 
 * Type: `npm install` This installs the dependencies as defined in the package.json file.
 
 * Type: `npm start` This launches the TypeScript compiler (tsc) to compile the application and wait for changes. It also starts the lite-server and launches the browser to run the application.
