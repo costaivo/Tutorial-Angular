@@ -1,10 +1,13 @@
 # Lesson 01 -- Ad Manager Getting Started : Building your first Component
 ----------
-#### Lesson Summary
+#### Lesson Contents
 1.  Adding the root component
 2.  Bootstrapping the application
 3.  Call the `my-app` selector in `index.html` file
 4.  Running the application
+
+> Tip: To grasp the concepts properly, It is **strongly** recommended that you type out all the code instead of copy + pasting it. 
+
 
 #### 1.  Adding the root component
  * Add `app.component.ts` file in the app folder
