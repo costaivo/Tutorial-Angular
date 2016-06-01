@@ -3,7 +3,7 @@
 #### Lesson Contents
 1.  Adding the root component
 2.  Bootstrapping the application
-3.  Call the `my-app` selector in `index.html` file
+3.  Call the `am-app` selector in `index.html` file
 4.  Running the application
 
 > Tip: To grasp the concepts properly, It is **strongly** recommended that you type out all the code instead of copy + pasting it. 
@@ -70,12 +70,12 @@
         //bootstrap the component
         bootstrap(AppComponent);
 ```
-#### 3. Call the `my-app` selector in `index.html` file
-* Call the `my-app` selector in html page
+#### 3. Call the `am-app` selector in `index.html` file
+* Call the `am-app` selector in html page
 ```html
 <body>
     <!--TODO: Add your component here-->
-    <my-app>Loading...</my-app>
+    <am-app>Loading...</am-app>
 </body>
 ```
 ### 4. Running the application
