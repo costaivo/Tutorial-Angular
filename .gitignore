@@ -3,3 +3,9 @@ node_modules
 typings
 *.js
 *.js.map
+
+
+# Logs
+logs
+*.log
+npm-debug.log*
