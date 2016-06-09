@@ -35,6 +35,7 @@ Metadata
 -------------------------------
 
 ---------Course Starts -----------
+
 1. Add new folder Publications
 1. Add new component for publication module
 publilcation-list.component.ts
@@ -81,4 +82,22 @@ Copy the html template below in the publicatioin-list.component.html file.
 </div>
 ```
 
-TemplateUrl
+add the below code in the `publilcation-list.component.ts` file
+``` typescript
+import {Component} from 'angular2/core'
+
+@Component({
+    selector:'am-publicationList',
+    templateUrl:'app/publications/publication-list.component.html'
+})
+
+export class PublicationListComponent
+{
+   
+}
+
+```
+Using a Component as a Directive
+1. 
+
+
