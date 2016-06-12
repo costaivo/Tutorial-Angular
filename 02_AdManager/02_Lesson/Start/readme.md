@@ -21,10 +21,10 @@
 **Template**
 - View 
 >
-**Class	**
-	- Methods
-	- Properties
-	- Code to interact with the view
+**Class**
+- Methods
+- Properties
+- Code to interact with the view
 >
 **Metadata**
 - instructs angular how to construct and use this component
