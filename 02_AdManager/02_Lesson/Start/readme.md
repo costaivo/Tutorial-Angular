@@ -80,8 +80,7 @@ Follow the instructions below to learn how to use a Component as Directive
 	    </div>
 	</div>	
 	```
-	
- 4. Add the below code in the `publilcation-list.component.ts` file
+4. Add the below code in the `publilcation-list.component.ts` file
 	```typescript
     import {Component} from 'angular2/core'
     
