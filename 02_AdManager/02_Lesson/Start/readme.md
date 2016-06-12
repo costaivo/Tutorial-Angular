@@ -9,13 +9,11 @@
 > Tip: To grasp the concepts properly, It is  **`strongly`**  recommended that you **type** out all the code instead of **copy + pasting** it. 
 
 
--------------------------------
--------------------------------
+
 ##### Overview of the application we are building in this lesson
 - App Component  [Done]
 - Publication List Component [Current Lesson]
--------------------------------
--------------------------------
+
 ##### What is a component ?
 
 > Component = Template + Class + Metadata
