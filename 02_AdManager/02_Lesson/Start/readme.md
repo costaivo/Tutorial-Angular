@@ -117,6 +117,19 @@ Follow the instructions below to learn how to use a Component as Directive
         
     }
 	```
+    
+    
+    DataBinding
+
+Interpolation 
+One way binding 
+<h1>{{pageTitle}}</h1>
+{{1+2}}
+
+Structural Directives
+*ngIf='publications && publications.length'
+*ngFor='#publication of publications'
+
 
 
 

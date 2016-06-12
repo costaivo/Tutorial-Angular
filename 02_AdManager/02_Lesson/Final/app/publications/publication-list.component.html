@@ -7,8 +7,8 @@
           
         </div>
         <div class='table-responsive'>
-            <table class='table'>
-                <thead>
+            <table class='table table-hover table-striped' *ngIf='publications && publications.length'>
+                <thead class="thead-inverse">
                     <tr>
                         <th>Name</th>
                         <th>Type</th>
@@ -19,38 +19,15 @@
                      </tr>
                 </thead>
                 <tbody>
-                   <tr>
-                        <td>Name</td>
-                        <td>Type</td>
-                        <td>Language</td>
-                        <td>% Advertisments</td>
-                        <td>% Classifieds</td>
-                        <td>Active</td>
+                   <tr *ngFor='#publication of publications' >
+                     <td>{{publication.Name}}</td>
+                     <td>{{publication.TypexCD}}</td>
+                       <td>{{publication.LanguagexCD}}</td>
+                        <td>{{publication.CommissionRateForAdvertisments}}</td>
+                         <td>{{publication.CommisionRateForClassifieds}}</td>
+                         <td>{{publication.IsActiveRecord}}</td>
                      </tr>
-                      <tr>
-                        <td>Name</td>
-                        <td>Type</td>
-                        <td>Language</td>
-                        <td>% Advertisments</td>
-                        <td>% Classifieds</td>
-                        <td>Active</td>
-                     </tr>
-                      <tr>
-                        <td>Name</td>
-                        <td>Type</td>
-                        <td>Language</td>
-                        <td>% Advertisments</td>
-                        <td>% Classifieds</td>
-                        <td>Active</td>
-                     </tr>
-                      <tr>
-                        <td>Name</td>
-                        <td>Type</td>
-                        <td>Language</td>
-                        <td>% Advertisments</td>
-                        <td>% Classifieds</td>
-                        <td>Active</td>
-                     </tr>
+                      
                 </tbody>
 
             </table>

@@ -11,5 +11,4 @@ import {PublicationListComponent} from './publications/publication-list.componen
 })
 export class AppComponent{
     pageTitle:string = 'Digital Ads';
-    
 }
