@@ -40,8 +40,8 @@ Follow the instructions below to learn how to use a Component as Directive
 1. Add new folder Publications
 2. Add new component for publication module
     * publilcation-list.component.ts
-    *   publicatioin-list.component.html
-    *   publicatioin-list.component.css
+    * publicatioin-list.component.html
+    * publicatioin-list.component.css
 
 3. Copy the html template below in the publicatioin-list.component.html file. 
 
@@ -101,8 +101,8 @@ Follow the instructions below to learn how to use a Component as Directive
 ```
 5.  Using a Component as a Directive,to use a component as a directive you have to follow three steps
     * _#Step 1 :_ import the component `PublicationListComponent` in the `app.component.ts`  file
-     * _#Step 2 :_ use the `am-publicationList` selector in the template view.
-     * _#Step 3 :_ add the `PublicationListComponent` component to the directives array
+    * _#Step 2 :_ use the `am-publicationList` selector in the template view.
+    * _#Step 3 :_ add the `PublicationListComponent` component to the directives array
     * the final code in `app.component.ts` file should look like as shown  below. 
    
 ``` typescript
