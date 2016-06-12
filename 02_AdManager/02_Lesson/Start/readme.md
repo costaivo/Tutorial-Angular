@@ -82,7 +82,7 @@ Follow the instructions below to learn how to use a Component as Directive
 	```
 	
  4. Add the below code in the `publilcation-list.component.ts` file
-```typescript
+	```typescript
     import {Component} from 'angular2/core'
     
     @Component({
@@ -94,14 +94,14 @@ Follow the instructions below to learn how to use a Component as Directive
     {
        
     }
-```
+	```
 5. Using a Component as a Directive,to use a component as a directive you have to follow three steps
     * _#Step 1 :_ import the component `PublicationListComponent` in the `app.component.ts`  file
     * _#Step 2 :_ use the `am-publicationList` selector in the template view.
     * _#Step 3 :_ add the `PublicationListComponent` component to the directives array
     * the final code in `app.component.ts` file should look like as shown  below. 
    
-``` typescript
+	``` typescript
     import  {Component} from 'angular2/core';
     import {PublicationListComponent} from './publications/publication-list.component';
 
@@ -117,7 +117,7 @@ Follow the instructions below to learn how to use a Component as Directive
         pageTitle:string = 'Digital Ads';
         
     }
-```
+	```
 
 
 
