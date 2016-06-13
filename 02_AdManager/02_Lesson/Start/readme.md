@@ -32,7 +32,9 @@
 -------------------------------
 
 ### Course Starts 
-Follow the instructions below to learn how to use a Component as Directive
+Follow the instructions below as your instructor explains during the presentaion. 
+
+> Note this course is structured in collobration with a trainer. Without a trainer you might loose some details which were not mentioned in the instructions below. 
 
 1. Add new folder Publications
 2. Add new component for publication module
@@ -118,7 +120,7 @@ Follow the instructions below to learn how to use a Component as Directive
 	```
     
     
-6. DataBinding
+### DataBinding
 	* Interpolation : One way binding 
 	 > Examlpe: `{{publication.Name}}`
 	* Property Binding : 
@@ -135,7 +137,7 @@ In the `publication-list.component.html` file replace the "Publications" with {{
 	</div>
 ```
 
-7. Structural Directives
+### Structural Directives
 	* *ngIf
 	* *ngFor
 
@@ -168,11 +170,13 @@ Next Modify the code in `publication-list.component.html` tbody section as shown
 
 8. Run the application, to view the records listed in the grid. 
 
-9. **Challenge:** Using the knowledge you have gained so far. Add logic to dispaly a image in the Active (last column) instead of true/false  
+### **Challenge:** 
+Using the knowledge you have gained so far. Add logic to dispaly a image in the Active (last column) instead of true/false  
 	* \app\assets\images\Inactive.png  -- InActive Record
 	* \app\assets\images\Active.png  -- InActive Record
 
-10. **HomeWork:** Complete the Grid loading for the following modules
+### **HomeWork:** 
+Complete the Grid loading for the following modules
 
 | Module        | Json          | 
 | ------------- |:-------------:| 
