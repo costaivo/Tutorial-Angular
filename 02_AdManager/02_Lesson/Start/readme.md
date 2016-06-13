@@ -151,17 +151,18 @@ Copy the sample publications list provided in file api/publications/publications
 
 
 Next Modify the code in `publication-list.component.html` tbody section as shown below. 
+
 	``` html
-<tbody>
- <tr *ngFor='#publication of publications' >
-    <td>{{publication.Name}}</td>
-    <td>{{publication.TypexCD}}</td>
-    <td>{{publication.LanguagexCD}}</td>
-    <td>{{publication.CommissionRateForAdvertisments}}</td>
-    <td>{{publication.CommisionRateForClassifieds}}</td>
-    <td>{{publication.IsActiveRecord}}</td>
-</tr>
-</tbody>
+		<tbody>
+		<tr *ngFor='#publication of publications' >
+			<td>{{publication.Name}}</td>
+			<td>{{publication.TypexCD}}</td>
+			<td>{{publication.LanguagexCD}}</td>
+			<td>{{publication.CommissionRateForAdvertisments}}</td>
+			<td>{{publication.CommisionRateForClassifieds}}</td>
+			<td>{{publication.IsActiveRecord}}</td>
+		</tr>
+		</tbody>
 	```
 
 Run the application.
