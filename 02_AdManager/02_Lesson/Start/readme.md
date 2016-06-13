@@ -125,12 +125,14 @@ Follow the instructions below to learn how to use a Component as Directive
 Add the property `pageTitle:string="Publications";` in `publication-list.component.ts` file
 
 In the `publication-list.component.html` file replace the "Publications" with {{pageTitle}}
-``` html 
+	``` html 
 	<div class="panel panel-primary">
     	<div class="panel-heading">
         	{{pageTitle}}
     	</div>
-```
+	.....
+	</div>
+	```
 
 7. Structural Directives
 	* *ngIf
@@ -149,7 +151,7 @@ Copy the sample publications list provided in file api/publications/publications
 
 
 Next Modify the code in `publication-list.component.html` tbody section as shown below. 
-``` html
+	``` html
 <tbody>
  <tr *ngFor='#publication of publications' >
     <td>{{publication.Name}}</td>
@@ -160,7 +162,7 @@ Next Modify the code in `publication-list.component.html` tbody section as shown
     <td>{{publication.IsActiveRecord}}</td>
 </tr>
 </tbody>
-```
+	```
 
 Run the application.
 
