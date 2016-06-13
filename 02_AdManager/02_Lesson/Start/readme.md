@@ -45,7 +45,7 @@ Follow the instructions below to learn how to use a Component as Directive
 	``` html
 	<div class="panel panel-primary">
 	    <div class="panel-heading">
-	        {{pageTitle}}
+	        Publications
 	    </div>
 	    <div class='panel-body'>
 	         <div class='row'>
@@ -119,17 +119,49 @@ Follow the instructions below to learn how to use a Component as Directive
 	```
     
     
-    DataBinding
+6. DataBinding
+	* Interpolation : One way binding 
 
-Interpolation 
-One way binding 
-<h1>{{pageTitle}}</h1>
-{{1+2}}
+Add the property `pageTitle:string="Publications";` in `publication-list.component.ts` file
 
-Structural Directives
-*ngIf='publications && publications.length'
-*ngFor='#publication of publications'
+In the `publication-list.component.html` file replace the "Publications" with {{pageTitle}}
+``` html 
+	<div class="panel panel-primary">
+    	<div class="panel-heading">
+        	{{pageTitle}}
+    	</div>
+```
+
+7. Structural Directives
+	* *ngIf
+	* *ngFor
+
+ 
+Add the property `publications:any[];` in `publication-list.component.ts` file
+
+Add the following code to load the table in the view only if the publications list is not null and there exists
+some records. 
+``` html
+<table class='table table-hover table-striped' *ngIf='publications && publications.length'>
+```
+
+Copy the sample publications list provided in file api/publications/publications.json  in the `publication-list.component.ts` file assign it to publications array. 
 
 
+Next Modify the code in `publication-list.component.html` tbody section as shown below. 
+``` html
+<tbody>
+ <tr *ngFor='#publication of publications' >
+    <td>{{publication.Name}}</td>
+    <td>{{publication.TypexCD}}</td>
+    <td>{{publication.LanguagexCD}}</td>
+    <td>{{publication.CommissionRateForAdvertisments}}</td>
+    <td>{{publication.CommisionRateForClassifieds}}</td>
+    <td>{{publication.IsActiveRecord}}</td>
+</tr>
+</tbody>
+```
+
+Run the application.
 
 
