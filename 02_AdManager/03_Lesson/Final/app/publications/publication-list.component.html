@@ -20,16 +20,16 @@
                 </thead>
                 <tbody>
                    <tr *ngFor='#publication of publications' >
-                     <td>{{publication.Name}}</td>
+                     <td>{{publication.Name | uppercase }}</td>
                      <td>{{publication.TypexCD}}</td>
                        <td>{{publication.LanguagexCD}}</td>
-                        <td>{{publication.CommissionRateForAdvertisments}}</td>
-                         <td>{{publication.CommisionRateForClassifieds}}</td>
+                        <td>{{publication.CommissionRateForAdvertisments | percent :'2.2-2' }}</td>
+                         <td>{{publication.CommisionRateForClassifieds | percent :'2.2-2'}}</td>
                          <td *ngIf='publication.IsActiveRecord'>
                              <img src="./app/assets/images/Active.png" 
                                   [title]='publication.IsActiveRecord'
                                   [style.width.px]='imageWidth'
-                                  [style.margin.px]='imageMargin'>
+                                  [style.margin.px]='imageMargin'> 
                          </td>
                           <td *ngIf='!publication.IsActiveRecord'>
                               <img src="./app/assets/images/Inactive.png"
