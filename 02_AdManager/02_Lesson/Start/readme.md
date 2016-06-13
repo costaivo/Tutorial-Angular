@@ -99,40 +99,42 @@ Follow the instructions below to learn how to use a Component as Directive
     * _#Step 2 :_ use the `am-publicationList` selector in the template view.
     * _#Step 3 :_ add the `PublicationListComponent` component to the directives array
     * the final code in `app.component.ts` file should look like as shown  below. 
-   
-	``` typescript
-    import  {Component} from 'angular2/core';
-    import {PublicationListComponent} from './publications/publication-list.component';
 
-    @Component({
-        selector:'am-app',
-        template:`<div >
-          <h1> {{pageTitle}} : Advertisment Manager</h1>
-          <am-publicationList></am-publicationList>
-           </div>`,
-           directives:[PublicationListComponent]
-    })
-    export class AppComponent{
-        pageTitle:string = 'Digital Ads';
-        
-    }
+	``` typescript
+		import  {Component} from 'angular2/core';
+		import {PublicationListComponent} from './publications/publication-list.component';
+
+		@Component({
+			selector:'am-app',
+			template:`<div >
+			<h1> {{pageTitle}} : Advertisment Manager</h1>
+			<am-publicationList></am-publicationList>
+			</div>`,
+			directives:[PublicationListComponent]
+		})
+		export class AppComponent{
+			pageTitle:string = 'Digital Ads';
+			
+		}
 	```
     
     
 6. DataBinding
 	* Interpolation : One way binding 
+	 > Examlpe: `{{publication.Name}}`
+	* Property Binding : 
+	> Example : `<img [title]='publication.IsActiveRecord'>`
 
 Add the property `pageTitle:string="Publications";` in `publication-list.component.ts` file
 
 In the `publication-list.component.html` file replace the "Publications" with {{pageTitle}}
-	``` html 
+``` html 
 	<div class="panel panel-primary">
     	<div class="panel-heading">
         	{{pageTitle}}
     	</div>
-	.....
 	</div>
-	```
+```
 
 7. Structural Directives
 	* *ngIf
@@ -152,7 +154,7 @@ Copy the sample publications list provided in file api/publications/publications
 
 Next Modify the code in `publication-list.component.html` tbody section as shown below. 
 
-	``` html
+``` html
 		<tbody>
 		<tr *ngFor='#publication of publications' >
 			<td>{{publication.Name}}</td>
@@ -165,6 +167,8 @@ Next Modify the code in `publication-list.component.html` tbody section as shown
 		</tbody>
 	```
 
-Run the application.
+8. Run the application, to view the records listed in the grid. 
 
-
+9. **Challenge:** Using the knowledge you have gained so far. Add logic to dispaly a image in the Active (last column) instead of true/false  
+	* \app\assets\images\Inactive.png  -- InActive Record
+	* \app\assets\images\Active.png  -- InActive Record

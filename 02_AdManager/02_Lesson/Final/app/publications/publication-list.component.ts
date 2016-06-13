@@ -29,7 +29,7 @@ export class PublicationListComponent
     },
     {
         "ID": "f42e2305-2c1e-4173-8e3b-b908283b57a6",
-        "IsActiveRecord": true,
+        "IsActiveRecord": false,
         "Name": "Times of India (Mumbai Edition)",
         "TypexCD": "Local",
         "LanguagexCD": "English",
