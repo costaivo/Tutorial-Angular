@@ -24,7 +24,8 @@ Pipes allow transforming data before they are dispalyed to the end user. A pipe 
 
 	* {{publication.Name | uppercase}}  apply uppercase formatting to publication name
 	* {{Advertisment.Rate | currency:'INR':true: '1.2-2' }} 	Chained pipes
-	* 
+	* {{publication.CommisionRateForClassifieds | percent :'2.2-2'}}
+
 
 
 **Further Reading:**

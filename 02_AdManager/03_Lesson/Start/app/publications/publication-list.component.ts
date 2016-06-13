@@ -18,8 +18,8 @@ export class PublicationListComponent
         "Name": "Herald",
         "TypexCD": "Local",
         "LanguagexCD": "English",
-        "CommissionRateForAdvertisments": 10.5,
-        "CommisionRateForClassifieds": 5.9
+        "CommissionRateForAdvertisments": 0.105,
+        "CommisionRateForClassifieds": 0.59
     },
     {
         "ID": "1806b70c-e47a-4c0b-835c-a88926d9723a",
@@ -27,8 +27,8 @@ export class PublicationListComponent
         "Name": "Times of India (Goa Edition)",
         "TypexCD": "Local",
         "LanguagexCD": "English",
-        "CommissionRateForAdvertisments": 10.5,
-        "CommisionRateForClassifieds": 5.9
+        "CommissionRateForAdvertisments": 0.10,
+        "CommisionRateForClassifieds": 0.6
     },
     {
         "ID": "f42e2305-2c1e-4173-8e3b-b908283b57a6",
@@ -36,8 +36,8 @@ export class PublicationListComponent
         "Name": "Times of India (Mumbai Edition)",
         "TypexCD": "Local",
         "LanguagexCD": "English",
-        "CommissionRateForAdvertisments": 15,
-        "CommisionRateForClassifieds": 12
+        "CommissionRateForAdvertisments": 0.15,
+        "CommisionRateForClassifieds": 0.12
     }
 ];
 }
