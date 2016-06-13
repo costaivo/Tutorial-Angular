@@ -1,10 +1,9 @@
 # Lesson 02 -- Ad Manager Getting Started : Using a Component as Directive
 ----------
 ### Lesson Contents
-1.  Templates
-2.  Interpolation 
-3.  Directives
-4.  Data Binding & Pipes
+1.  Using Templates Url
+2.  Data Binding :Interpolation & Property Bindings
+3.  Using a Component as a Directive
 
 > Tip: To grasp the concepts properly, It is  **`strongly`**  recommended that you **type** out all the code instead of **copy + pasting** it. 
 
@@ -172,3 +171,23 @@ Next Modify the code in `publication-list.component.html` tbody section as shown
 9. **Challenge:** Using the knowledge you have gained so far. Add logic to dispaly a image in the Active (last column) instead of true/false  
 	* \app\assets\images\Inactive.png  -- InActive Record
 	* \app\assets\images\Active.png  -- InActive Record
+
+10. **HomeWork:** Complete the Grid loading for the following modules
+
+| Module        | Json          | 
+| ------------- |:-------------:| 
+| Clients	    | clients.json  | 
+| AdvertismentReleaseOrders     | << TODO >>   |  
+| AdvertismentRates | << TODO >>     |    
+
+
+
+
+
+
+
+-------------------------------
+#####END of Lesson 02 
+
+-------------------------------
+

@@ -8,6 +8,9 @@ import {Component} from 'angular2/core'
 export class PublicationListComponent
 {
     pageTitle:string="Publications";
+    imageWidth:number=16;
+    imageMargin:number=2;
+
     publications:any[]=[
     {
         "ID": "c7bd9a71-a1a4-4d39-ab91-be966512bd0e",

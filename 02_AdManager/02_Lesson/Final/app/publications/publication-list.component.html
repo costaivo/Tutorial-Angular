@@ -25,10 +25,18 @@
                        <td>{{publication.LanguagexCD}}</td>
                         <td>{{publication.CommissionRateForAdvertisments}}</td>
                          <td>{{publication.CommisionRateForClassifieds}}</td>
-                         <td *ngIf='publication.IsActiveRecord'><img src="./app/assets/images/Active.png" 
-                         [title]='publication.IsActiveRecord'></td>
-                          <td *ngIf='!publication.IsActiveRecord'><img src="./app/assets/images/Inactive.png"
-                          [title]='publication.IsActiveRecord'></td>
+                         <td *ngIf='publication.IsActiveRecord'>
+                             <img src="./app/assets/images/Active.png" 
+                                  [title]='publication.IsActiveRecord'
+                                  [style.width.px]='imageWidth'
+                                  [style.margin.px]='imageMargin'>
+                         </td>
+                          <td *ngIf='!publication.IsActiveRecord'>
+                              <img src="./app/assets/images/Inactive.png"
+                                    [title]='publication.IsActiveRecord'
+                                    [style.width.px]='imageWidth'
+                                    [style.margin.px]='imageMargin'>
+                          </td>
                         
                      </tr>
                       
