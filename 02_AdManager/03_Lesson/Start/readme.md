@@ -59,7 +59,7 @@ Create Custom pipes using Interface.
 	```       
 
 ### Challenge: 
-Using the knowledge you have gained so far. Add logic to hide/unhide the records based on IsActiveStatus in the html
+Using the knowledge you have gained so far. Add logic to hide/unhide the records based on IsActiveStatus in the `publication-list.component.html`
 
 
 ### **HomeWork:** 
