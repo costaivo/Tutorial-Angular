@@ -1,0 +1,48 @@
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        {{pageTitle}}
+    </div>
+    <div class='panel-body'>
+         <div class='row'>
+          
+        </div>
+        <div class='table-responsive'>
+            <table class='table table-hover table-striped' *ngIf='publications && publications.length'>
+                <thead class="thead-inverse">
+                    <tr>
+                        <th>Name</th>
+                        <th>Type</th>
+                        <th>Language</th>
+                        <th>% Advertisments</th>
+                        <th>% Classifieds</th>
+                        <th>Active</th>
+                     </tr>
+                </thead>
+                <tbody>
+                   <tr *ngFor='#publication of publications' >
+                     <td>{{publication.Name}}</td>
+                     <td>{{publication.TypexCD}}</td>
+                       <td>{{publication.LanguagexCD}}</td>
+                        <td>{{publication.CommissionRateForAdvertisments }}</td>
+                         <td>{{publication.CommisionRateForClassifieds }}</td>
+                         <td *ngIf='publication.IsActiveRecord'>
+                             <img src="./app/assets/images/Active.png" 
+                                  [title]='publication.IsActiveRecord'
+                                  [style.width.px]='imageWidth'
+                                  [style.margin.px]='imageMargin'>
+                         </td>
+                          <td *ngIf='!publication.IsActiveRecord'>
+                              <img src="./app/assets/images/Inactive.png"
+                                    [title]='publication.IsActiveRecord'
+                                    [style.width.px]='imageWidth'
+                                    [style.margin.px]='imageMargin'>
+                          </td>
+                        
+                     </tr>
+                      
+                </tbody>
+
+            </table>
+        </div>
+    </div>
+</div>
