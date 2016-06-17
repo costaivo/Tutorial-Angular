@@ -1,4 +1,6 @@
 import {Component} from 'angular2/core'
+import {publication} from './publications/publication'
+
 
 @Component({
     selector:'am-publicationList',
@@ -12,7 +14,7 @@ export class PublicationListComponent
     imageMargin:number=2;
     showOnlyActiveRecords:boolean=false;
 
-    publications:any[]=[
+    publications:IPublication[]=[
     {
         "ID": "c7bd9a71-a1a4-4d39-ab91-be966512bd0e",
         "IsActiveRecord": true,

@@ -26,11 +26,20 @@ Pipes allow transforming data before they are dispalyed to the end user. A pipe 
 	* {{Advertisment.Rate | currency:'INR':true: '1.2-2' }} 	Chained pipes
 	* {{publication.CommisionRateForClassifieds | percent :'2.2-2'}}
 
-
-
-
 **Further Reading:**
 	* [Angularjs Pipes](https://angular.io/docs/ts/latest/guide/pipes.html)
+
+##Creating Custom Pipes
+Create Custom pipes using Interface. 
+export interface IPublication{
+		"ID": ,
+        "IsActiveRecord": ,
+        "Name":,
+        "TypexCD": ,
+        "LanguagexCD": ,
+        "CommissionRateForAdvertisments": ,
+        "CommisionRateForClassifieds": 
+	}
 
 ### **Challenge:** 
 Using the knowledge you have gained so far. Add logic to dispaly a image in the Active (last column) instead of true/false  
