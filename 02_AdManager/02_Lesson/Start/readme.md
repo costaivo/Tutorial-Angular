@@ -170,12 +170,12 @@ Next Modify the code in `publication-list.component.html` tbody section as shown
 
 8. Run the application, to view the records listed in the grid. 
 
-### **Challenge:** 
+### Challenge: 
 Using the knowledge you have gained so far. Add logic to dispaly a image in the Active (last column) instead of true/false  
 	* \app\assets\images\Inactive.png  -- InActive Record
 	* \app\assets\images\Active.png  -- InActive Record
 
-### **HomeWork:** 
+### HomeWork: 
 Complete the Grid loading for the following modules
 
 | Module        | Json          | 
@@ -190,8 +190,8 @@ Complete the Grid loading for the following modules
 
 
 
--------------------------------
-#####END of Lesson 02 
 
+####END of Lesson 02 
 -------------------------------
+
 
