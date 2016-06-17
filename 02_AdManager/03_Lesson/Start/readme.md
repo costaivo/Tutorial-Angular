@@ -58,10 +58,9 @@ Create Custom pipes using Interface.
 	}	 
 	```       
 
-### **Challenge:** 
-Using the knowledge you have gained so far. Add logic to dispaly a image in the Active (last column) instead of true/false  
-	* \app\assets\images\Inactive.png  -- InActive Record
-	* \app\assets\images\Active.png  -- InActive Record
+### Challenge: 
+Using the knowledge you have gained so far. Add logic to hide/unhide the records based on IsActiveStatus in the html
+
 
 ### **HomeWork:** 
 Use Pipes and Event bidings  for the following modules appropriately. 
