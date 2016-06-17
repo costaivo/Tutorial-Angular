@@ -1,10 +1,11 @@
 import {Component} from 'angular2/core'
-import {publication} from './publications/publication'
+import {IPublication} from './publication'
 
 
 @Component({
     selector:'am-publicationList',
-    templateUrl:'app/publications/publication-list.component.html'
+    templateUrl:'app/publications/publication-list.component.html',
+    styleUrls:['app/publications/publication-list.component.css']
 })
 
 export class PublicationListComponent
