@@ -10,6 +10,7 @@ export class PublicationListComponent
     pageTitle:string="Publications";
     imageWidth:number=16;
     imageMargin:number=2;
+    showOnlyActiveRecords:boolean=false;
 
     publications:any[]=[
     {
@@ -40,4 +41,10 @@ export class PublicationListComponent
         "CommisionRateForClassifieds": .10
     }
 ];
+
+
+showHideInactiveRecords():void{
+    this.showOnlyActiveRecords = !this.showOnlyActiveRecords;
+    
+}
 }

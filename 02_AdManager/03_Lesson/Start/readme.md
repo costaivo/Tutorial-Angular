@@ -28,6 +28,7 @@ Pipes allow transforming data before they are dispalyed to the end user. A pipe 
 
 
 
+
 **Further Reading:**
 	* [Angularjs Pipes](https://angular.io/docs/ts/latest/guide/pipes.html)
 
