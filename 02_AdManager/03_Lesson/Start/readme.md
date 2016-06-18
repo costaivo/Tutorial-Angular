@@ -22,9 +22,9 @@ Follow the instructions below as your instructor explains during the presentaion
 ## Pipes
 Pipes allow transforming data before they are dispalyed to the end user. A pipe takes in data as input and transforms it to a desired output. 
 
-	* {{publication.Name | uppercase}}  apply uppercase formatting to publication name
-	* {{Advertisment.Rate | currency:'INR':true: '1.2-2' }} 	Chained pipes
-	* {{publication.CommisionRateForClassifieds | percent :'2.2-2'}}
+	 {{publication.Name | uppercase}}  apply uppercase formatting to publication name
+	 {{Advertisment.Rate | currency:'INR':true: '1.2-2' }} 	Chained pipes
+	 {{publication.CommisionRateForClassifieds | percent :'2.2-2'}}
 
 **Further Reading:**
 	* [Angularjs Pipes](https://angular.io/docs/ts/latest/guide/pipes.html)
