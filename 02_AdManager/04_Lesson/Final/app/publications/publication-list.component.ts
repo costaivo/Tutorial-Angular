@@ -1,14 +1,18 @@
-import {Component} from 'angular2/core'
+import {Component,OnInit} from 'angular2/core'
+
 import {IPublication} from './publication'
+import {PublicationFilterPipe} from './publication-filter.pipe'
 
 
 @Component({
     selector:'am-publicationList',
     templateUrl:'app/publications/publication-list.component.html',
-    styleUrls:['app/publications/publication-list.component.css']
+    styleUrls:['app/publications/publication-list.component.css'],
+    pipes:[PublicationFilterPipe]
 })
 
-export class PublicationListComponent
+export class PublicationListComponent 
+            implements OnInit
 {
     pageTitle:string="Publications";
     imageWidth:number=16;
@@ -50,4 +54,9 @@ showHideInactiveRecords():void{
     this.showOnlyActiveRecords = !this.showOnlyActiveRecords;
     
 }
+
+ngOnInit():void{
+        console.log('In OnInit');
+}
+
 }

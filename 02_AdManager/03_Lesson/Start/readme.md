@@ -2,8 +2,9 @@
 ----------
 ### Lesson Contents
 1.  Transforming data with pipes
-2.  Handling Events with Event Bindings
-3.  
+2.  Defining and Using Interfaces
+3.  Handling Events with Event Bindings
+
 
 > Tip: To grasp the concepts properly, It is  **`strongly`**  recommended that you **type** out all the code instead of **copy + pasting** it. 
 
@@ -29,8 +30,8 @@ Pipes allow transforming data before they are dispalyed to the end user. A pipe 
 **Further Reading:**
 -  [Angularjs Pipes](https://angular.io/docs/ts/latest/guide/pipes.html)
 
-## Creating Custom Pipes
-Create Custom pipes using Interface. 
+## Using Interfaces
+Accessing data objects with interfaces and its advantages.  
 
 1. Add a new file Publication.ts
 2. Type the code below in the Publication.ts file
