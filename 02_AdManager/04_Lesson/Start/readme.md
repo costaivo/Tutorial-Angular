@@ -1,4 +1,4 @@
-# Lesson 03 -- Ad Manager : Creating Custom Pipes and Understanding Component LifeCycle hooks
+# Lesson 04 -- Ad Manager : Creating Custom Pipes and Understanding Component LifeCycle hooks
 ----------
 ### Lesson Contents
 1.  Component Lifecycle Hooks
@@ -163,6 +163,6 @@ Use Custom Pipes  for the following modules appropriately.
 
 
 -------------------------------
-#####END of Lesson 03
+#####END of Lesson 04
 
 -------------------------------

@@ -5,3 +5,7 @@
                  <img *ngSwitchWhen="false" src="./app/assets/images/Inactive.png" [style.width.px]='imageWidth' [style.margin.px]='imageMargin'>
             <td>
 	```
+	
+	
+	
+Creating Nested Components
