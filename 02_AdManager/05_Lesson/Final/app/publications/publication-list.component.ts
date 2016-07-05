@@ -3,6 +3,7 @@ import {Component,OnInit} from 'angular2/core'
 import {IPublication} from './publication'
 import {PublicationFilterPipe} from './publication-filter.pipe'
 import {StarComponent} from '../shared/star.component';
+import {PublicationService} from './publication.service';
 
 @Component({
     selector:'am-publicationList',
@@ -19,41 +20,14 @@ export class PublicationListComponent
     imageWidth:number=16;
     imageMargin:number=2;
     showOnlyActiveRecords:boolean=false;
+    errorMessage:string;
 
-    publications:IPublication[]=[
-    {
-        "ID": "c7bd9a71-a1a4-4d39-ab91-be966512bd0e",
-        "IsActiveRecord": true,
-        "Name": "Herald",
-        "TypexCD": "Local",
-        "LanguagexCD": "English",
-        "CommissionRateForAdvertisments": 0.15,
-        "CommisionRateForClassifieds": .059,
-        "Ratings":4
-    },
-    {
-        "ID": "1806b70c-e47a-4c0b-835c-a88926d9723a",
-        "IsActiveRecord": true,
-        "Name": "Times of India (Goa Edition)",
-        "TypexCD": "Local",
-        "LanguagexCD": "English",
-        "CommissionRateForAdvertisments": 0.25,
-        "CommisionRateForClassifieds": .050,
-        "Ratings":2.5
-    },
-    {
-        "ID": "f42e2305-2c1e-4173-8e3b-b908283b57a6",
-        "IsActiveRecord": false,
-        "Name": "Times of India (Mumbai Edition)",
-        "TypexCD": "Local",
-        "LanguagexCD": "English",
-        "CommissionRateForAdvertisments": .15,
-        "CommisionRateForClassifieds": .10,
-         "Ratings":5
-    }
-];
+    publications:IPublication[]=null;
 
 
+constructor(private _publicationService:PublicationService){
+
+}
 showHideInactiveRecords():void{
     this.showOnlyActiveRecords = !this.showOnlyActiveRecords;
     
@@ -61,6 +35,10 @@ showHideInactiveRecords():void{
 
 ngOnInit():void{
         console.log('In OnInit');
+        this.publications = this._publicationService.getProducts()
+        .subscribe(
+            publication => this.publications = publication,
+            error=> this.errorMessage = <any> error);
 }
 
 onRatingClicked(message:string):void{

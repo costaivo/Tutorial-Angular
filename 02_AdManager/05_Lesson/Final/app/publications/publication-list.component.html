@@ -3,14 +3,16 @@
         {{pageTitle}}
     </div>
     <div class='panel-body'>
-         <div class='row'>
-          <div class='col-md-2'><button class='btn btn-primary' (click)='showHideInactiveRecords()'>
+         <div class='row'  >
+          <div class='col-md-2'><button 
+                    class='btn btn-primary' (click)='showHideInactiveRecords()'>
                 {{showOnlyActiveRecords ? 'Hide Inactive ' :'Show all '}} Records
               </button>
               </div>
             
         </div>
         <div class='table-responsive'>
+            <span *ngIf='publications==null || publications.length==0' >No Records found</span>
             <table class='table table-hover table-striped' *ngIf='publications && publications.length'>
                 <thead>
                     <tr>

@@ -113,5 +113,19 @@ div {
 Explain Dependency Injection with example
 Creating Service and using in angular 2
 1. Create a service
-2. Define metadata with a decorator
+2. Define metadata with a decorator -@Injectable
 3. Import the required functions
+
+Using the Service
+
+1. Register it in app.component.ts as providers
+2. using the provider property to register the service
+
+
+----HTTP----
+Observables & Reactive extensions
+Sending an http request
+1. add the script tag to the index.html file
+2. register in app.component.ts
+3. Modify the service to call the http get
+4. subscribe to an observable
