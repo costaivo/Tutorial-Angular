@@ -16,7 +16,7 @@ constructor(private _http:Http )
  getPublication(id:string):Observable<IPublication>{
      console.log("Fetching publication");
         return this.getPublications()
-            .map((publications:IPublication[])=> publications.find(p=>p.ID ===  "c7bd9a71-a1a4-4d39-ab91-be966512bd0e")]);
+            .map((publications:IPublication[])=> publications.find(p=>p.ID ===  id));
     }
 
  getPublications():Observable<IPublication[]>{
