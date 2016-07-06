@@ -13,10 +13,16 @@ constructor(private _http:Http )
 
 }
 
- getProducts():Observable<IPublication[]>{
+ getPublication(id:string):Observable<IPublication>{
+     console.log("Fetching publication");
+        return this.getPublications()
+            .map((publications:IPublication[])=> publications[0]);
+    }
+
+ getPublications():Observable<IPublication[]>{
         return this._http.get(this._publicationUrl)
         .map((response:Response)=> <IPublication[]>response.json())
-        .do(data => console.log('All: '+ JSON.stringify(data)))
+       // .do(data => console.log('All: '+ JSON.stringify(data)))
         .catch(this.handleError);
     }
 
@@ -24,7 +30,7 @@ private handleError(error:Response){
     console.error(error);
     return Observable.throw(error.json().error || 'Server error');
 }
-    getProducts2():IPublication[]{
+    getPublication2():IPublication[]{
         return [
     {
         "ID": "c7bd9a71-a1a4-4d39-ab91-be966512bd0e",

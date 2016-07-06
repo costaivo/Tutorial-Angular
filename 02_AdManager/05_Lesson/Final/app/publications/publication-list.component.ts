@@ -1,7 +1,8 @@
-import {Component,OnInit} from 'angular2/core'
+import {Component,OnInit} from 'angular2/core';
+import {ROUTER_DIRECTIVES} from 'angular2/router';
 
-import {IPublication} from './publication'
-import {PublicationFilterPipe} from './publication-filter.pipe'
+import {IPublication} from './publication';
+import {PublicationFilterPipe} from './publication-filter.pipe';
 import {StarComponent} from '../shared/star.component';
 import {PublicationService} from './publication.service';
 
@@ -9,7 +10,7 @@ import {PublicationService} from './publication.service';
     templateUrl:'app/publications/publication-list.component.html',
     styleUrls:['app/publications/publication-list.component.css'],
     pipes:[PublicationFilterPipe],
-    directives:[StarComponent]
+    directives:[StarComponent,ROUTER_DIRECTIVES]
 })
 
 export class PublicationListComponent 
@@ -34,7 +35,7 @@ showHideInactiveRecords():void{
 
 ngOnInit():void{
         console.log('In OnInit');
-        this.publications = this._publicationService.getProducts()
+       this._publicationService.getPublications()
         .subscribe(
             publication => this.publications = publication,
             error=> this.errorMessage = <any> error);

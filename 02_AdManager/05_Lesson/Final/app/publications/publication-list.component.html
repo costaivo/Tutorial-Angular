@@ -27,7 +27,9 @@
                 </thead>
                 <tbody *ngFor='#publication of publications | publicationFilter:showOnlyActiveRecords '>
                    <tr>
-                     <td>{{publication.Name | uppercase }}</td>
+                     <td>
+                         <a [routerLink]="['PublicationDetail',{id:publication.ID}]">
+                         {{publication.Name | uppercase }}</a></td>
                      <td>{{publication.TypexCD}}</td>
                        <td>{{publication.LanguagexCD}}</td>
                         <td>{{publication.CommissionRateForAdvertisments | percent :'2.2-2' }}</td>

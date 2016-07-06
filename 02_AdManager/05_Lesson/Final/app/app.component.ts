@@ -4,6 +4,7 @@ import  'rxjs/Rx'; //Load all features
 import {ROUTER_PROVIDERS,RouteConfig,ROUTER_DIRECTIVES} from 'angular2/router';
 
 import {PublicationListComponent} from './publications/publication-list.component';
+import {PublicationDetailComponent} from './publications/publication-detail.component';
 import {PublicationService} from './publications/publication.service';
 import {IndexComponent} from './home/index.component';
 
@@ -19,7 +20,8 @@ import {IndexComponent} from './home/index.component';
 
 @RouteConfig([
     {path:'/index',name:'Index',component:IndexComponent,useAsDefault:true},
-    {path:'/publications',name:'Publications',component:PublicationListComponent}
+    {path:'/publications',name:'Publications',component:PublicationListComponent},
+    {path:'/publication/:id',name:'PublicationDetail',component:PublicationDetailComponent}
 ])
 
 export class AppComponent{
