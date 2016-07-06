@@ -1,10 +1,12 @@
-<div class="panel panel-primary">
+<div class="panel panel-primary" *ngIf='publication'>
     <div class="panel-heading"> 
-        {{pageTitle + ':' + publication.Name}}
+        {{pageTitle + ' : ' +publication.Name}}
     </div>
     <div class="panel-body">
         <div class="row">
-            <div class='col-md-6'></div>
+            <div class='col-md-6'>
+                {{publication.Name}}
+            </div>
         </div>
     </div>
     <div class="panel-footer">

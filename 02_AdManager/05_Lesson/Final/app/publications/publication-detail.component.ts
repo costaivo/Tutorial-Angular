@@ -14,13 +14,13 @@ import {StarComponent} from '../shared/star.component';
 
 export class PublicationDetailComponent implements OnInit{
     pageTitle: string = 'Publication Detail';
-    publication:IPublication=null;
+    publication:IPublication;
     errorMessage:string;
 
 
-    constructor(private _routeParams:RouteParams,
-                private _router:Router,
-                private _publicationService:PublicationService){
+    constructor(private _publicationService:PublicationService,
+    private _router:Router,
+    private _routeParams:RouteParams){
           
     }
 
@@ -29,11 +29,11 @@ export class PublicationDetailComponent implements OnInit{
     ngOnInit(){
     console.log('In OnInit -PublicationDetail');
 
-        if(!this.publication){
+       if(!this.publication){
             let id=this._routeParams.get('id');
             this.getPublication(id);
-               console.log(this.publication);
-        }
+             console.log(this.publication);
+       }
     }
 
     getPublication(id:string){
