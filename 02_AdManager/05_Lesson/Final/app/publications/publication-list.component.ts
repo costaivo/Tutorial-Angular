@@ -6,7 +6,6 @@ import {StarComponent} from '../shared/star.component';
 import {PublicationService} from './publication.service';
 
 @Component({
-    selector:'am-publicationList',
     templateUrl:'app/publications/publication-list.component.html',
     styleUrls:['app/publications/publication-list.component.css'],
     pipes:[PublicationFilterPipe],

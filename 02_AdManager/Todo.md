@@ -129,3 +129,20 @@ Sending an http request
 2. register in app.component.ts
 3. Modify the service to call the http get
 4. subscribe to an observable
+
+----Routing----
+1. Configure routes
+2. Tying Routes to actions
+3. Placing the Views
+4. Passing Parameters to Route
+5. Activateing a Route with Code
+
+Set up 
+1. Include the angular router script in index.html file
+2. in the Head section add <base href="/">
+3. Register the routing provides in app.component
+
+4. Add publication-detail.component.ts and its related files
+
+
+Passing Parameters using routing
