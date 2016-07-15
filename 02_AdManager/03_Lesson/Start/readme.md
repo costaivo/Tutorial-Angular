@@ -54,7 +54,8 @@ Accessing data objects with interfaces and its advantages.
 ## Handling Events with Event Bindings
 
 1. Add a button above the grid to hide/show Inactive records
-	``` css
+
+	``` html
 	<button class='btn btn-primary' (click)='showHideInactiveRecords()'>
 					Show all  Records
 	</button>
