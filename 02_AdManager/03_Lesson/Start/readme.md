@@ -35,6 +35,17 @@ Accessing data objects with interfaces and its advantages.
 
 1. Add a new file Publication.ts
 2. Type the code below in the Publication.ts file
+``` typescript
+	export interface IPublication{
+		ID:string ,
+        IsActiveRecord:Boolean ,
+        Name:string,
+        TypexCD:string,
+        LanguagexCD: string,
+        CommissionRateForAdvertisments:number ,
+        CommisionRateForClassifieds:number 
+}
+```
 3. import the publication in publication-list.component.ts file
 4. Replace the any with IPublication
 5. If you make any typo mistake in the declartion of publication, you will now get an error.
