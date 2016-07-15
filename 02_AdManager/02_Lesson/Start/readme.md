@@ -2,8 +2,9 @@
 ----------
 ### Lesson Contents
 1.  Using Templates Url
-2.  Data Binding :Interpolation & Property Bindings
-3.  Using a Component as a Directive
+2.  Using StyleUrl
+3.  Data Binding :Interpolation & Property Bindings
+4.  Using a Component as a Directive
 
 > Tip: To grasp the concepts properly, It is  **`strongly`**  recommended that you **type** out all the code instead of **copy + pasting** it. 
 
@@ -81,20 +82,31 @@ Follow the instructions below as your instructor explains during the presentaion
 	    </div>
 	</div>	
 	```
-4. Add the below code in the `publilcation-list.component.ts` file
-	```typescript
-    import {Component} from 'angular2/core'
-    
-    @Component({
-        selector:'am-publicationList',
-        templateUrl:'app/publications/publication-list.component.html'
-    })
-
-    export class PublicationListComponent
-    {
-       
-    }
+3. Copy the CSS template below in the publicatioin-list.component.html file. 
+	``` css
+		thead{
+    			background-color: #337ab7;
+     			color:#f5f5f5;
+			}
 	```
+
+4. Add the below code in the `publilcation-list.component.ts` file
+	```  typescript
+		import {Component} from 'angular2/core'
+		
+		@Component({
+			selector:'am-publicationList',
+			templateUrl:'app/publications/publication-list.component.html',
+			styleUrls:['app/publications/publication-list.component.css']
+		})
+
+		export class PublicationListComponent
+		{
+		
+		}
+	```
+	The styleUrls property can be used to link the stylesheets with the view. 
+
 5. Using a Component as a Directive,to use a component as a directive you have to follow three steps
     * _#Step 1 :_ import the component `PublicationListComponent` in the `app.component.ts`  file
     * _#Step 2 :_ use the `am-publicationList` selector in the template view.
@@ -111,7 +123,7 @@ Follow the instructions below as your instructor explains during the presentaion
 			<h1> {{pageTitle}} : Advertisment Manager</h1>
 			<am-publicationList></am-publicationList>
 			</div>`,
-			directives:[PublicationListComponent]
+			directives:[PublicationListComponent],
 		})
 		export class AppComponent{
 			pageTitle:string = 'Digital Ads';
@@ -121,10 +133,10 @@ Follow the instructions below as your instructor explains during the presentaion
     
     
 ### DataBinding
-	* Interpolation : One way binding 
-	 > Examlpe: `{{publication.Name}}`
-	* Property Binding : 
-	> Example : `<img [title]='publication.IsActiveRecord'>`
+* Interpolation : One way binding 
+> Examlpe: `{{publication.Name}}`
+* Property Binding : 
+> Example : `<img [title]='publication.IsActiveRecord'>`
 
 Add the property `pageTitle:string="Publications";` in `publication-list.component.ts` file
 
@@ -188,10 +200,8 @@ Complete the Grid loading for the following modules
 
 
 
-
-
-
 ####END of Lesson 02 
+
 -------------------------------
 
 
