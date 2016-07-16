@@ -5,6 +5,5 @@ export interface IPublication{
         TypexCD:string,
         LanguagexCD: string,
         CommissionRateForAdvertisments:number ,
-        CommisionRateForClassifieds:number ,
-        Ratings:number
+        CommisionRateForClassifieds:number 
 }
