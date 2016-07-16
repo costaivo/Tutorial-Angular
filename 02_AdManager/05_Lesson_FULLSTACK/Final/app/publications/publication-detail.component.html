@@ -1,0 +1,17 @@
+<div class="panel panel-primary" *ngIf='publication'>
+    <div class="panel-heading"> 
+        {{pageTitle + ' : ' +publication.Name}}
+    </div>
+    <div class="panel-body">
+        <div class="row">
+            <div class='col-md-6'>
+                {{publication.Name}}
+            </div>
+        </div>
+    </div>
+    <div class="panel-footer">
+        <a class="btn btn-default" (click)='onBack()' style="width:80px">
+            <i class='glyphicon glyphicon-chevron-left'></i> Back
+        </a>
+    </div>
+</div>
