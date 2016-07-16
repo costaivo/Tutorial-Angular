@@ -22,9 +22,8 @@
                         <th>Active</th>
                      </tr>
                 </thead>
-                <tbody *ngFor='#publication of publications'>
-
-                   <tr *ngIf='showOnlyActiveRecords'>
+                <tbody  *ngFor='#publication of publications'>
+                 <tr *ngIf='showOnlyActiveRecords == publication.IsActiveRecord || !showOnlyActiveRecords'>
                      <td>{{publication.Name | uppercase }}</td>
                      <td>{{publication.TypexCD}}</td>
                        <td>{{publication.LanguagexCD}}</td>
@@ -44,27 +43,6 @@
                           </td>
                         
                      </tr>
-                      <tr *ngIf='!showOnlyActiveRecords && publication.IsActiveRecord'>
-                     <td>{{publication.Name | uppercase }}</td>
-                     <td>{{publication.TypexCD}}</td>
-                       <td>{{publication.LanguagexCD}}</td>
-                        <td>{{publication.CommissionRateForAdvertisments | percent :'2.2-2' }}</td>
-                         <td>{{publication.CommisionRateForClassifieds | percent :'2.2-2'}}</td>
-                         <td *ngIf='publication.IsActiveRecord'>
-                             <img src="./app/assets/images/Active.png" 
-                                  [title]='publication.IsActiveRecord'
-                                  [style.width.px]='imageWidth'
-                                  [style.margin.px]='imageMargin'> 
-                         </td>
-                          <td *ngIf='!publication.IsActiveRecord'>
-                              <img src="./app/assets/images/Inactive.png"
-                                    [title]='publication.IsActiveRecord'
-                                    [style.width.px]='imageWidth'
-                                    [style.margin.px]='imageMargin'>
-                          </td>
-                        
-                     </tr>
-                      
                 </tbody>
 
             </table>

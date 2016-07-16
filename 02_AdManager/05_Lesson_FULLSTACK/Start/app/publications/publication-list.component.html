@@ -22,8 +22,8 @@
                         <th>Active</th>
                      </tr>
                 </thead>
-                <tbody >
-                   <tr *ngFor='#publication of publications | publicationFilter:showOnlyActiveRecords '>
+                <tbody *ngFor='#publication of publications | publicationFilter:showOnlyActiveRecords '>
+                   <tr>
                      <td>{{publication.Name | uppercase }}</td>
                      <td>{{publication.TypexCD}}</td>
                        <td>{{publication.LanguagexCD}}</td>

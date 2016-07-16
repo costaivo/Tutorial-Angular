@@ -1,6 +1,6 @@
 {
     "name": "ad-management",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "author": "Costa Ivo",
     "description": "Package for the Digital Ads Manager",
     "scripts": {
