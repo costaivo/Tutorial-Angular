@@ -24,10 +24,10 @@ Follow the instructions below as your instructor explains during the presentaion
 
 1. Create a new folder called shared under app folder. 
 2. add the following files in the shared folder 
->
-- active.component.ts
-- active.component.html
-- active.component.css
+
+    - active.component.ts
+    - active.component.html
+    - active.component.css
 
 3. Add the below code in the `active.component.ts` file. 
 ``` typeScript
