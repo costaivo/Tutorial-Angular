@@ -20,33 +20,34 @@ Follow the instructions below as your instructor explains during the presentaion
 > Note this course is structured in collobration with a trainer. Without a trainer you might loose some details which were not mentioned in the instructions below. 
 
 
-Creating Nested Components
-1. Create a new folder called Shared
+##Creating Nested Components
+
+1. Create a new folder called shared under app folder. 
 2. add the following files in the shared folder 
-- star.component.ts
-- star.component.html
-- star.component.css
-3. Add the below code in the `star.component.ts` file. 
+>
+- active.component.ts
+- active.component.html
+- active.component.css
+
+3. Add the below code in the `active.component.ts` file. 
 ``` typeScript
     import {Component,OnChanges} from 'angular2/Core';
 
     @Component({
-        selector:'ct-star',
-        templateUrl:'app/shared/star.component.html',
-        styleUrls: ['app/shared/star.component.html']
+        selector:'ct-active',
+        templateUrl:'app/shared/active.component.html',
+        styleUrls: ['app/shared/active.component.html']
     })
 
 
-    export class StarComponent implements OnChanges{
-        rating: number=4;
-        startWidth:number;
+    export class ActiveComponent implements OnChanges{
 
         ngOnChanges():void{
-            this.startWidth=this.rating *86/5;
+           console.log('active component changed');
         }
     }
 ```
-4. Add the below code in the `star.component.html` file
+4. Add the below code in the `active.component.html` file
 
 ``` html
     <div class="crop" 
@@ -62,7 +63,7 @@ Creating Nested Components
     </div>
 </div>
 ```
-5. Add the below code in the `star.component.css` file
+5. Add the below code in the `active.component.css` file
 ``` css
 .crop {
     overflow: hidden;
