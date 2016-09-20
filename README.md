@@ -1,10 +1,25 @@
 # AngularJs2-AdManager
-Using AngularJS 2 to create a Advertisment Manager Application.
-A tutorial on Learning Angular JS 
+A tutorial on Learning Angular JS 2. With this tutorial we will be creating a full working application using AngularJs 2
 
-#### Course Contents
-1.  Lesson 01 -- Ad Manager Getting Started : Building your first Component
-2.  Lesson 02 -- Ad Manager Getting Started : Using a Component as Directive
+## Sample Applications we will be developing during this tutorial
+- AdManager Application
+   - Learn AngularJS 2 Fundamentals using this Course.
+   - The backend application we will be consuming has already been developed and can be found at the following link 
+   [NodeJS-AdManager](https://github.com/costaivo/NodeJS-AdManager)
+
+- ToDo Application
+    - A simple app to keep track of tasks, using localstorage. 
+
+- Github  Application 
+    - Develop a simple app to connect to github REST services and display its contents using web application.
+
+
+
+## AdManager Application Development - Course Contents
+- Lesson 01 -- Running a AngularJS 2 Application
+- Lesson 02 -- Create  an Hello World Application
+
+Ad Manager Getting Started : Using a Component as Directive
 todo -- Add routing lesson here
 3.  Lesson 03 -- Ad Manager : Using pipes and Events
 4.  Lesson 04 -- Ad Manager : Creating Custom Pipes and Understanding Component LifeCycle hooks
