@@ -1,8 +1,6 @@
 {
-  "name": "ad-management",
+  "name": "angular2-quickstart",
   "version": "1.0.0",
-  "author": "Costa Ivo",
-  "description": "Package for the Digital Ads Manager",
   "scripts": {
     "start": "tsc && concurrently \"npm run tsc:w\" \"npm run lite\" ",
     "lite": "lite-server",
@@ -37,4 +35,3 @@
     "typings":"^1.3.2"
   }
 }
-

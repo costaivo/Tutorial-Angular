@@ -1,12 +1,14 @@
-import  {Component} from 'angular2/core';
+//import Component from angular core
+import {Component} from '@angular/core';
 
-@Component({
-    selector:'am-app',
-    template:`<div >
-      <h1> {{pageTitle}} : Advertisment Manager</h1>
-       </div>`
+//define the metadata for the component using decorator
+ @Component({
+     selector:'am-app',
+     template:`<div ><h1> {{pageTitle}} : Ad Manager</h1>
+     </div>`
 })
+
+//create class for the component
 export class AppComponent{
-    pageTitle:string = 'Digital Ads';
-    
+    pageTitle:string = "Digital Ads ";
 }
