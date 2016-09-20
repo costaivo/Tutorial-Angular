@@ -6,9 +6,7 @@
 3.  Selecting Editor for developement
 4.  Running the application
 
-> Tip: To grasp the concepts properly, It is **strongly** recommended that you type out all the code instead of copy + pasting it. 
 
-```
 # 4. Open a command prompt in the project's root directory  (AngularJs2-AdManager\01_QuickStart)
 
 - Type: `npm install` 
