@@ -1,9 +1,9 @@
 # Lesson 01 -- Running an AngularJS 2 Application
 ----------
 #### Lesson Contents
-1.  Developement Environment Setup
+1.  Development Environment Setup
 2.  Selecting an Language
-3.  Selecting Editor for developement
+3.  Selecting Editor for development
 4.  Running the application
 
 
