@@ -1,4 +1,4 @@
-# Lesson 01 -- Ad Manager Getting Started : Building your first Component
+# Lesson 01 -- Running an AngularJS 2 Application
 ----------
 #### Lesson Contents
 1.  Developement Environment Setup
