@@ -1,13 +1,25 @@
 # Lesson 01 -- Running an AngularJS 2 Application
 ----------
-#### Lesson Contents
+## Lesson Contents
 1.  Development Environment Setup
 2.  Selecting an Language
 3.  Selecting Editor for development
-4.  Running the application
+4.  Running AngularJs 2 Application
 
+### 1. Development Environment Setup
+    Install NodeJS on the developement machine.
 
-# 4. Open a command prompt in the project's root directory  (AngularJs2-AdManager\01_QuickStart)
+### 2. Selecting an Language
+    TypeScript
+
+### 3. Selecting Editor for development
+- **VS-Code** 
+- Brackets
+- Sublime
+- CodePen
+ 
+### 4. Running AngularJs 2 Application
+Open a command prompt in the project's root directory  (AngularJs2-AdManager\01_QuickStart)
 
 - Type: `npm install` 
  This installs the dependencies as defined in the package.json file.
