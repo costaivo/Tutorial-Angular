@@ -13,20 +13,20 @@
 ## 1.  Adding the root component - AppComponent
  * Add `app.component.ts` file in the app folder
 ``` typescript
-            //import Component from angular core
+//import Component from angular core
             import {Component} from '@angular2/core';
             
-            //define the metadata for the component using decorator
-            @Component({
-                selector:'am-app',
-                template:`<div ><h1> {{pageTitle}} : Ad Manager</h1>
-                </div>`
-            })
+//define the metadata for the component using decorator
+@Component({
+    selector:'am-app',
+    template:`<div ><h1> {{pageTitle}} : Ad Manager</h1>
+    </div>`
+})
             
-            //create class for the component
-            export class AppComponent{
-                pageTitle:string = "Digital Ads ";
-            }
+//create class for the component
+export class AppComponent{
+    pageTitle:string = "Digital Ads ";
+}
 ```
 ----------
 ### Explanations 
@@ -34,13 +34,13 @@
 **Import**
 
 `import {Component} from '@angular2/core';`
-> when we need something from a module or library, it has to be imported using the import statement
+> when we need something from a module or library, it has to be imported using the import statement.
 > In the current example we have imported the **Angular 2 core** so that our component code can have access to the @Component  decorator. 
 
 **@Component**
 ``` typescript
  @Component({
-      selector:'my-app',
+      selector:'am-app',
       template:`<div >
       <h1> {{pageTitle}} : Ad Manager</h1>
        </div>`
@@ -54,32 +54,32 @@
 
 **Component Class**
 ``` typescript
-            export class AppComponent{
-                pageTitle:string = "Digital Ads ";
-            }
+export class AppComponent{
+  pageTitle:string = "Digital Ads ";
+}
 ```
 
 ## 2. Adding the root module - AppModule
  * Add `app.module.ts` file in the app folder
 ``` typescript
-    //import the NgModule decorator function.
-    import { NgModule }      from '@angular/core';
+//import the NgModule decorator function.
+import { NgModule }      from '@angular/core';
 
-    //import the  BrowsesrModule.This is an web application that will run in a browser, hence this module is required.
-    import { BrowserModule } from '@angular/platform-browser';
+//import the  BrowsesrModule.This is an web application that will run in a browser, hence this module is required.
+import { BrowserModule } from '@angular/platform-browser';
 
-    //import our root component
-    import { AppComponent }   from './app.component';
+//import our root component
+import { AppComponent }   from './app.component';
 
-    //@NgModule takes a metadata object that tells Angular how to compile and run module code. It identifies the module's own components, directives and pipes, making some of them public so external components can use them. It may add service providers to the application dependency injectors.
-    @NgModule({
+//@NgModule takes a metadata object that tells Angular how to compile and run module code. It identifies the module's own components, directives and pipes, making some of them public so external components can use them. It may add service providers to the application dependency injectors.
+@NgModule({
     imports:      [ BrowserModule ],
     declarations: [ AppComponent],
     bootstrap:    [AppComponent]
-    })
+})
 
-    //create class for the module
-    export class AppModule { }
+//create class for the module
+export class AppModule { }
 ```
 
 ----------
@@ -97,15 +97,15 @@ An Angular Module is a class decorated with @NgModule metadata.
 #### 2. Bootstrapping the application
 * Add `main.ts` file in the app folder.
 ```typescript
-        // import bootstrap 
-        import {platformBrowserDynamic} from '@angular2/platform-browser-dynamic';
+// import bootstrap 
+import {platformBrowserDynamic} from '@angular2/platform-browser-dynamic';
         
-        // import our root module
-        import {AppModule} from './app.module';
+// import our root module
+import {AppModule} from './app.module';
         
-        //bootstrap the component
-        const platform = platformBrowserDynamic();
-        platform.bootstrapModule(AppModule);
+//bootstrap the component
+const platform = platformBrowserDynamic();
+platform.bootstrapModule(AppModule);
 ```
 ----------
 ### Explanations 
