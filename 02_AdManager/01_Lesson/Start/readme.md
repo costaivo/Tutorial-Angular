@@ -14,7 +14,7 @@
  * Add `app.component.ts` file in the app folder
 ``` typescript
 //import Component from angular core
-            import {Component} from '@angular2/core';
+            import {Component} from '@angular/core';
             
 //define the metadata for the component using decorator
 @Component({
@@ -71,7 +71,9 @@ import { BrowserModule } from '@angular/platform-browser';
 //import our root component
 import { AppComponent }   from './app.component';
 
-//@NgModule takes a metadata object that tells Angular how to compile and run module code. It identifies the module's own components, directives and pipes, making some of them public so external components can use them. It may add service providers to the application dependency injectors.
+//@NgModule takes a metadata object that tells Angular how to compile and run module code. 
+//It identifies the module's own components, directives and pipes, making some of them public 
+//so external components can use them. It may add service providers to the application dependency injectors.
 @NgModule({
     imports:      [ BrowserModule ],
     declarations: [ AppComponent],
@@ -98,7 +100,7 @@ An Angular Module is a class decorated with @NgModule metadata.
 * Add `main.ts` file in the app folder.
 ```typescript
 // import bootstrap 
-import {platformBrowserDynamic} from '@angular2/platform-browser-dynamic';
+import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
         
 // import our root module
 import {AppModule} from './app.module';
