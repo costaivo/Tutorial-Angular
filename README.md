@@ -2,15 +2,15 @@
 A tutorial on Learning Angular JS 2. With this tutorial we will be creating a full working application using AngularJs 2
 
 ## Sample Applications we will be developing during this tutorial
-- AdManager Application
+- _**AdManager Application**_
    - Learn AngularJS 2 Fundamentals using this Course.
    - The backend application we will be consuming has already been developed and can be found at the following link 
    [NodeJS-AdManager](https://github.com/costaivo/NodeJS-AdManager)
 
-- ToDo Application
+- _**ToDo Application**_
     - A simple app to keep track of tasks, using localstorage. 
 
-- Github  Application 
+- _**Github  Application**_ 
     - Develop a simple app to connect to github REST services and display its contents using web application.
 
 
