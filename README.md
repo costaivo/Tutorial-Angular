@@ -17,7 +17,7 @@ A tutorial on Learning Angular JS 2. With this tutorial we will be creating a fu
 
 ## AdManager Application Development - Course Contents
 - [Lesson 01 -- Running an AngularJS 2 Application](https://github.com/costaivo/AngularJs2-AdManager/tree/Dev/01_QuickStart)
-- Lesson 02 -- Create  an Hello World Application
+- [Lesson 02 -- Building your first Component and Module](https://github.com/costaivo/AngularJs2-AdManager/tree/Dev/02_AdManager/01_Lesson/Start)
 
 Ad Manager Getting Started : Using a Component as Directive
 todo -- Add routing lesson here
