@@ -10,7 +10,9 @@
     Install NodeJS on the development machine.
 
 ### 2. Selecting an Language
-    TypeScript
+- **TypeScript**
+- Dart
+- JavaScript
 
 ### 3. Selecting Editor for development
 - **VS-Code** 
