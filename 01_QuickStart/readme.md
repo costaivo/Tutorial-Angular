@@ -30,4 +30,4 @@ Open a command prompt in the project's root directory  (AngularJs2-AdManager\01_
 This launches the TypeScript compiler (tsc) to compile the application and wait for changes. 
 It also starts the lite-server and launches the browser to run the application.
 
-:arrow_left: :arrow_right: 
+[:arrow_left:](https://github.com/costaivo/AngularJs2-AdManager/tree/Dev) :arrow_right: 
