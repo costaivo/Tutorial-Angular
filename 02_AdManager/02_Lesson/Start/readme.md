@@ -14,7 +14,7 @@
  * Add `app.component.ts` file in the app folder
 ``` typescript
 //import Component from angular core
-            import {Component} from '@angular/core';
+import {Component} from '@angular/core';
             
 //define the metadata for the component using decorator
 @Component({
