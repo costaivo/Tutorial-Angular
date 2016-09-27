@@ -1,207 +1,136 @@
-# Lesson 02 -- Ad Manager Getting Started : Using a Component as Directive
+# Lesson 02 -- Building your first Component and Module
 ----------
-### Lesson Contents
-1.  Using Templates Url
-2.  Using StyleUrl
-3.  Data Binding :Interpolation & Property Bindings
-4.  Using a Component as a Directive
+## Lesson Contents
+1. Adding the root component - AppComponent
+2. Adding the root module    - AppModule
+3. Bootstrapping the application
+4. Call the `am-app` selector in `index.html` file
+5. Running the application
 
-> Tip: To grasp the concepts properly, It is  **`strongly`**  recommended that you **type** out all the code instead of **copy + pasting** it. 
+> Tip: To grasp the concepts properly, It is **strongly** recommended that you type out all the code instead of copy + pasting it. 
 
--------------------------------
 
-##### Overview of the application we are building in this lesson
-- App Component  [Done]
-- Publication List Component [Current Lesson]
+## 1.  Adding the root component - AppComponent
+ * Add `app.component.ts` file in the app folder
+``` typescript
+//import Component from angular core
+            import {Component} from '@angular/core';
+            
+//define the metadata for the component using decorator
+@Component({
+    selector:'am-app',
+    template:`<div ><h1> {{pageTitle}} : Ad Manager</h1>
+    </div>`
+})
+            
+//create class for the component
+export class AppComponent{
+    pageTitle:string = "Digital Ads ";
+}
+```
+----------
+### Explanations 
 
-##### What is a component ?
+**Import**
 
-> Component = Template + Class + Metadata
->
-**Template**
-- View 
->
-**Class**
-- Methods
-- Properties
-- Code to interact with the view
->
-**Metadata**
-- instructs angular how to construct and use this component
-- defined with a decorator
+`import {Component} from '@angular2/core';`
+> when we need something from a module or library, it has to be imported using the import statement.
+> In the current example we have imported the **Angular 2 core** so that our component code can have access to the @Component  decorator. 
 
--------------------------------
+**@Component**
+``` typescript
+ @Component({
+      selector:'am-app',
+      template:`<div >
+      <h1> {{pageTitle}} : Ad Manager</h1>
+       </div>`
+     })
+```  
+> Component is a decorator function that takes metadata object as argument. The main objective of it is to add meta-data to the application that will tell **Angular 2** how to process a class. 
 
-### Course Starts 
-Follow the instructions below as your instructor explains during the presentaion. 
+> **selector :** defines the name of the HTML tag. whenever Angular encouters a `am-app` it will create and display an instance of AppComponent.
 
-> Note this course is structured in collobration with a trainer. Without a trainer you might loose some details which were not mentioned in the instructions below. 
+> **template :** this part defines the html template. It tells Angular how to render the component view. 
 
-1. Add new folder Publications
-2. Add new component for publication module
-    * publilcation-list.component.ts
-    * publicatioin-list.component.html
-    * publicatioin-list.component.css
-
-3. Copy the html template below in the publicatioin-list.component.html file. 
-	``` html
-	<div class="panel panel-primary">
-	    <div class="panel-heading">
-	        Publications
-	    </div>
-	    <div class='panel-body'>
-	         <div class='row'>
-	            
-	        </div>
-	        <div class='table-responsive'>
-	            <table class='table'>
-	                <thead>
-	                    <tr>
-	                        <th>Name</th>
-	                        <th>Type</th>
-	                        <th>Language</th>
-	                        <th>% Advertisments</th>
-	                        <th>% Classifieds</th>
-	                        <th>Active</th>
-	                     </tr>
-	                </thead>
-	                <tbody>
-	                   <tr>
-	                        <td>Name</td>
-	                        <td>Type</td>
-	                        <td>Language</td>
-	                        <td>% Advertisments</td>
-	                        <td>% Classifieds</td>
-	                        <td>Active</td>
-	                     </tr>
-	                     
-	                </tbody>
-	
-	            </table>
-	        </div>
-	    </div>
-	</div>	
-	```
-3. Copy the CSS template below in the publicatioin-list.component.html file. 
-	``` css
-		thead{
-    			background-color: #337ab7;
-     			color:#f5f5f5;
-			}
-	```
-
-4. Add the below code in the `publilcation-list.component.ts` file
-	```  typescript
-		import {Component} from 'angular2/core'
-		
-		@Component({
-			selector:'am-publicationList',
-			templateUrl:'app/publications/publication-list.component.html',
-			styleUrls:['app/publications/publication-list.component.css']
-		})
-
-		export class PublicationListComponent
-		{
-		
-		}
-	```
-	The styleUrls property can be used to link the stylesheets with the view. 
-
-5. Using a Component as a Directive,to use a component as a directive you have to follow three steps
-    * _#Step 1 :_ import the component `PublicationListComponent` in the `app.component.ts`  file
-    * _#Step 2 :_ use the `am-publicationList` selector in the template view.
-    * _#Step 3 :_ add the `PublicationListComponent` component to the directives array
-    * the final code in `app.component.ts` file should look like as shown  below. 
-
-	``` typescript
-		import  {Component} from 'angular2/core';
-		import {PublicationListComponent} from './publications/publication-list.component';
-
-		@Component({
-			selector:'am-app',
-			template:`<div >
-			<h1> {{pageTitle}} : Advertisment Manager</h1>
-			<am-publicationList></am-publicationList>
-			</div>`,
-			directives:[PublicationListComponent],
-		})
-		export class AppComponent{
-			pageTitle:string = 'Digital Ads';
-			
-		}
-	```
-    
-    
-### DataBinding
-* Interpolation : One way binding 
-> Examlpe: `{{publication.Name}}`
-* Property Binding : 
-> Example : `<img [title]='publication.IsActiveRecord'>`
-
-Add the property `pageTitle:string="Publications";` in `publication-list.component.ts` file
-
-In the `publication-list.component.html` file replace the "Publications" with {{pageTitle}}
-``` html 
-	<div class="panel panel-primary">
-    	<div class="panel-heading">
-        	{{pageTitle}}
-    	</div>
-	</div>
+**Component Class**
+``` typescript
+export class AppComponent{
+  pageTitle:string = "Digital Ads ";
+}
 ```
 
-### Structural Directives
-	* *ngIf
-	* *ngFor
+## 2. Adding the root module - AppModule
+ * Add `app.module.ts` file in the app folder
+``` typescript
+//import the NgModule decorator function.
+import { NgModule }      from '@angular/core';
 
- 
-Add the property `publications:any[];` in `publication-list.component.ts` file
+//import the  BrowsesrModule.This is an web application that will run in a browser, hence this module is required.
+import { BrowserModule } from '@angular/platform-browser';
 
-Add the following code to load the table in the view only if the publications list is not null and there exists
-some records. 
-``` html
-<table class='table table-hover table-striped' *ngIf='publications && publications.length'>
+//import our root component
+import { AppComponent }   from './app.component';
+
+//@NgModule takes a metadata object that tells Angular how to compile and run module code. 
+//It identifies the module's own components, directives and pipes, making some of them public 
+//so external components can use them. It may add service providers to the application dependency injectors.
+@NgModule({
+    imports:      [ BrowserModule ],
+    declarations: [ AppComponent],
+    bootstrap:    [AppComponent]
+})
+
+//create class for the module
+export class AppModule { }
 ```
 
-Copy the sample publications list provided in file api/publications/publications.json  in the `publication-list.component.ts` file assign it to publications array. 
+----------
+### Explanations 
+Every application has minimum one module,the root module is usually named as AppModule. 
+Modules allow organizing the application, they contain related components,directives and pipes which work togther.
+
+An Angular Module is a class decorated with @NgModule metadata. 
+- list the components,directives and pipes contained in the module.
+- provide services at the application level that any component can use. 
+- import external modules which might be needed by components in this module.
+- make some of those classes public so that other components templates can use them. 
 
 
-Next Modify the code in `publication-list.component.html` tbody section as shown below. 
+#### 2. Bootstrapping the application
+* Add `main.ts` file in the app folder.
+```typescript
+// import bootstrap 
+import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
+        
+// import our root module
+import {AppModule} from './app.module';
+        
+//bootstrap the component
+const platform = platformBrowserDynamic();
+platform.bootstrapModule(AppModule);
+```
+----------
+### Explanations 
+The code in main.ts file initializes the platform that the application runs in, then it uses the platform to 
+bootstrap the AppModule.
 
-``` html
-		<tbody>
-		<tr *ngFor='#publication of publications' >
-			<td>{{publication.Name}}</td>
-			<td>{{publication.TypexCD}}</td>
-			<td>{{publication.LanguagexCD}}</td>
-			<td>{{publication.CommissionRateForAdvertisments}}</td>
-			<td>{{publication.CommisionRateForClassifieds}}</td>
-			<td>{{publication.IsActiveRecord}}</td>
-		</tr>
-		</tbody>
-	```
-
-8. Run the application, to view the records listed in the grid. 
-
-### Challenge: 
-Using the knowledge you have gained so far. Add logic to dispaly a image in the Active (last column) instead of true/false  
-	* \app\assets\images\Inactive.png  -- InActive Record
-	* \app\assets\images\Active.png  -- InActive Record
-
-### HomeWork: 
-Complete the Grid loading for the following modules
-
-| Module        | Json          | 
-| ------------- |:-------------:| 
-| Clients	    | clients.json  | 
-| AdvertismentReleaseOrders     | << TODO >>   |  
-| AdvertismentRates | << TODO >>     |    
+#### 4. Call the `am-app` selector in `index.html` file
+* Call the `am-app` selector in html page
+```html
+<body>
+    <!--TODO: Add your component here-->
+    <am-app>Loading...</am-app>
+</body>
+```
 
 
+### 5. Running the application
+Open a command prompt in the project's root directory 
+* Type: `npm install` This installs the dependencies as defined in the package.json file.
 
+* Type: `npm start` This launches the TypeScript compiler (tsc) to compile the application and wait for changes. It also starts the lite-server and launches the browser to run the application.
 
-
-####END of Lesson 02 
-
--------------------------------
+Open the browser and navigate to port http://localhost:3000/
+![Digital Ads Splash](https://snag.gy/QJHSW9.jpg "Final Output Screen")
 
 
