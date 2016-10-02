@@ -20,6 +20,8 @@ A tutorial on Learning Angular JS 2. With this tutorial we will be creating a fu
 - [Lesson 02 -- Building your first Component and Module](https://github.com/costaivo/AngularJs2-AdManager/tree/Dev/02_AdManager/02_Lesson/Start)
 - [Lesson 03 -- DataBinding](https://github.com/costaivo/AngularJs2-AdManager/tree/Dev/02_AdManager/03_Lesson/Start)
 
+
+*** Rough notes *** 
 DataBinding
 -One Way Data Binding
 Interpolation 
@@ -32,11 +34,21 @@ Routing
 Services
 
 
-Ad Manager Getting Started : Using a Component as Directive
-todo -- Add routing lesson here
-3.  Lesson 03 -- Ad Manager : Using pipes and Events
-4.  Lesson 04 -- Ad Manager : Creating Custom Pipes and Understanding Component LifeCycle hooks
-todo -- break lesson 4 into two parts
-5.  Lesson 05 -- Ad Manager : Creating Nested Components
-6.  Lesson 06 -- Ad Manager : Using Forms
-7.  Lesson 07 -- Ad Manager : http
+### 8 Main Parts in Angular Js 2 
+
+1. Module
+2. Component
+3. Template
+4. Metadata
+5. Data Binding
+6. Service
+7. Directive 
+8. Dependency Injection
+
+
+### Why Angular2 ?
+1. Cleaner Code
+2. More Powerful Applications
+3. Faster 
+4. Simpler
+

@@ -10,6 +10,15 @@ ng new todoApp
 
 ng serve
 ```
+
+Create component
+ng g component todo
+
 Create service
  ng g service todo
 
+
+Reference to angular CLI 
+https://cli.angular.io/reference.pdf
+
+![Todo app](https://snag.gy/0tcvJ4.jpg "Final  Screen")
