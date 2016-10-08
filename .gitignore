@@ -9,3 +9,7 @@ typings
 logs
 *.log
 npm-debug.log*
+
+
+#Custom files
+Instructions.md
