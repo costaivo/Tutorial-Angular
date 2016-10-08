@@ -1,32 +1,46 @@
-# Lesson 02 -- Building your first Component and Module
+# Lesson 03 -- Component & DataBinding
 ----------
 ## Lesson Contents
-1. Adding the root component - AppComponent
-2. Adding the root module    - AppModule
-3. Bootstrapping the application
-4. Call the `am-app` selector in `index.html` file
-5. Running the application
+1. What is a component?
+2. Types of Databinding
+    * Interpolation
+    * Property Binding
+    * Two way Binding
+    * Event Binding
 
 > Tip: To grasp the concepts properly, It is **strongly** recommended that you type out all the code instead of copy + pasting it. 
 
+### 1. What is a component ?
+
+> Component = Template + Class + Metadata
+>
+**Template**
+- View - HTML Markup
+>
+**Class**
+- Methods
+- Properties
+- Code to interact with the view
+>
+**Metadata**
+- instructs angular how to construct and use this component
+- defined with a decorator
+
+### 2. Types of Databinding
+* Component to DOM 
+    * Interpolation
+    * Property Binding
+    * Two way Binding
+* DOM to Component
+    * Event Binding
+
+
+####  Interpolation
 
 ## 1.  Adding the root component - AppComponent
  * Add `app.component.ts` file in the app folder
 ``` typescript
-//import Component from angular core
-import {Component} from '@angular/core';
-            
-//define the metadata for the component using decorator
-@Component({
-    selector:'am-app',
-    template:`<div ><h1> {{pageTitle}} : Ad Manager</h1>
-    </div>`
-})
-            
-//create class for the component
-export class AppComponent{
-    pageTitle:string = "Digital Ads ";
-}
+
 ```
 ----------
 ### Explanations 
