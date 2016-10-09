@@ -7,6 +7,7 @@
     * Property Binding
     * Two way Binding
     * Event Binding
+3. Re-factor Code
 
 > Tip: To grasp the concepts properly, It is **strongly** recommended that you type out all the code instead of copy + pasting it. 
 
@@ -35,7 +36,30 @@
     * Event Binding
 
 
-####  Interpolation
+#### Interpolation
+``` typescript
+    {{pageTitle}}
+```
+
+#### Property Binding
+``` typescript
+    <div [style.backcolor]="backcolor">{{pageTitle}}</div>
+``` 
+
+#### Two way Binding
+import FormsModule in `app.modules.ts` file
+``` typescript
+     <input [(ngModel)]="publication" placeholder="Publication Name"/>
+``` 
+
+#### Todo: Binding List of data
+Copy the Publications json array from api/Publications/publication.json file
+
+
+### 3. Re-factor Code
+ * use templareUrl
+ * use styleUrls
+
 
 ## 1.  Adding the root component - AppComponent
  * Add `app.component.ts` file in the app folder
