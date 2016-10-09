@@ -18,7 +18,7 @@ A tutorial on Learning Angular JS 2. With this tutorial we will be creating a fu
 ## AdManager Application Development - Course Contents
 - [Lesson 01 -- Running an AngularJS 2 Application](https://github.com/costaivo/AngularJs2-AdManager/tree/Dev/01_QuickStart)
 - [Lesson 02 -- Building your first Component and Module](https://github.com/costaivo/AngularJs2-AdManager/tree/Dev/02_AdManager/02_Lesson/Start)
-- [Lesson 03 -- DataBinding](https://github.com/costaivo/AngularJs2-AdManager/tree/Dev/02_AdManager/03_Lesson/Start)
+- [Lesson 03 -- Component & DataBinding](https://github.com/costaivo/AngularJs2-AdManager/tree/Dev/02_AdManager/03_Lesson/Start)
 
 
 *** Rough notes *** 
