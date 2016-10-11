@@ -76,7 +76,7 @@ import {FormsModule} from '@angular/forms';
 
 ### *Start Demo 3* - Binding Grid
 
-### *Start Demo 3* - Binding Grid
+### *Start Demo 4* - Refactoring Data
  
 
  [ :house: Lesson 3](https://github.com/costaivo/AngularJs2-AdManager/tree/Dev/02_AdManager/03_Lesson/Start) 
