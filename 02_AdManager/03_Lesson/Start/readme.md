@@ -61,6 +61,9 @@ Copy the Publications json array from api/Publications/publication.json file
  * use styleUrls
 
 
+
+[:arrow_left: Previous](https://github.com/costaivo/AngularJs2-AdManager/tree/Dev/02_AdManager/02_Lesson/Start)  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                     [:arrow_right: Next] (https://github.com/costaivo/AngularJs2-AdManager/tree/Dev/02_AdManager/04_Lesson/Start)
+
 ## 1.  Adding the root component - AppComponent
  * Add `app.component.ts` file in the app folder
 ``` typescript

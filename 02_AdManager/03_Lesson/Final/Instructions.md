@@ -1,8 +1,8 @@
-1. Explain about the Component contents
-2. Re-visit the application code an explain about the project w.r.t Component contents.
-3. Explain about Different DataBinding Concepts with a diagram. 
+### Explain about the Component contents
+### Re-visit the application code an explain about the project w.r.t Component contents.
+### Explain about Different DataBinding Concepts with a diagram. 
 ![Component](https://snag.gy/mfVROY.jpg "Component Structure")
-4. Start Demo 1 - TypeScript,interpolation,Template('',``) & Styles
+### Start Demo 1 - TypeScript,interpolation,Template('',``) & Styles
 * TypeScript Intro
 * Create property in the application named as title
 * Create html script using interpolation to display the title
@@ -41,7 +41,7 @@
         }      
 ```
 
-5. Start Demo 2 - Property Binding,Two way Binding.
+### *Start Demo 2* - Property Binding,Two way Binding.
 * Explain about Property Binding
 ``` TypeScript
  fontColor="red";
@@ -74,5 +74,9 @@ import {FormsModule} from '@angular/forms';
     <input [(ngModel)]="publication" placeholder="Publication Name"/>
  ```
 
- 6. Start Demo 3 - Binding Grid
+### *Start Demo 3* - Binding Grid
+
+### *Start Demo 3* - Binding Grid
  
+
+ [ :house: Lesson 3](https://github.com/costaivo/AngularJs2-AdManager/tree/Dev/02_AdManager/03_Lesson/Start) 
