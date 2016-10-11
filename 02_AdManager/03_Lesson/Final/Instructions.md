@@ -6,10 +6,11 @@
     * TypeScript Intro
     * Create property in the application named as title
     * Create html script using interpolation to display the title
-``` html
+```html
     '<div><h1>{{pageTitle}}</h1></div>'
    pageTitle:string = "Digital Ads : Ad Manager";
 ```
+
 * Explain about type check in TypeScript
 * Add CSS so that the head title color is changed to blue
 
@@ -73,5 +74,5 @@ import {FormsModule} from '@angular/forms';
     <input [(ngModel)]="publication" placeholder="Publication Name"/>
  ```
 
- 5. Start Demo 3 - Binding Grid
+ 6. Start Demo 3 - Binding Grid
  
