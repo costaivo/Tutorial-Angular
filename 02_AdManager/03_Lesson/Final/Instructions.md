@@ -7,19 +7,19 @@
     * Create property in the application named as title
     * Create html script using interpolation to display the title
 ``` html
-'<div><h1>{{pageTitle}}</h1></div>'
+    '<div><h1>{{pageTitle}}</h1></div>'
    pageTitle:string = "Digital Ads : Ad Manager";
 ```
-
-    * Explain about type check in TypeScript
-    * Add CSS so that the head title color is changed to blue
+* Explain about type check in TypeScript
+* Add CSS so that the head title color is changed to blue
 
 ``` html
  styles:['h1{color:blue}']
-
 ```
-    * Explain about ES6 feature of using multiline code using backticks
-    * Replace the styles code with multiline code
+
+* Explain about ES6 feature of using multiline code using backticks
+* Replace the styles code with multiline code
+
 ``` html
      styles:[`
      h1 {
@@ -39,7 +39,6 @@
             color:#369
         }
         
-
 ```
 5. Start Demo 2 - Property Binding,Two way Binding.
 * Explain about Property Binding
@@ -49,7 +48,9 @@
 
  <span [style.color]="fontColor">{{publication}}</span>
 ```
+
 * Start binding to a input field and demonstrate one way binding.
+
 ``` html
  <br/>
  <input [value]="publication" placeholder="Publication Name"/> 
@@ -72,5 +73,5 @@ import {FormsModule} from '@angular/forms';
     <input [(ngModel)]="publication" placeholder="Publication Name"/>
  ```
 
- 5. Start Demo 3 - Binding Lists
+ 5. Start Demo 3 - Binding Grid
  
