@@ -3,9 +3,9 @@
 3. Explain about Different DataBinding Concepts with a diagram. 
 ![Component](https://snag.gy/mfVROY.jpg "Component Structure")
 4. Start Demo 1 - TypeScript,interpolation,Template('',``) & Styles
-    * TypeScript Intro
-    * Create property in the application named as title
-    * Create html script using interpolation to display the title
+* TypeScript Intro
+* Create property in the application named as title
+* Create html script using interpolation to display the title
 ```html
     '<div><h1>{{pageTitle}}</h1></div>'
    pageTitle:string = "Digital Ads : Ad Manager";
@@ -38,9 +38,9 @@
         }
         p{
             color:#369
-        }
-        
+        }      
 ```
+
 5. Start Demo 2 - Property Binding,Two way Binding.
 * Explain about Property Binding
 ``` TypeScript
