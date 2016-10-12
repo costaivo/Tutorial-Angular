@@ -52,7 +52,7 @@ import FormsModule in `app.modules.ts` file
      <input [(ngModel)]="publication" placeholder="Publication Name"/>
 ``` 
 
-#### Todo: Binding List of data
+#### Todo: Binding Publication data to a grid
 Copy the Publications json array from api/Publications/publication.json file
 
 
