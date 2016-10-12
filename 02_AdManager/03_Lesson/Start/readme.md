@@ -52,13 +52,30 @@ import FormsModule in `app.modules.ts` file
      <input [(ngModel)]="publication" placeholder="Publication Name"/>
 ``` 
 
-#### Todo: Binding Publication data to a grid
-Copy the Publications json array from api/Publications/publication.json file
+## **DEMO ** - 
+Follow the instructions below as your instructor explains during the presentation. 
+
+> Note this course is structured in collaboration with a trainer. Without a trainer you might loose some details which were not mentioned in the instructions below. 
+
+### **Start Demo 1** - TypeScript,interpolation,Template('',``) & Styles
+
+### **Start Demo 2** - Property Binding,Two way Binding.
+
+### **Start Demo 3** - Binding Publication data to a grid
+* Copy the Publications json array from api/Publications/publication.json file
+* Add publication property in the app.component.ts
+
+### **Start Demo 4** - Refactoring Data
+ * use _templareUrl_
+ * use _styleUrls_
 
 
-### 3. Re-factor Code
- * use templareUrl
- * use styleUrls
+## Summary
+* What is a component 
+* Significance of ` [backticks]
+* Types of Databinding
+* Code Re-Sturucting using templareUrl,styleUrls
+
 
 
 

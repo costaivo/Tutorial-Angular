@@ -2,7 +2,8 @@
 ### Re-visit the application code an explain about the project w.r.t Component contents.
 ### Explain about Different DataBinding Concepts with a diagram. 
 ![Component](https://snag.gy/mfVROY.jpg "Component Structure")
-### Start Demo 1 - TypeScript,interpolation,Template('',``) & Styles
+
+### **Start Demo 1** - TypeScript,interpolation,Template('',``) & Styles
 * TypeScript Intro
 * Create property in the application named as title
 * Create html script using interpolation to display the title
@@ -41,7 +42,7 @@
         }      
 ```
 
-### *Start Demo 2* - Property Binding,Two way Binding.
+### **Start Demo 2** - Property Binding,Two way Binding.
 * Explain about Property Binding
 ``` TypeScript
  fontColor="red";
@@ -74,9 +75,34 @@ import {FormsModule} from '@angular/forms';
     <input [(ngModel)]="publication" placeholder="Publication Name"/>
  ```
 
-### *Start Demo 3* - Binding Grid
+### **Start Demo 3** - Binding Publication data to a grid
+* Copy the Publications json array from api/Publications/publication.json file
+* Add publication property in the app.component.ts
 
-### *Start Demo 4* - Refactoring Data
- 
+> app.component.ts
+``` TypeScript
+export class AppComponent{
+    pageTitle:string = "Digital Ads : Ad Manager";
+    
+    fontColor="red";
+    publication={
+        "ID": "c7bd9a71-a1a4-4d39-ab91-be966512bd0e",
+        "IsActiveRecord": true,
+        "Name": "Herald",
+        "TypexCD": "Local",
+        "LanguagexCD": "English",
+        "CommissionRateForAdvertisments": 0.15,
+        "CommisionRateForClassifieds": 0.059
+    };
+```
+``` html
+
+```
+### **Start Demo 4** - Refactoring Data
+* use templareUrl
+* use styleUrls
+* create file app.component.html
+* create file app.component.CSS
+* link files in the component decorator 
 
  [ :house: Lesson 3](https://github.com/costaivo/AngularJs2-AdManager/tree/Dev/02_AdManager/03_Lesson/Start) 
