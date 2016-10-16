@@ -45,5 +45,9 @@ export class AppComponent{
     }
 ];
 
-
+onRowClick(publication){
+    console.log("Row clicked "+publication.Name);
+    this.selectedPublication=publication;
+    
+}
 }
