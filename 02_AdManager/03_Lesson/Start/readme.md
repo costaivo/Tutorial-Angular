@@ -64,6 +64,7 @@ Follow the instructions below as your instructor explains during the presentatio
 ### **Start Demo 3** - Binding Publication data to a grid
 * Copy the Publications json array from api/Publications/publication.json file
 * Add publication property in the app.component.ts
+* Bind the Name,Type and Language columns to the grid
 
 ### **Start Demo 4** - Refactoring Data
  * use _templareUrl_

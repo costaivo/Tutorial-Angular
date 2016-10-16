@@ -1,85 +1,71 @@
-# Lesson 03 -- Component & DataBinding
+# Lesson 04 -- Structural Directives
 ----------
 ## Lesson Contents
-1. What is a component?
-2. Types of Databinding
-    * Interpolation
-    * Property Binding
-    * Two way Binding
-    * Event Binding
-3. Re-factor Code
+1. Structural Directives
+2. Types of Directives
 
 > Tip: To grasp the concepts properly, It is **strongly** recommended that you type out all the code instead of copy + pasting it. 
 
-### 1. What is a component ?
+### Structural Directives 
+A _structural directive_ changes the appearance or bheaviour of an element. A structural directive changes the DOM layout by adding and removing DOM elements. 
 
-> Component = Template + Class + Metadata
->
-**Template**
-- View - HTML Markup
->
-**Class**
-- Methods
-- Properties
-- Code to interact with the view
->
-**Metadata**
-- instructs angular how to construct and use this component
-- defined with a decorator
+http://blog.angular-university.io/angular-2-ngfor/
 
-### 2. Types of Databinding
-* Component to DOM 
-    * Interpolation
-    * Property Binding
-    * Two way Binding
-* DOM to Component
-    * Event Binding
+###  Directives
 
-
-#### Interpolation
-``` typescript
-    {{pageTitle}}
+#### ngIf
+ref:https://angular.io/docs/ts/latest/api/common/index/NgIf-directive.html
 ```
+	<table *ngIf="publications!=null">
+    ...
+    </table>
+```
+#### ngFor
+ref:https://angular.io/docs/ts/latest/api/common/index/NgFor-directive.html
 
-#### Property Binding
-``` typescript
-    <div [style.backcolor]="backcolor">{{pageTitle}}</div>
-``` 
-
-#### Two way Binding
-import FormsModule in `app.modules.ts` file
-``` typescript
-     <input [(ngModel)]="publication" placeholder="Publication Name"/>
-``` 
+#### ngSwitch
+ref:https://angular.io/docs/ts/latest/api/common/index/NgSwitch-directive.html
+#### ngStyle
+using ngStyle we can easily style multiple properties of an element. 
+``` html
+<div [ngStyle]="{'color': 'blue', 'font-size': '24px', 'font-weight': 'bold'}">
+  style using ngStyle
+</div>
+```
+ref:https://angular.io/docs/js/latest/api/common/index/NgStyle-directive.html
+#### ngClass
+``` html
+<div [ngClass]="['bold-text', 'green']">array of classes</div>
+<div [ngClass]="'italic-text blue'">string of classes</div>
+<div [ngClass]="{'small-text': true, 'red': true}">object of classes</div>
+```
+ref:https://angular.io/docs/ts/latest/api/common/index/NgClass-directive.html
 
 ## **DEMO ** - 
 Follow the instructions below as your instructor explains during the presentation. 
 
 > Note this course is structured in collaboration with a trainer. Without a trainer you might loose some details which were not mentioned in the instructions below. 
 
-### **Start Demo 1** - TypeScript,interpolation,Template('',``) & Styles
+### **Start Demo 1** - ngFor
+* Using *ngFor demonstrate the use of binding a list of data
 
-### **Start Demo 2** - Property Binding,Two way Binding.
+### **Start Demo 2** - ngIf
+* Using *ngIf demonstrate the use of hide/show data based on conditions
 
-### **Start Demo 3** - Binding Publication data to a grid
-* Copy the Publications json array from api/Publications/publication.json file
-* Add publication property in the app.component.ts
+### **Start Demo 3** - ngClass
+* Using ngClass demonstrate the use of condional styling
 
-### **Start Demo 4** - Refactoring Data
- * use _templareUrl_
- * use _styleUrls_
+### **Start Demo 4** - selecting a row
+* Using event binding show the details of the selected row
 
 
 ## Summary
-* What is a component 
-* Significance of ` [backticks]
-* Types of Databinding
-* Code Re-Sturucting using templareUrl,styleUrls
 
 
 
 
-[:arrow_left: Previous](https://github.com/costaivo/AngularJs2-AdManager/tree/Dev/02_AdManager/02_Lesson/Start)  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                     [:arrow_right: Next] (https://github.com/costaivo/AngularJs2-AdManager/tree/Dev/02_AdManager/04_Lesson/Start)
+
+[:arrow_left: Previous](https://github.com/costaivo/AngularJs2-AdManager/tree/Dev/02_AdManager/03_Lesson/Start)  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                     [:arrow_right: Next] (https://github.com/costaivo/AngularJs2-AdManager/tree/Dev/02_AdManager/05_Lesson/Start)
 
 
 

@@ -2,14 +2,14 @@
 	<h1> {{pageTitle}}</h1>
 	<hr>
 </div>
-<label>Publication : </label>
-<span [style.color]="fontColor"> {{publication.Name}}</span>
+<!--<label>Publication : </label>
+<span [style.color]="fontColor"> {{publication[0].Name}}</span>
 <br/>
-<input [(ngModel)]="publication.Name" placeholder="Publication Name" />
-<br/>
+<input [(ngModel)]="publication[0].Name" placeholder="Publication Name" />
+<br/>-->
 <label>Publication List</label>
 <div>
-	<table>
+	<table *ngIf="publications && publications.Length!==0">
 		<thead>
 			<tr>
 				<th>Name </th>
@@ -18,11 +18,11 @@
 			</tr>
 		</thead>
 		<tbody>
-			<tr>
-				<td>{{publication.Name}}</td>
+			<tr *ngFor="let publication of publications;let i=index; let isEven=even;let isOdd=odd;trackBy publication?.id" 
+			[ngClass]="{'odd':isOdd ,'even':  isEven}">
+				<td> {{publication.Name}}</td>
 				<td>| {{publication.TypexCD}}</td>
-				<td>| {{publication.LanguagexCD}}</td>
+				<td>| {{publication.LanguagexCD}}  {{isEven}}</td>
 			</tr>
-		</tbody>
 	</table>
 </div>
