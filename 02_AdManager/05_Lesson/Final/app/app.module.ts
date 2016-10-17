@@ -10,7 +10,7 @@ import {FormsModule} from '@angular/forms';
 //import our root component
 import { AppComponent }   from './app.component';
 
-
+import {PublicationListComponent} from './publications/publications-list';
 
 
 //@NgModule takes a metadata object that tells Angular how to compile and run module code. 
@@ -22,7 +22,8 @@ import { AppComponent }   from './app.component';
         FormsModule 
         ],
     declarations: [ 
-        AppComponent
+        AppComponent,
+        PublicationListComponent
         ],
     bootstrap:    [AppComponent]
 })
