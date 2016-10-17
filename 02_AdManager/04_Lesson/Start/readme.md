@@ -14,14 +14,24 @@ http://blog.angular-university.io/angular-2-ngfor/
 ###  Directives
 
 #### ngIf
-ref:https://angular.io/docs/ts/latest/api/common/index/NgIf-directive.html
-```
+[Ref](https://angular.io/docs/ts/latest/api/common/index/NgIf-directive.html)
+``` html
 	<table *ngIf="publications!=null">
     ...
     </table>
 ```
 #### ngFor
-ref:https://angular.io/docs/ts/latest/api/common/index/NgFor-directive.html
+``` html
+<tbody>
+			<tr *ngFor="let publication of publications">
+				<td> {{publication.Name}}</td>
+				<td> {{publication.TypexCD}}</td>
+				<td> {{publication.LanguagexCD}}</td>
+			</tr>
+		</tbody>
+```
+
+[Ref](https://angular.io/docs/ts/latest/api/common/index/NgFor-directive.html)
 
 #### ngSwitch
 ref:https://angular.io/docs/ts/latest/api/common/index/NgSwitch-directive.html
@@ -32,14 +42,14 @@ using ngStyle we can easily style multiple properties of an element.
   style using ngStyle
 </div>
 ```
-ref:https://angular.io/docs/js/latest/api/common/index/NgStyle-directive.html
+[Ref](https://angular.io/docs/js/latest/api/common/index/NgStyle-directive.html)
 #### ngClass
 ``` html
 <div [ngClass]="['bold-text', 'green']">array of classes</div>
 <div [ngClass]="'italic-text blue'">string of classes</div>
 <div [ngClass]="{'small-text': true, 'red': true}">object of classes</div>
 ```
-ref:https://angular.io/docs/ts/latest/api/common/index/NgClass-directive.html
+[Ref](https://angular.io/docs/ts/latest/api/common/index/NgClass-directive.html)
 
 ## **DEMO ** - 
 Follow the instructions below as your instructor explains during the presentation. 
@@ -60,7 +70,8 @@ Follow the instructions below as your instructor explains during the presentatio
 
 
 ## Summary
-
+* ngIf,NgFor,NgSwitch
+* ngClass,NgStyle
 
 
 
