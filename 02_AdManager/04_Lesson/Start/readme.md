@@ -14,12 +14,13 @@ http://blog.angular-university.io/angular-2-ngfor/
 ###  Directives
 
 #### ngIf
-[Ref](https://angular.io/docs/ts/latest/api/common/index/NgIf-directive.html)
+
 ``` html
 	<table *ngIf="publications!=null">
     ...
     </table>
 ```
+[Ref](https://angular.io/docs/ts/latest/api/common/index/NgIf-directive.html)
 #### ngFor
 ``` html
 <tbody>
@@ -34,7 +35,9 @@ http://blog.angular-university.io/angular-2-ngfor/
 [Ref](https://angular.io/docs/ts/latest/api/common/index/NgFor-directive.html)
 
 #### ngSwitch
-ref:https://angular.io/docs/ts/latest/api/common/index/NgSwitch-directive.html
+``` html
+```
+[Ref](https://angular.io/docs/ts/latest/api/common/index/NgSwitch-directive.html)
 #### ngStyle
 using ngStyle we can easily style multiple properties of an element. 
 ``` html

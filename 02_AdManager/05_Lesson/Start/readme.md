@@ -1,4 +1,4 @@
-# Lesson 000 -- XXXXXXXXXXXXXXXXX
+# Lesson 05 -- Create a Custom Component
 ----------
 ## Lesson Contents
 
@@ -30,7 +30,7 @@ Follow the instructions below as your instructor explains during the presentatio
 
 
 
-[:arrow_left: Previous](https://github.com/costaivo/AngularJs2-AdManager/tree/Dev/02_AdManager/03_Lesson/Start)  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                     [:arrow_right: Next] (https://github.com/costaivo/AngularJs2-AdManager/tree/Dev/02_AdManager/05_Lesson/Start)
+[:arrow_left: Previous](https://github.com/costaivo/AngularJs2-AdManager/tree/Dev/02_AdManager/04_Lesson/Start)  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                     [:arrow_right: Next] (https://github.com/costaivo/AngularJs2-AdManager/tree/Dev/02_AdManager/06_Lesson/Start)
 
 
 
