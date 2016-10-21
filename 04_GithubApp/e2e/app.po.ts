@@ -1,6 +1,6 @@
 import { browser, element, by } from 'protractor';
 
-export class GitHubSearchPage {
+export class AngularclidemoPage {
   navigateTo() {
     return browser.get('/');
   }
