@@ -36,6 +36,11 @@ http://blog.angular-university.io/angular-2-ngfor/
 
 #### ngSwitch
 ``` html
+<div class="container" [ngSwitch]="Status">
+  <div *ngSwitchCase="'Inactive'">Is Inactive</div>
+  <div *ngSwitchCase="Active">Is Active</div>
+  <div *ngSwitchDefault>Invalid State</div>
+</div>
 ```
 [Ref](https://angular.io/docs/ts/latest/api/common/index/NgSwitch-directive.html)
 #### ngStyle
