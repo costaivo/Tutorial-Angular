@@ -1,14 +1,17 @@
-import  {Component} from 'angular2/core';
-import {PublicationListComponent} from './publications/publication-list.component';
+//import Component from angular core
+import {Component} from '@angular/core';
 
-@Component({
-    selector:'am-app',
-    template:`<div >
-      <h1> {{pageTitle}} : Advertisment Manager</h1>
-      <am-publicationList></am-publicationList>
-       </div>`,
-       directives:[PublicationListComponent]
+//define the metadata for the component using decorator
+ @Component({
+     selector:'am-app',
+     templateUrl:'app/app.component.html',
+     styleUrls:['app/app.component.css']
 })
+
+
+//create class for the component
 export class AppComponent{
-    pageTitle:string = 'Digital Ads';
+    pageTitle:string = "Digital Ads : Ad Manager";
+    
+    
 }

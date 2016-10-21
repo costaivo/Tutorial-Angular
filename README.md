@@ -16,14 +16,54 @@ A tutorial on Learning Angular JS 2. With this tutorial we will be creating a fu
 
 
 ## AdManager Application Development - Course Contents
-- [Lesson 01 -- Running an AngularJS 2 Application](https://github.com/costaivo/AngularJs2-AdManager/tree/Dev/01_QuickStart)
-- [Lesson 02 -- Building your first Component and Module](https://github.com/costaivo/AngularJs2-AdManager/tree/Dev/02_AdManager/01_Lesson/Start)
 
-Ad Manager Getting Started : Using a Component as Directive
-todo -- Add routing lesson here
-3.  Lesson 03 -- Ad Manager : Using pipes and Events
-4.  Lesson 04 -- Ad Manager : Creating Custom Pipes and Understanding Component LifeCycle hooks
-todo -- break lesson 4 into two parts
-5.  Lesson 05 -- Ad Manager : Creating Nested Components
-6.  Lesson 06 -- Ad Manager : Using Forms
-7.  Lesson 07 -- Ad Manager : http
+### Level 1 
+- [Lesson 01 -- Running an AngularJS 2 Application](https://github.com/costaivo/AngularJs2-AdManager/tree/Dev/01_QuickStart)
+- [Lesson 02 -- Building your first Component and Module](https://github.com/costaivo/AngularJs2-AdManager/tree/Dev/02_AdManager/02_Lesson/Start)
+- [Lesson 03 -- Component & DataBinding](https://github.com/costaivo/AngularJs2-AdManager/tree/Dev/02_AdManager/03_Lesson/Start)
+- [Lesson 04 -- Structural Directives](https://github.com/costaivo/AngularJs2-AdManager/tree/Dev/02_AdManager/04_Lesson/Start)
+<<---IN-PROGRESS-->>
+- [Lesson 05 -- Create a Custom Component](https://github.com/costaivo/AngularJs2-AdManager/tree/Dev/02_AdManager/05_Lesson/Start)
+<<---TODO--->>
+- [Lesson 0 -- Routing](https://github.com/costaivo/AngularJs2-AdManager/tree/Dev/02_AdManager/05_Lesson/Start)
+- [Lesson 0 -- Services](https://github.com/costaivo/AngularJs2-AdManager/tree/Dev/02_AdManager/06_Lesson/Start)
+- [Lesson 0 -- Http](https://github.com/costaivo/AngularJs2-AdManager/tree/Dev/02_AdManager/07_Lesson/Start)
+
+### Level 2
+
+
+*** Rough notes *** 
+DataBinding
+-One Way Data Binding
+Interpolation 
+Property Binding
+Event Binding
+Two Way Binding
+
+Routing
+
+Services
+
+
+### 8 Main Parts in Angular Js 2 
+
+1. Module
+2. Component
+3. Template
+4. Metadata
+5. Data Binding
+6. Service
+7. Directive 
+8. Dependency Injection
+
+
+### Why Angular2 ?
+1. Cleaner Code
+2. More Powerful Applications
+3. Faster 
+4. Simpler
+
+
+
+Topics to cover
+barrels

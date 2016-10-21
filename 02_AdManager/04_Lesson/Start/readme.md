@@ -1,168 +1,90 @@
-# Lesson 04 -- Ad Manager : Creating Custom Pipes and Understanding Component LifeCycle hooks
+# Lesson 04 -- Structural Directives
 ----------
-### Lesson Contents
-1.  Component Lifecycle Hooks
-2.  Building Custom Pipes
-3.  Using a Custom Pipe
+## Lesson Contents
+1. Structural Directives
+2. Types of Directives
 
-> Tip: To grasp the concepts properly, It is  **`strongly`**  recommended that you **type** out all the code instead of **copy + pasting** it. 
+> Tip: To grasp the concepts properly, It is **strongly** recommended that you type out all the code instead of copy + pasting it. 
 
--------------------------------
+### Structural Directives 
+A _structural directive_ changes the appearance or bheaviour of an element. A structural directive changes the DOM layout by adding and removing DOM elements. 
 
-##### Overview of the application we are building in this lesson
-- App Component  **[Done]**
-- Publication List Component **[In Progress]**
+http://blog.angular-university.io/angular-2-ngfor/
 
+###  Directives
 
-### Course Starts 
-Follow the instructions below as your instructor explains during the presentaion. 
+#### ngIf
 
-> Note this course is structured in collobration with a trainer. Without a trainer you might loose some details which were not mentioned in the instructions below. 
-
-
-###Component Lifecycle Hooks
-- Create
-- Render
-- Create and render children
-- Process changes
-- Destroy
-
-https://angular.io/docs/ts/latest/guide/lifecycle-hooks.html#!#hooks-overview
-
-### Integrating Lifecycle hooks with PublicationListComponent
-
-**Step 1:** Use import statement to import the OnInit 
-`import {Component,OnInit} from 'angular2/core'`
-
-**Step 2:** add the `implements OnInit` to the PublicationListComponent Class
-
-``` typescript
-        export class PublicationListComponent implements OnInit
-        {
-
-        }
-```
-
-**Step 3:** Implement the method implementation for OnInit
-``` typescript
-        ngOnInit():void{
-                console.log('In OnInit');
-        }
-```
-###Building Custom Pipes
-
-**Step 1:** 
-- Add a new file `publication-filter.pipe.ts`
-- Import the Pipe and PipeTransform directive
-- Import the IPublication interface 
-
-``` typescript
-        import {PipeTransform,Pipe} from 'angular2/core';
-        import {IPublication} from './publication';
-```
-
-**Step 2:** 
-- Declare the @Pipe directive and specify the pipe name in the `name` selector
-
-``` typescript
-        @Pipe({
-        name:"publicationFilter" 
-        })
-```
-
-**Step 3:** 
-- Create a class and implement PipeTransform interface
-
-``` typescript
- transform(value:IPublication[],args:string[]):IPublication[]{
-         console.log('In PublicationFilterPipe');
-        return value;
-    }
-```
-
-###Using a Custom Pipe
-
-**Step 1:** 
-- import the pipe in the component `publication-list.component.ts` file
-``` typescript
-        import {PublicationFilterPipe} from './publication-filter.pipe'
-```
-
-**Step 2**
-- define the pipe in the pipes directive under the @Component directive
-``` typescript
-        @Component({
-                ...
-        pipes:[PublicationFilterPipe]
-        })
-```
-
-**Step 3:**
-- Use the pipe in the template.
 ``` html
-   <tbody *ngFor='#publication of publications | publicationFilter:showOnlyActiveRecords '>
+	<table *ngIf="publications!=null">
+    ...
+    </table>
 ```
-
-Run the application now and use the developer tools to check the messages in the console window. 
-You will see the log messages specified in OnInit method and PublicationFilterPipe
-
-
-### Optimizing the code we have written so far.
-After learning about the new feature about building custom Pipers we no longer require the code we had used earlier to hide/show the Inactive records.
-Refactor the code in the `publication-list.component.html` file, remove the extra block used to show/hide the Active/InActiveRecords.
-The final code in the <tbody> should be as shown below 
+[Ref](https://angular.io/docs/ts/latest/api/common/index/NgIf-directive.html)
+#### ngFor
 ``` html
-   <tbody *ngFor='#publication of publications | publicationFilter:showOnlyActiveRecords '>
-        <tr>
-                <td>{{publication.Name | uppercase }}</td>
-                <td>{{publication.TypexCD}}</td>
-                <td>{{publication.LanguagexCD}}</td>
-                <td>{{publication.CommissionRateForAdvertisments | percent :'2.2-2' }}</td>
-                <td>{{publication.CommisionRateForClassifieds | percent :'2.2-2'}}</td>
-                <td *ngIf='publication.IsActiveRecord'>
-                        <img src="./app/assets/images/Active.png" 
-                                [title]='publication.IsActiveRecord'
-                                [style.width.px]='imageWidth'
-                                [style.margin.px]='imageMargin'> 
-                </td>
-                <td *ngIf='!publication.IsActiveRecord'>
-                        <img src="./app/assets/images/Inactive.png"
-                                [title]='publication.IsActiveRecord'
-                                [style.width.px]='imageWidth'
-                                [style.margin.px]='imageMargin'>
-                </td>
-        </tr> 
-   </tbody>
-           
+<tbody>
+			<tr *ngFor="let publication of publications">
+				<td> {{publication.Name}}</td>
+				<td> {{publication.TypexCD}}</td>
+				<td> {{publication.LanguagexCD}}</td>
+			</tr>
+		</tbody>
 ```
 
-Write the logic in the transform method in `publication-filter.pipe.ts` file
-``` typescript
-      transform(value:IPublication[],args:string[]):IPublication[]{
-         console.log('In PublicationFilterPipe');
-         let filteredData : string = args[0]? args[0]:null;
-         console.log('In PublicationFilterPipe '+filteredData);
-         
-        return filteredData ? value.filter((publication:IPublication)=>
-        publication.IsActiveRecord== (<any>filteredData)):value;
-    }
+[Ref](https://angular.io/docs/ts/latest/api/common/index/NgFor-directive.html)
+
+#### ngSwitch
+``` html
+<div class="container" [ngSwitch]="Status">
+  <div *ngSwitchCase="'Inactive'">Is Inactive</div>
+  <div *ngSwitchCase="Active">Is Active</div>
+  <div *ngSwitchDefault>Invalid State</div>
+</div>
 ```
+[Ref](https://angular.io/docs/ts/latest/api/common/index/NgSwitch-directive.html)
+#### ngStyle
+using ngStyle we can easily style multiple properties of an element. 
+``` html
+<div [ngStyle]="{'color': 'blue', 'font-size': '24px', 'font-weight': 'bold'}">
+  style using ngStyle
+</div>
+```
+[Ref](https://angular.io/docs/js/latest/api/common/index/NgStyle-directive.html)
+#### ngClass
+``` html
+<div [ngClass]="['bold-text', 'green']">array of classes</div>
+<div [ngClass]="'italic-text blue'">string of classes</div>
+<div [ngClass]="{'small-text': true, 'red': true}">object of classes</div>
+```
+[Ref](https://angular.io/docs/ts/latest/api/common/index/NgClass-directive.html)
 
-### Challenge: 
-Find and fix the bug in the application developed so far. 
+## **DEMO ** - 
+Follow the instructions below as your instructor explains during the presentation. 
+
+> Note this course is structured in collaboration with a trainer. Without a trainer you might loose some details which were not mentioned in the instructions below. 
+
+### **Start Demo 1** - ngFor
+* Using *ngFor demonstrate the use of binding a list of data
+
+### **Start Demo 2** - ngIf
+* Using *ngIf demonstrate the use of hide/show data based on conditions
+
+### **Start Demo 3** - ngClass
+* Using ngClass demonstrate the use of condional styling
+
+### **Start Demo 4** - selecting a row
+* Using event binding show the details of the selected row
 
 
-### **HomeWork:** 
-Use Custom Pipes  for the following modules appropriately. 
-
-| Module        | Json          | 
-| ------------- |:-------------:| 
-| Clients	    | clients.json  | 
-| AdvertismentReleaseOrders     | << TODO >>   |  
-| AdvertismentRates | << TODO >>     |    
+## Summary
+* ngIf,NgFor,NgSwitch
+* ngClass,NgStyle
 
 
--------------------------------
-#####END of Lesson 04
 
--------------------------------
+
+[:arrow_left: Previous](https://github.com/costaivo/AngularJs2-AdManager/tree/Dev/02_AdManager/03_Lesson/Start)  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                     [:arrow_right: Next] (https://github.com/costaivo/AngularJs2-AdManager/tree/Dev/02_AdManager/05_Lesson/Start)
+
+
+

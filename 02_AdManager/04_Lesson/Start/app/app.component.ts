@@ -1,14 +1,27 @@
-import  {Component} from 'angular2/core';
-import {PublicationListComponent} from './publications/publication-list.component';
+//import Component from angular core
+import {Component} from '@angular/core';
 
-@Component({
-    selector:'am-app',
-    template:`<div >
-      <h1> {{pageTitle}} : Advertisment Manager</h1>
-      <am-publicationList></am-publicationList>
-       </div>`,
-       directives:[PublicationListComponent]
+//define the metadata for the component using decorator
+ @Component({
+     selector:'am-app',
+     templateUrl:'app/app.component.html',
+     styleUrls:['app/app.component.css']
 })
+
+
+//create class for the component
 export class AppComponent{
-    pageTitle:string = 'Digital Ads';
+    pageTitle:string = "Digital Ads : Ad Manager";
+    
+    fontColor="red";
+    publication={
+        "ID": "c7bd9a71-a1a4-4d39-ab91-be966512bd0e",
+        "IsActiveRecord": true,
+        "Name": "Herald",
+        "TypexCD": "Local",
+        "LanguagexCD": "English",
+        "CommissionRateForAdvertisments": 0.15,
+        "CommisionRateForClassifieds": 0.059
+    };
+
 }

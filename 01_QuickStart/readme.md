@@ -10,7 +10,11 @@
     Install NodeJS on the development machine.
 
 ### 2. Selecting an Language
-    TypeScript
+- **TypeScript**
+- Dart
+- JavaScript
+    - ES5
+    - ES6/ES2015
 
 ### 3. Selecting Editor for development
 - **VS-Code** 
@@ -27,3 +31,5 @@ Open a command prompt in the project's root directory  (AngularJs2-AdManager\01_
 - Type: `npm start` 
 This launches the TypeScript compiler (tsc) to compile the application and wait for changes. 
 It also starts the lite-server and launches the browser to run the application.
+
+[:arrow_left: Previous](https://github.com/costaivo/AngularJs2-AdManager/tree/Dev)  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                     [:arrow_right: Next] (https://github.com/costaivo/AngularJs2-AdManager/tree/Dev/02_AdManager/02_Lesson/Start) 

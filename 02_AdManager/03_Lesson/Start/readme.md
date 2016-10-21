@@ -1,93 +1,86 @@
-# Lesson 03 -- Ad Manager : Using pipes and Events
+# Lesson 03 -- Component & DataBinding
 ----------
-### Lesson Contents
-1.  Transforming data with pipes
-2.  Defining and Using Interfaces
-3.  Handling Events with Event Bindings
+## Lesson Contents
+1. What is a component?
+2. Types of Databinding
+    * Interpolation
+    * Property Binding
+    * Two way Binding
+    * Event Binding
+3. Re-factor Code
+
+> Tip: To grasp the concepts properly, It is **strongly** recommended that you type out all the code instead of copy + pasting it. 
+
+### 1. What is a component ?
+
+> Component = Template + Class + Metadata
+>
+**Template**
+- View - HTML Markup
+>
+**Class**
+- Methods
+- Properties
+- Code to interact with the view
+>
+**Metadata**
+- instructs angular how to construct and use this component
+- defined with a decorator
+
+### 2. Types of Databinding
+* Component to DOM 
+    * Interpolation
+    * Property Binding
+    * Two way Binding
+* DOM to Component
+    * Event Binding
 
 
-> Tip: To grasp the concepts properly, It is  **`strongly`**  recommended that you **type** out all the code instead of **copy + pasting** it. 
-
--------------------------------
-
-##### Overview of the application we are building in this lesson
-- App Component  **[Done]**
-- Publication List Component **[In Progress]**
-
-
-### Course Starts 
-Follow the instructions below as your instructor explains during the presentaion. 
-
-> Note this course is structured in collobration with a trainer. Without a trainer you might loose some details which were not mentioned in the instructions below. 
-
-## Pipes
-Pipes allow transforming data before they are dispalyed to the end user. A pipe takes in data as input and transforms it to a desired output. 
-
-- {{publication.Name | uppercase}}  apply uppercase formatting to publication name
-- {{Advertisment.Rate | currency:'INR':true: '1.2-2' }} 	Chained pipes
-- {{publication.CommisionRateForClassifieds | percent :'2.2-2'}}
-
-**Further Reading:**
--  [Angularjs Pipes](https://angular.io/docs/ts/latest/guide/pipes.html)
-
-## Using Interfaces
-Accessing data objects with interfaces and its advantages.  
-
-1. Add a new file Publication.ts
-2. Type the code below in the Publication.ts file
+#### Interpolation
 ``` typescript
-	export interface IPublication{
-		ID:string ,
-        IsActiveRecord:Boolean ,
-        Name:string,
-        TypexCD:string,
-        LanguagexCD: string,
-        CommissionRateForAdvertisments:number ,
-        CommisionRateForClassifieds:number 
-}
+    {{pageTitle}}
 ```
-3. import the publication in publication-list.component.ts file
-4. Replace the any with IPublication
-5. If you make any typo mistake in the declartion of publication, you will now get an error.
+
+#### Property Binding
+``` typescript
+    <div [style.backcolor]="backcolor">{{pageTitle}}</div>
+``` 
+
+#### Two way Binding
+import FormsModule in `app.modules.ts` file
+``` typescript
+     <input [(ngModel)]="publication" placeholder="Publication Name"/>
+``` 
+
+## **DEMO ** - 
+Follow the instructions below as your instructor explains during the presentation. 
+
+> Note this course is structured in collaboration with a trainer. Without a trainer you might loose some details which were not mentioned in the instructions below. 
+
+### **Start Demo 1** - TypeScript,interpolation,Template('',``) & Styles
+
+### **Start Demo 2** - Property Binding,Two way Binding.
+
+### **Start Demo 3** - Binding Publication data to a grid
+* Copy the Publications json array from api/Publications/publication.json file
+* Add publication property in the app.component.ts
+* Bind the Name,Type and Language columns to the grid
+
+### **Start Demo 4** - Refactoring Data
+ * use _templareUrl_
+ * use _styleUrls_
 
 
-## Handling Events with Event Bindings
-
-1. Add a button above the grid to hide/show Inactive records
-
-	``` html
-	<button class='btn btn-primary' (click)='showHideInactiveRecords()'>
-					Show all  Records
-	</button>
-    ```  
-2. Add the logic in the typescript file to handle the click event
-	``` typescript
-	
-	//Variable to keep track of activeRecords visibility
-	showOnlyActiveRecords:boolean=false;
-
-	showHideInactiveRecords():void{
-    	this.showOnlyActiveRecords = !this.showOnlyActiveRecords;
-	}	 
-	```       
-
-### Challenge: 
-Using the knowledge you have gained so far. Add logic to hide/unhide the records based on IsActiveStatus in the `publication-list.component.html`
+## Summary
+* What is a component 
+* Significance of ` [backticks]
+* Types of Databinding
+* Code Re-Sturucting using templareUrl,styleUrls
 
 
 
-### **HomeWork:** 
-Use Pipes and Event bidings  for the following modules appropriately. 
 
-| Module        | Json          | 
-| ------------- |:-------------:| 
-| Clients	    | clients.json  | 
-| AdvertismentReleaseOrders     | << TODO >>   |  
-| AdvertismentRates | << TODO >>     |    
+[:arrow_left: Previous](https://github.com/costaivo/AngularJs2-AdManager/tree/Dev/02_AdManager/02_Lesson/Start)  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                     [:arrow_right: Next] (https://github.com/costaivo/AngularJs2-AdManager/tree/Dev/02_AdManager/04_Lesson/Start)
 
 
--------------------------------
-#####END of Lesson 03
-
--------------------------------
 
