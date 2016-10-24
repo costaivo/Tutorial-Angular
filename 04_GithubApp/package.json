@@ -1,6 +1,6 @@
 {
-  "name": "angularclidemo",
-  "version": "0.0.0",
+  "name": "githubSearch",
+  "version": "0.0.2",
   "license": "MIT",
   "angular-cli": {},
   "scripts": {
