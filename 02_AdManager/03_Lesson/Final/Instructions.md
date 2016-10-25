@@ -1,6 +1,6 @@
 # Instructions for Lesson 03
 
-## Main Points to be explained 
+## Main Points to be explained
 
 ### Explain about the Component contents
 
