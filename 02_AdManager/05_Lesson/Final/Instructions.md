@@ -2,6 +2,9 @@
 
 ## Main Points to be explained
 
+* Move the code from app.component into seperate component
+publications/publication-list.
+
 
 ## Demos
 
