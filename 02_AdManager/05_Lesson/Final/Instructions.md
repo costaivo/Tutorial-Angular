@@ -5,6 +5,12 @@
 * Move the code from app.component into seperate component
 publications/publication-list.
 
+1. Create new folder for publications
+2. Create the following files :
+* publications-list.Component.ts
+* publications-list.Component.html
+* publications-list.Component.css
+
 
 ## Demos
 

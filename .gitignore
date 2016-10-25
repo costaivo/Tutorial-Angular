@@ -1,7 +1,13 @@
 #Ignore Folders
 node_modules
-.vscode
+.vs
 typings
+node_modules
+jspm_packages
+bower_components
+bin
+obj
+packages
 
 #Logs
 logs
@@ -11,3 +17,17 @@ npm-debug.log*
 
 #Custom files to be ignored
 #Instructions.md
+
+
+#Exclude tsc generated files
+**/app/**/*.js
+**/app/**/*.map
+
+
+
+
+
+
+
+**/*.sou
+**/*.user
