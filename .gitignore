@@ -1,15 +1,13 @@
+#Ignore Folders
 node_modules
 .vscode
 typings
-*.js
-*.js.map
 
-
-# Logs
+#Logs
 logs
 *.log
 npm-debug.log*
 
 
-#Custom files
+#Custom files to be ignored
 #Instructions.md
