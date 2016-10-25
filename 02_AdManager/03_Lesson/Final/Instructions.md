@@ -1,6 +1,13 @@
+# Instructions for Lesson 03
+
+## Main Points to be explained 
+
 ### Explain about the Component contents
-### Re-visit the application code an explain about the project w.r.t Component contents.
-### Explain about Different DataBinding Concepts with a diagram. 
+
+### Re-visit the application code an explain about the project w.r.t Component contents
+
+### Explain about Different DataBinding Concepts with a diagram
+
 ![Component](https://snag.gy/mfVROY.jpg "Component Structure")
 
 ### **Start Demo 1** - TypeScript,interpolation,Template('',``) & Styles
