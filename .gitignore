@@ -12,7 +12,7 @@ packages
 #Logs
 logs
 *.log
-npm-debug.log*
+npm-debug.log.*
 
 
 #Custom files to be ignored
@@ -22,12 +22,5 @@ npm-debug.log*
 #Exclude tsc generated files
 **/app/**/*.js
 **/app/**/*.map
-
-
-
-
-
-
-
 **/*.sou
 **/*.user
