@@ -11,7 +11,7 @@ A _structural directive_ changes the appearance or bheaviour of an element. A st
 
 http://blog.angular-university.io/angular-2-ngfor/
 
-###  Directives
+### Directives
 
 #### ngIf
 
