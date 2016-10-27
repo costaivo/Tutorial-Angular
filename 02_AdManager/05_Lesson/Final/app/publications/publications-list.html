@@ -16,7 +16,7 @@
 				</div>
 			</div>
 			<div class="table-responsive">
-				<table class="table" *ngIf="publications && publications.Length!==0">
+				<table class="table table-hover table-striped" *ngIf="publications && publications.Length!==0">
 					<thead class="thead-inverse">
 						<tr>
 							<th>Name </th>
@@ -26,12 +26,12 @@
 						</tr>
 					</thead>
 					<tbody>
-						<tr *ngFor="let publication of publications;let i=index; let isEven=even;let isOdd=odd;trackBy publication?.id" [ngClass]="{'odd':isOdd ,'even':  isEven}"
+						<tr *ngFor="let publication of publications;let i=index; "
 							(click)="onRowClick(publication)">
 							<td> {{publication.Name}}</td>
 							<td> {{publication.TypexCD}}</td>
 							<td> {{publication.LanguagexCD}}</td>
-							<td> {{isEven}}</td>
+							<td> {{publication.IsActiveRecord}}</td>
 						</tr>
 					</tbody>
 				</table>
