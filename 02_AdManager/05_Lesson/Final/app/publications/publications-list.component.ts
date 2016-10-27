@@ -2,8 +2,8 @@ import {Component} from '@angular/core';
 
 @Component({
     selector:'am-publicationList',
-    templateUrl:'app/publications/publications-list.html',
-    styleUrls:['app/publications/publications-list.css']
+    templateUrl:'app/publications/publications-list.component.html',
+    styleUrls:['app/publications/publications-list.component.css']
 })
 
 export class PublicationListComponent{

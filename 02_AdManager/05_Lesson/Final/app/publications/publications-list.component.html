@@ -26,12 +26,13 @@
 						</tr>
 					</thead>
 					<tbody>
-						<tr *ngFor="let publication of publications;let i=index; "
-							(click)="onRowClick(publication)">
+						<tr *ngFor="let publication of publications; " (click)="onRowClick(publication)">
 							<td> {{publication.Name}}</td>
 							<td> {{publication.TypexCD}}</td>
 							<td> {{publication.LanguagexCD}}</td>
-							<td> {{publication.IsActiveRecord}}</td>
+							<td>
+								<am-activeRecord [isActiveRecord]='publication.IsActiveRecord'></am-activeRecord>
+							</td>
 						</tr>
 					</tbody>
 				</table>
