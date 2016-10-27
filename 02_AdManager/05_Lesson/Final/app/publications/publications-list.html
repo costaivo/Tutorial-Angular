@@ -1,31 +1,40 @@
-<div *ngIf="selectedPublication">
+<div class="panel panel-primary">
+	<div class="panel-heading">
+		<h3 class="panel-title">Publications</h3>
+	</div>
+	<div class="panel-body">
+		<div>
+			<div *ngIf="selectedPublication">
 
-	Details of <span [style.color]="fontColor"> {{selectedPublication.Name}}</span>
-	<div>
-		<label>Publication : </label>
-		<input [(ngModel)]="selectedPublication.Name" placeholder="Publication Name" />
+				Details of <span [style.color]="fontColor"> {{selectedPublication.Name}}</span>
+				<div>
+					<label>Publication : </label>
+					<input [(ngModel)]="selectedPublication.Name" placeholder="Publication Name" />
+				</div>
+				<div>
+					<label>Type : </label>{{selectedPublication.TypexCD}}
+				</div>
+			</div>
+			<div class="table-responsive">
+				<table class="table" *ngIf="publications && publications.Length!==0">
+					<thead class="thead-inverse">
+						<tr>
+							<th>Name </th>
+							<th>Type </th>
+							<th>Language </th>
+							<th>Active<th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr *ngFor="let publication of publications;let i=index; let isEven=even;let isOdd=odd;trackBy publication?.id" [ngClass]="{'odd':isOdd ,'even':  isEven}"
+							(click)="onRowClick(publication)">
+							<td> {{publication.Name}}</td>
+							<td> {{publication.TypexCD}}</td>
+							<td> {{publication.LanguagexCD}}</td>
+							<td> {{isEven}}</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
 	</div>
-	<div>
-		<label>Type : </label>{{selectedPublication.TypexCD}}
-	</div>
-</div>
-<h2>Publication List</h2>
-<div>
-	<table *ngIf="publications && publications.Length!==0">
-		<thead>
-			<tr>
-				<th>Name </th>
-				<th>Type </th>
-				<th>Language </th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr *ngFor="let publication of publications;let i=index; let isEven=even;let isOdd=odd;trackBy publication?.id" [ngClass]="{'odd':isOdd ,'even':  isEven}"
-				(click)="onRowClick(publication)">
-				<td> {{publication.Name}}</td>
-				<td>| {{publication.TypexCD}}</td>
-				<td>| {{publication.LanguagexCD}} {{isEven}}</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
