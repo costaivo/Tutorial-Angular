@@ -11,4 +11,5 @@ export class IsActiveComponent{
 
     @Input()
     isActiveRecord:boolean;
+   
 }

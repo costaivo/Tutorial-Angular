@@ -2,61 +2,32 @@
 	<div class="panel-heading">
 		<h3 class="panel-title">Publications</h3>
 	</div>
+
 	<div class="panel-body">
-		<div>
-			<div class="panel panel-primary" *ngIf="selectedPublication">
-				<div class="panel-heading">
-					Details of Publication : {{selectedPublication.Name}}
-				</div>
-				<div class="panel-body">
-					<div class='row'>
-						<div class='col-md-3'>Name:</div>
-						<div class='col-md-6'>{{selectedPublication.Name}}</div>
-					</div>
-					<div class='row'>
-						<div class='col-md-3'>Publication Type:</div>
-						<div class='col-md-6'>{{selectedPublication.TypexCD}}</div>
-					</div>
-					<div class='row'>
-						<div class='col-md-3'>Publication Language</div>
-						<div class='col-md-6'>{{selectedPublication.LanguagexCD}}</div>
-					</div>
-					<div class='row'>
-						<div class='col-md-3'>Commission Rate For Advertisments</div>
-						<div class='col-md-6'>{{selectedPublication.CommissionRateForAdvertisments}}</div>
-					</div>
-					<div class='row'>
-						<div class='col-md-3'>Commision Rate For Classifieds</div>
-						<div class='col-md-6'>{{selectedPublication.CommisionRateForClassifieds}}</div>
-					</div>
-					<div class='row'>
-						<div class='col-md-3'>Ratings</div>
-						<div class='col-md-6'>{{selectedPublication.Ratings}}</div>
-					</div>
-				</div>
-			</div>
-			<div class="table-responsive">
-				<table class="table table-hover table-striped" *ngIf="publications && publications.Length!==0">
-					<thead class="thead-inverse">
-						<tr>
-							<th>Name </th>
-							<th>Type </th>
-							<th>Language </th>
-							<th>Active
-								<th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr *ngFor="let publication of publications; " (click)="onRowClick(publication)">
-							<td> {{publication.Name}}</td>
-							<td> {{publication.TypexCD}}</td>
-							<td> {{publication.LanguagexCD}}</td>
-							<td>
-								<am-activeRecord [isActiveRecord]='publication.IsActiveRecord'></am-activeRecord>
-							</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
+		<am-active2Record [selectedPublication]='selectedPublication'></am-active2Record>
+		<div class="table-responsive">
+			<table class="table table-hover table-striped" *ngIf="publications && publications.Length!==0">
+				<thead class="thead-inverse">
+					<tr>
+						<th>Name </th>
+						<th>Type </th>
+						<th>Language</th>
+						<th>Ratings</th>
+						<th>Active</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr *ngFor="let publication of publications; " (click)="onRowClick(publication)">
+						<td> {{publication.Name}}</td>
+						<td> {{publication.TypexCD}}</td>
+						<td> {{publication.LanguagexCD}}</td>
+						<td>{{publication.Ratings}}</td>
+						<td>
+							<am-activeRecord [isActiveRecord]='publication.IsActiveRecord'></am-activeRecord>
+						</td>
+					</tr>
+				</tbody>
+			</table>
 		</div>
 	</div>
+</div>

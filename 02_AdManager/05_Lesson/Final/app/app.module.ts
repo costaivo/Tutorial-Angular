@@ -11,6 +11,7 @@ import {FormsModule} from '@angular/forms';
 import { AppComponent }   from './app.component';
 
 import {PublicationListComponent} from './publications/publications-list.component';
+import {PublicationDetailsComponent} from './publications/publication-details.component';
 
 import {IsActiveComponent} from './shared/isActive.component';
 
@@ -24,8 +25,9 @@ import {IsActiveComponent} from './shared/isActive.component';
         ],
     declarations: [ 
         AppComponent,
+        PublicationDetailsComponent,
         PublicationListComponent,
-        IsActiveComponent
+        IsActiveComponent,
         ],
     bootstrap:    [AppComponent]
 })
