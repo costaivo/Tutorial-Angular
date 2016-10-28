@@ -17,8 +17,11 @@ Move the code from  app.component into publications-list.component
 
 ## BootStrap the Application
 
+## Create isActive.component
 
-## create publication-details component
+## create starRating.component  component
+
+## bootstrap publication-details component
 
 
 ## Demos

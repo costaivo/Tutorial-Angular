@@ -4,15 +4,35 @@
 	</div>
 	<div class="panel-body">
 		<div>
-			<div *ngIf="selectedPublication">
-
-				Details of <span [style.color]="fontColor"> {{selectedPublication.Name}}</span>
-				<div>
-					<label>Publication : </label>
-					<input [(ngModel)]="selectedPublication.Name" placeholder="Publication Name" />
+			<div class="panel panel-primary" *ngIf="selectedPublication">
+				<div class="panel-heading">
+					Details of Publication : {{selectedPublication.Name}}
 				</div>
-				<div>
-					<label>Type : </label>{{selectedPublication.TypexCD}}
+				<div class="panel-body">
+					<div class='row'>
+						<div class='col-md-3'>Name:</div>
+						<div class='col-md-6'>{{selectedPublication.Name}}</div>
+					</div>
+					<div class='row'>
+						<div class='col-md-3'>Publication Type:</div>
+						<div class='col-md-6'>{{selectedPublication.TypexCD}}</div>
+					</div>
+					<div class='row'>
+						<div class='col-md-3'>Publication Language</div>
+						<div class='col-md-6'>{{selectedPublication.LanguagexCD}}</div>
+					</div>
+					<div class='row'>
+						<div class='col-md-3'>Commission Rate For Advertisments</div>
+						<div class='col-md-6'>{{selectedPublication.CommissionRateForAdvertisments}}</div>
+					</div>
+					<div class='row'>
+						<div class='col-md-3'>Commision Rate For Classifieds</div>
+						<div class='col-md-6'>{{selectedPublication.CommisionRateForClassifieds}}</div>
+					</div>
+					<div class='row'>
+						<div class='col-md-3'>Ratings</div>
+						<div class='col-md-6'>{{selectedPublication.Ratings}}</div>
+					</div>
 				</div>
 			</div>
 			<div class="table-responsive">
@@ -22,7 +42,8 @@
 							<th>Name </th>
 							<th>Type </th>
 							<th>Language </th>
-							<th>Active<th>
+							<th>Active
+								<th>
 						</tr>
 					</thead>
 					<tbody>
