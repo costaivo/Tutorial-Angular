@@ -1,8 +1,9 @@
 import {Component,Input} from '@angular/core';
 
 @Component({
+    moduleId:module.id,
     selector:'am-active2Record',
-    templateUrl:'app/publications/publication-details.component.html'
+    templateUrl:'publication-details.component.html'
 })
 
 export class PublicationDetailsComponent{

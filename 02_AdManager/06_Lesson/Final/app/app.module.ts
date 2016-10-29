@@ -15,8 +15,8 @@ import {PublicationDetailsComponent} from './publications/publication-details.co
 import {PublicationService} from './publications/publication.service';
 
 //Core Components
-import {IsActiveComponent} from './core/isActive.component';
-import {StarComponent} from './core/star.component';
+import {IsActiveComponent} from './core/activerecord/isActive.component';
+import {StarComponent} from './core/star/star.component';
 
 //@NgModule takes a metadata object that tells Angular how to compile and run module code. 
 //It identifies the module's own components, directives and pipes, making some of them public so external 

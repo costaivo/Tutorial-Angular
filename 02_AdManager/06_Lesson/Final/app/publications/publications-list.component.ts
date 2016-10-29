@@ -2,9 +2,10 @@ import { Component,OnInit } from '@angular/core';
 import { PublicationService } from './publication.service';
 
 @Component({
+    moduleId:module.id,
     selector: 'am-publicationList',
-    templateUrl: 'app/publications/publications-list.component.html',
-    styleUrls: ['app/publications/publications-list.component.css']
+    templateUrl: 'publications-list.component.html',
+    styleUrls: ['publications-list.component.css']
 })
 
 export class PublicationListComponent implements OnInit {

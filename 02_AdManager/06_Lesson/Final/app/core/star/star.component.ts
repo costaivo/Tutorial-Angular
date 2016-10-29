@@ -1,9 +1,10 @@
 import {Component,Input,Output,EventEmitter} from '@angular/core';
 
 @Component({
+    moduleId:module.id,
     selector:'ct-star',
-    templateUrl:'app/shared/star.component.html',
-    styleUrls:['app/shared/star.component.css']
+    templateUrl:'star.component.html',
+    styleUrls:['star.component.css']
 })
 
 export class StarComponent 

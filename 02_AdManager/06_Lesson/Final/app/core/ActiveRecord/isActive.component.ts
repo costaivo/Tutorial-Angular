@@ -1,8 +1,9 @@
 import {Component,Input} from '@angular/core';
 
 @Component({
+    moduleId:module.id,
     selector:'ct-activeRecord',
-    templateUrl:'app/shared/isActive.component.html'
+    templateUrl:'isActive.component.html'
 })
 
 export class IsActiveComponent{
