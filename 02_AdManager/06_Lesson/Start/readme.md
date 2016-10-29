@@ -30,9 +30,9 @@ Follow the instructions below as your instructor explains during the presentatio
 
 
 
-[:arrow_left: Previous](https://github.com/costaivo/AngularJs2-AdManager/tree/Dev/02_AdManager/05_Lesson/Start)  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                    
-[::1234: Index](https://github.com/costaivo/AdManagerUI-AngularJs2/tree/Dev)nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
- [:arrow_right: Next] (https://github.com/costaivo/AngularJs2-AdManager/tree/Dev/02_AdManager/07_Lesson/Start)
+[:arrow_left: Previous](https://github.com/costaivo/AngularJs2-AdManager/tree/Dev/02_AdManager/05_Lesson/Start)  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+[:1234: Index](https://github.com/costaivo/AdManagerUI-AngularJs2/tree/Dev) &nbsp;&nbsp;&nbsp;nbsp;&nbsp; 
+[:arrow_right: Next](https://github.com/costaivo/AngularJs2-AdManager/tree/Dev/02_AdManager/07_Lesson/Start)
 
 
 
