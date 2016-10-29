@@ -13,7 +13,9 @@ import { AppComponent }   from './app.component';
 import {PublicationListComponent} from './publications/publications-list.component';
 import {PublicationDetailsComponent} from './publications/publication-details.component';
 
+//Core Components
 import {IsActiveComponent} from './shared/isActive.component';
+import {StarComponent} from './shared/star.component';
 
 //@NgModule takes a metadata object that tells Angular how to compile and run module code. 
 //It identifies the module's own components, directives and pipes, making some of them public so external 
@@ -28,6 +30,7 @@ import {IsActiveComponent} from './shared/isActive.component';
         PublicationDetailsComponent,
         PublicationListComponent,
         IsActiveComponent,
+        StarComponent
         ],
     bootstrap:    [AppComponent]
 })
