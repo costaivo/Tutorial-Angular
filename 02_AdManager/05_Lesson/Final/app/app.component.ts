@@ -11,7 +11,5 @@ import {Component} from '@angular/core';
 
 //create class for the component
 export class AppComponent{
-    pageTitle:string = "Digital Ads : Ad Manager";
-    
-    
+    pageTitle:string = "Digital Ads";   
 }
