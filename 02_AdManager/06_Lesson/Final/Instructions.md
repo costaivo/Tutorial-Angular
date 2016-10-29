@@ -26,8 +26,13 @@
             } 
             this will not show any error just the data will be not shown. then demonstrate with interface the benifit 
   * create interface IPublication	
+
+
+* Explain how bootstrap themes can be applied. 
+
 * Home work 
-do the client service 
+  * Implement Client Component module 
+ 
 ## Demos
 
 ### **Start Demo 1** -
