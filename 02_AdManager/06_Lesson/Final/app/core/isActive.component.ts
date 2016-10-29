@@ -1,7 +1,7 @@
 import {Component,Input} from '@angular/core';
 
 @Component({
-    selector:'am-activeRecord',
+    selector:'ct-activeRecord',
     templateUrl:'app/shared/isActive.component.html'
 })
 
