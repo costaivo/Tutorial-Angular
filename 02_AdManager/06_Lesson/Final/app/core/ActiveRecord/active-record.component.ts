@@ -3,10 +3,10 @@ import {Component,Input} from '@angular/core';
 @Component({
     moduleId:module.id,
     selector:'ct-activeRecord',
-    templateUrl:'isActive.component.html'
+    templateUrl:'active-record.component.html'
 })
 
-export class IsActiveComponent{
+export class ActiveRecordComponent{
     imageWidth:number=16;
     imageMargin:number=2;
 

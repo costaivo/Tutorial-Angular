@@ -15,7 +15,7 @@ import {PublicationDetailsComponent} from './publications/publication-details.co
 import {PublicationService} from './publications/publication.service';
 
 //Core Components
-import {IsActiveComponent} from './core/activerecord/isActive.component';
+import {ActiveRecordComponent} from './core/activerecord/active-record.component';
 import {StarComponent} from './core/star/star.component';
 
 //@NgModule takes a metadata object that tells Angular how to compile and run module code. 
@@ -30,7 +30,7 @@ import {StarComponent} from './core/star/star.component';
         AppComponent,
         PublicationDetailsComponent,
         PublicationListComponent,
-        IsActiveComponent,
+        ActiveRecordComponent,
         StarComponent
         ],
         providers:[
