@@ -1,9 +1,10 @@
 # Instructions for Lesson 04
 
 ## Main Points to be explained
-
+* Explain about module.id and its importance
 * Explain about Interfaces and its importance. 
 * create a service and use it. 
+* Explain short end method to create services
 
 ## Demos
 

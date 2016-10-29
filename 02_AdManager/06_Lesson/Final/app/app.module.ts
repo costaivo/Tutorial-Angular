@@ -12,6 +12,7 @@ import { AppComponent }   from './app.component';
 
 import {PublicationListComponent} from './publications/publications-list.component';
 import {PublicationDetailsComponent} from './publications/publication-details.component';
+import {PublicationService} from './publications/publication.service';
 
 //Core Components
 import {IsActiveComponent} from './shared/isActive.component';
@@ -31,6 +32,9 @@ import {StarComponent} from './shared/star.component';
         PublicationListComponent,
         IsActiveComponent,
         StarComponent
+        ],
+        providers:[
+				PublicationService
         ],
     bootstrap:    [AppComponent]
 })
