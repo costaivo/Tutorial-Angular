@@ -26,7 +26,9 @@
 			</div>
 			<div class='row'>
 				<div class='col-md-3'>Ratings</div>
-				<div class='col-md-6'>{{selectedPublication.Ratings}}</div>
+				<div class='col-md-6'>
+					<ct-star [rating]='selectedPublication.Ratings' ></ct-star>
+				</div>
 			</div>
 		</div>
 	</div>

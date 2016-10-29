@@ -9,6 +9,8 @@ import {Component} from '@angular/core';
 export class PublicationListComponent{
     fontColor="red";
     selectedPublication:any;
+    pageTitle:string="Publications";
+
     publications:any[]=[
     {
         "ID": "c7bd9a71-a1a4-4d39-ab91-be966512bd0e",
@@ -66,5 +68,10 @@ onRowClick(publication){
     console.log("Row clicked "+publication.Name);
     this.selectedPublication=publication;
     
+}
+
+onRatingClicked(message:string):void{
+console.log("hello "+message);
+    this.pageTitle = "Publications :"+message;
 }
 }
