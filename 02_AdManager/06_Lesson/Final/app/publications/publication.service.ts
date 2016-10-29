@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import {IPublication} from './publication';
 
 @Injectable()
 
@@ -8,7 +9,7 @@ export class PublicationService {
 
     }
 
-    getAll(): any {
+    getAll(): IPublication []{
         return [
             {
                 "ID": "c7bd9a71-a1a4-4d39-ab91-be966512bd0e",
@@ -84,3 +85,5 @@ export class PublicationService {
         ];
     }
 }
+
+

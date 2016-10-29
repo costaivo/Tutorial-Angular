@@ -1,5 +1,6 @@
 import { Component,OnInit } from '@angular/core';
 import { PublicationService } from './publication.service';
+import {IPublication} from './publication';
 
 @Component({
     moduleId:module.id,
@@ -9,10 +10,9 @@ import { PublicationService } from './publication.service';
 })
 
 export class PublicationListComponent implements OnInit {
-    fontColor = "red";
     selectedPublication: any;
     pageTitle: string = "Publications";
-    publications: any[];
+    publications: IPublication[];
 
     constructor(private _publicationService: PublicationService) {
 
