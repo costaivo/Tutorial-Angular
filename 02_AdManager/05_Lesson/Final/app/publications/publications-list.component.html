@@ -21,7 +21,9 @@
 						<td> {{publication.Name}}</td>
 						<td> {{publication.TypexCD}}</td>
 						<td> {{publication.LanguagexCD}}</td>
-						<td>{{publication.Ratings}}</td>
+						<td>
+							<ct-star [rating]='publication.Ratings'></ct-star>
+						</td>
 						<td>
 							<am-activeRecord [isActiveRecord]='publication.IsActiveRecord'></am-activeRecord>
 						</td>

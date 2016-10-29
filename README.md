@@ -51,8 +51,9 @@ Two Way Binding
 
 Routing
 
-Services
-
+Services  
+* Refactor code -- show how to use moduleid
+* Rename shared folder to core
 
 ### 8 Main Parts in Angular Js 2 
 
