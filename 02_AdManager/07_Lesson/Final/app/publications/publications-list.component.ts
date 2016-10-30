@@ -10,7 +10,7 @@ import {IPublication} from './publication';
 })
 
 export class PublicationListComponent implements OnInit {
-    selectedPublication: any;
+    selectedPublication: IPublication;
     pageTitle: string = "Publications";
     publications: IPublication[];
 

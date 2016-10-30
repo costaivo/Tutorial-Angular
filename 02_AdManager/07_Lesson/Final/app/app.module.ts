@@ -20,8 +20,10 @@ import {PublicationService} from './publications/publication.service';
 
 //Client 
 import {ClientListComponent} from './clients/client-list.component';
-//import {ClientDetailsComponent} from './clients/client-details.component';
+import {ClientDetailsComponent} from './clients/client-details.component';
 import {ClientService} from './clients/client.service';
+
+import {ClientDetailsGaurd} from './clients/client-details-gaurd.service';
 
 //dashboard
 import {DasboardComponent} from './dashboard/dashboard.component';
@@ -41,7 +43,9 @@ import {StarComponent} from './core/star/star.component';
             {path:'publications',component:PublicationListComponent},
             {path:'publication/:id',component:PublicationDetailsComponent},
             {path:'clients',component:ClientListComponent},
-          //  {path:'publication/:id',component:PublicationDetailsComponent},
+            {path:'client/:id',
+            canActivate:[ClientDetailsGaurd],
+            component:ClientDetailsComponent},
             {path:'dashboard',component:DasboardComponent},
             {path:'',redirectTo:'dashboard',pathMatch:'full'},
             {path:'**',redirectTo:'dashboard',pathMatch:'full'}
@@ -56,6 +60,7 @@ import {StarComponent} from './core/star/star.component';
         
         //Client
         ClientListComponent,
+        ClientDetailsComponent,
 
         //shared components
         DasboardComponent,
@@ -66,7 +71,8 @@ import {StarComponent} from './core/star/star.component';
         ],
         providers:[
 				PublicationService,
-                ClientService
+                ClientService,
+                ClientDetailsGaurd
         ],
     bootstrap:    [AppComponent]
 })

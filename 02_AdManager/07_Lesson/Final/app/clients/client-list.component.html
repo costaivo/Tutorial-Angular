@@ -17,7 +17,10 @@
 			</thead>
 			<tbody>
 				<tr *ngFor="let client of clients; " (click)="onRowClick(client)">
-					<td> {{client.FirstName}} {{client.MiddleName}} {{client.LastName}}</td>
+					<td><a [routerLink]="['/client',client.ID]"> 
+							{{client.FirstName}} {{client.MiddleName}} {{client.LastName}}
+						</a>
+					</td>
 					<td> {{client.MobileNumber}}</td>
 					<td> {{client.TypexCD}}</td>
 					<td>{{client.Address}}</td>
