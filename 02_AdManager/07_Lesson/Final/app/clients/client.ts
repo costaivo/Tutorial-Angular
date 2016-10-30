@@ -3,9 +3,9 @@ export interface IClient {
     IsActiveRecord: boolean,
     FirstName: string,
     MiddleName: string,
-    LastName: string,
+     LastName: string,
     Address: string,
-    MobileNumber: number,
+    MobileNumber: string,
     TypexCD: string
 }
 
