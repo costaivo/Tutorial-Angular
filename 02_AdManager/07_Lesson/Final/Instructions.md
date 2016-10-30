@@ -14,6 +14,11 @@
 1. Passing parameters through routing
 
 
+1. Create shared folder. 
+2. add pageNotFoundComponent
+
+## STEPS TO add routes
+in index.html file add the `<base href="/">`
 ## Demos
 
 ### **Start Demo 1** -

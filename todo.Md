@@ -29,4 +29,4 @@
 1. Fix all links for all readme & Instructions file
 # [Lesson 06 -- Services](https://github.com/costaivo/AdManagerUI-AngularJs2/tree/Dev/02_AdManager/06_Lesson/Start)
 
-1. TODO
+1. Rename publications-list to publication in all lessons. 

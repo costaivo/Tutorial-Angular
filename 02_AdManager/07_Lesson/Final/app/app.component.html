@@ -2,16 +2,16 @@
 	<a class="navbar-brand" href="#">{{pageTitle}}</a>
 	<ul class="nav navbar-nav">
 		<li class="active">
-			<a href="#">Dashboard</a>
+			<a [routerLink]="['/dashboard']">Dashboard</a>
 		</li>
 		<li>
-			<a href="#">Publications</a>
+			<a [routerLink]="['/publications']">Publications</a>
 		</li>
 		<li>
-			<a href="#">Clients</a>
+			<a [routerLink]="['/clients']">Clients</a>
 		</li>
 	</ul>
 </nav>
-<am-dashboard></am-dashboard>
-<!--<am-publicationList></am-publicationList>-->
-
+<div class="container">
+	<router-outlet></router-outlet>
+</div>

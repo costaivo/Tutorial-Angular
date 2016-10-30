@@ -33,6 +33,7 @@ A tutorial on Learning Angular JS 2. With this tutorial we will be creating a fu
 * [Lesson 07 -- Routing](https://github.com/costaivo/AngularJs2-AdManager/tree/Dev/02_AdManager/07_Lesson/Start)
 
 <<---TODO--->>
+* [Lesson 0 -- Barrels](https://github.com/costaivo/AngularJs2-AdManager/tree/Dev/02_AdManager/07_Lesson/Start)
 * [Lesson 0 -- Http](https://github.com/costaivo/AngularJs2-AdManager/tree/Dev/02_AdManager/07_Lesson/Start)
 
 ### Level 2

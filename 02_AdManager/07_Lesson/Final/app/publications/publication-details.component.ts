@@ -2,7 +2,7 @@ import {Component,Input} from '@angular/core';
 
 @Component({
     moduleId:module.id,
-    selector:'am-active2Record',
+    selector:'am-publicationDetail',
     templateUrl:'publication-details.component.html'
 })
 

@@ -7,6 +7,9 @@ import { BrowserModule } from '@angular/platform-browser';
 //required for two-way binding
 import {FormsModule} from '@angular/forms';
 
+//required for routing
+import {RouterModule} from '@angular/router';
+
 //import our root component
 import { AppComponent }   from './app.component';
 
@@ -28,7 +31,14 @@ import {StarComponent} from './core/star/star.component';
 @NgModule({
     imports:      [ 
         BrowserModule,
-        FormsModule 
+        FormsModule,
+        RouterModule.forRoot([
+            {path:'publications',component:PublicationListComponent},
+            {path:'publication/:id',component:PublicationDetailsComponent},
+            {path:'dashboard',component:DasboardComponent},
+            {path:'',redirectTo:'dashboard',pathMatch:'full'},
+            {path:'**',redirectTo:'dashboard',pathMatch:'full'}
+        ])
         ],
     declarations: [ 
         AppComponent,

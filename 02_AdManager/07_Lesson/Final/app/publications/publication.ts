@@ -1,6 +1,6 @@
 export interface IPublication{
 		ID:string ,
-        IsActiveRecord:Boolean ,
+        IsActiveRecord:boolean ,
         Name:string,
         TypexCD:string,
         LanguagexCD: string,
