@@ -1,12 +1,19 @@
 import { Component, OnInit } from '@angular/core';
+import { ClientService } from './client.service';
 
 @Component({
     moduleId: module.id,
-    selector: 'selector',
-    templateUrl: 'feature.component.html'
+    selector: 'am-clientlist',
+    templateUrl: 'client-list.component.html',
+    styleUrls: ['client-list.component.css']
 })
-export class FeatureComponent implements OnInit {
-    constructor() { }
+export class ClientListComponent implements OnInit {
+    pageTitle: string = "Clients";
+    clients: any[];
 
-    ngOnInit() { }
+    constructor(private _clientService: ClientService) { }
+
+    ngOnInit() {
+        this.clients = this._clientService.getAll();
+    }
 }

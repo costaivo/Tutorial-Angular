@@ -18,6 +18,11 @@ import {PublicationListComponent} from './publications/publications-list.compone
 import {PublicationDetailsComponent} from './publications/publication-details.component';
 import {PublicationService} from './publications/publication.service';
 
+//Client 
+import {ClientListComponent} from './clients/client-list.component';
+//import {ClientDetailsComponent} from './clients/client-details.component';
+import {ClientService} from './clients/client.service';
+
 //dashboard
 import {DasboardComponent} from './dashboard/dashboard.component';
 
@@ -35,6 +40,8 @@ import {StarComponent} from './core/star/star.component';
         RouterModule.forRoot([
             {path:'publications',component:PublicationListComponent},
             {path:'publication/:id',component:PublicationDetailsComponent},
+            {path:'clients',component:ClientListComponent},
+          //  {path:'publication/:id',component:PublicationDetailsComponent},
             {path:'dashboard',component:DasboardComponent},
             {path:'',redirectTo:'dashboard',pathMatch:'full'},
             {path:'**',redirectTo:'dashboard',pathMatch:'full'}
@@ -47,6 +54,9 @@ import {StarComponent} from './core/star/star.component';
         PublicationDetailsComponent,
         PublicationListComponent,
         
+        //Client
+        ClientListComponent,
+
         //shared components
         DasboardComponent,
 
@@ -55,7 +65,8 @@ import {StarComponent} from './core/star/star.component';
         StarComponent
         ],
         providers:[
-				PublicationService
+				PublicationService,
+                ClientService
         ],
     bootstrap:    [AppComponent]
 })
