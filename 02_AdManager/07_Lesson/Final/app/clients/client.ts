@@ -1,5 +1,5 @@
 export interface IClient {
-    ID: string//,
+    ID: string,
     IsActiveRecord: boolean,
     FirstName: string,
     MiddleName: string,
@@ -8,3 +8,4 @@ export interface IClient {
     MobileNumber: number,
     TypexCD: string
 }
+

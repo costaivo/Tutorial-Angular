@@ -42,9 +42,12 @@ import {StarComponent} from './core/star/star.component';
         ],
     declarations: [ 
         AppComponent,
+
+        //Publication
         PublicationDetailsComponent,
         PublicationListComponent,
         
+        //shared components
         DasboardComponent,
 
         //Core Components

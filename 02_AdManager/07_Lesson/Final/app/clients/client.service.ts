@@ -2,13 +2,12 @@ import { Injectable } from '@angular/core';
 import { IClient } from './client';
 
 @Injectable()
-
 export class ClientService {
 
     constructor() {
 
     }
-
+//TODO : Not sure why the interface for the client is not working
     getAll(): any [] {
         return [{
             "ID": "1E916F75-E36F-4842-82B2-01647E75C79D",
