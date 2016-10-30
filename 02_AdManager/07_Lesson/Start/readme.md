@@ -1,4 +1,6 @@
-# Lesson 000 -- XXXXXXXXXXXXXXXXX
+# Lesson 07 -- Routing
+
+> Learn about the AngularJs2 Routing Concepts
 ----------
 ## Lesson Contents
 

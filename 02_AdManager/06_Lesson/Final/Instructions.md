@@ -1,4 +1,4 @@
-# Instructions for Lesson 04
+# Instructions for **Lesson 06 -- Services**
 
 ## Main Points to be explained
 * Rename Shared folder to core.
@@ -14,7 +14,10 @@
 * Explain short end method to create services
 * Explain about Interfaces and its importance. 
   * show why it can introduce errors if no interface is defined. 
-  *  {
+  * Interface
+
+``` typescript
+   {
                 "ID": "c7bd9a71-a1a4-4d39-ab91-be966512bd0e",
                 "IsActiveRecord": true,
                 "Name": "Herald",
@@ -23,16 +26,20 @@
                 "xCommissionRateForAdvertisments": 0.15,
                 "CommisionRateForClassifieds": 0.059,
                 "Ratings": 5
-            } 
-            this will not show any error just the data will be not shown. then demonstrate with interface the benifit 
-  * create interface IPublication	
+   }
+```
+
+> this will not show any error just the data will be not shown. then demonstrate with interface the benifit
+
+* create interface IPublication
 
 
-* Explain how bootstrap themes can be applied. 
+* Explain how bootstrap themes can be applied.
 
-* Home work 
-  * Implement Client Component module 
- 
+* Home work
+
+  * Implement Client Component module
+
 ## Demos
 
 ### **Start Demo 1** -
