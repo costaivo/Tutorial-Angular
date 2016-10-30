@@ -10,9 +10,13 @@ import {FormsModule} from '@angular/forms';
 //import our root component
 import { AppComponent }   from './app.component';
 
+//Publication 
 import {PublicationListComponent} from './publications/publications-list.component';
 import {PublicationDetailsComponent} from './publications/publication-details.component';
 import {PublicationService} from './publications/publication.service';
+
+//dashboard
+import {DasboardComponent} from './dashboard/dashboard.component';
 
 //Core Components
 import {ActiveRecordComponent} from './core/activerecord/active-record.component';
@@ -30,6 +34,10 @@ import {StarComponent} from './core/star/star.component';
         AppComponent,
         PublicationDetailsComponent,
         PublicationListComponent,
+        
+        DasboardComponent,
+
+        //Core Components
         ActiveRecordComponent,
         StarComponent
         ],
