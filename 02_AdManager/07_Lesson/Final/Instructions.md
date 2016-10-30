@@ -1,6 +1,17 @@
-# Instructions for Lesson 04
+# Instructions for Lesson 07
 
 ## Main Points to be explained
+
+1. Introduce the concept of barrels
+  * Rename app folder to src
+  * Create a new folder under src named as app
+  * Move all the files related to app component into app folder. 
+  * add index.ts file and create a barrel
+  * Implement barrel for the reamaing application
+
+1. Create dashboard component
+1. Create Client Component -- Home Work
+1. Passing parameters through routing
 
 
 ## Demos
