@@ -8,7 +8,10 @@ export class PublicationService {
     constructor() {
 
     }
-
+	getTotalCount():number{
+		return this.getAll().length;
+    }
+    
     getAll(): IPublication []{
         return [
             {

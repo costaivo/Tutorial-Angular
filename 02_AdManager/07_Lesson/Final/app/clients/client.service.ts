@@ -8,7 +8,10 @@ export class ClientService {
 
     }
    
-
+	getTotalCount():number{
+		return this.getAll().length;
+    }
+    
     getAll(): IClient [] {
         return [{
             "ID": "1E916F75-E36F-4842-82B2-01647E75C79D",

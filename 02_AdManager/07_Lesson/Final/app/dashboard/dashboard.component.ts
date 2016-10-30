@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { PublicationService } from '../publications/publication.service';
+import { ClientService } from '../clients/client.service';
 
 @Component({
     moduleId: module.id,
@@ -6,8 +8,18 @@ import { Component } from '@angular/core';
     templateUrl: 'dasboard.component.html',
     styleUrls: ['dasboard.component.css']
 })
-export class DasboardComponent {
+export class DasboardComponent implements OnInit {
 
     publicationCount: number = 10;
     clientCount: number = 10;
+
+    constructor(private _clientService: ClientService, private _publicationService: PublicationService) {
+
+    }
+
+    ngOnInit() {
+        this.publicationCount = this._publicationService.getTotalCount();
+        this.clientCount = this._clientService.getTotalCount();
+    }
+
 }
