@@ -19,7 +19,7 @@ import {TodoService} from './todo.service';
   providers: [TodoService],
   bootstrap: [AppComponent]
 })
-export class AppModule { 
+export class AppModule {
   constructor(){
     console.log("App Module Initialized");
   }
