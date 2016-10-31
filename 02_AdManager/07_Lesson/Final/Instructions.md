@@ -12,7 +12,7 @@
 1. Create dashboard component
 1. Create Client Component -- Home Work
 1. Passing parameters through routing
-
+1. Explain the concept of Gaurd
 
 1. Create shared folder. 
 2. add pageNotFoundComponent

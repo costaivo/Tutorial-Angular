@@ -11,6 +11,9 @@ export class ClientService {
 	getTotalCount():number{
 		return this.getAll().length;
     }
+    getClient(id:string):IClient{
+		return this.getAll().find(x=>x.ID==id);
+    }
     
     getAll(): IClient [] {
         return [{
