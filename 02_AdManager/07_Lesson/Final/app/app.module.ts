@@ -46,9 +46,9 @@ import {StarComponent} from './core/star/star.component';
             {path:'client/:id',
             canActivate:[ClientDetailsGaurd],
             component:ClientDetailsComponent},
-            {path:'dashboard',component:DasboardComponent}//,
-           // {path:'',redirectTo:'dashboard',pathMatch:'full'},
-           // {path:'**',redirectTo:'dashboard',pathMatch:'full'}
+            {path:'dashboard',component:DasboardComponent},
+            {path:'',redirectTo:'dashboard',pathMatch:'full'},
+            {path:'**',redirectTo:'dashboard',pathMatch:'full'}
         ])
         ],
     declarations: [ 

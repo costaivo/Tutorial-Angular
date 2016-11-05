@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import {IPublication} from './publication';
+import { IPublication } from './publication';
 
 @Injectable()
 
@@ -8,11 +8,14 @@ export class PublicationService {
     constructor() {
 
     }
-	getTotalCount():number{
-		return this.getAll().length;
+    getTotalCount(): number {
+        return this.getAll().length;
     }
-    
-    getAll(): IPublication []{
+    getPublication(id:string): IPublication {
+        return this.getAll().find(x => x.ID == id);
+    }
+
+    getAll(): IPublication[] {
         return [
             {
                 "ID": "c7bd9a71-a1a4-4d39-ab91-be966512bd0e",
@@ -64,7 +67,7 @@ export class PublicationService {
                 "CommisionRateForClassifieds": 0.10,
                 "Ratings": 1
             },
-             {
+            {
                 "ID": "E1CAE59B-8662-4785-857F-B7395CD5E897",
                 "IsActiveRecord": true,
                 "Name": "Gomantak Times",
@@ -75,7 +78,7 @@ export class PublicationService {
                 "Ratings": 2
             }
             ,
-             {
+            {
                 "ID": "E1CAE59B-8662-4785-857F-B7395CD5E897",
                 "IsActiveRecord": true,
                 "Name": "Tarun Bharat",

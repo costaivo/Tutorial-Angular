@@ -17,7 +17,10 @@
 			</thead>
 			<tbody>
 				<tr *ngFor="let publication of publications; " (click)="onRowClick(publication)">
-					<td> {{publication.Name}}</td>
+					<td><a [routerLink]="['/publication',publication.ID]">
+					 {{publication.Name}}
+					 </a>
+					 </td>
 					<td> {{publication.TypexCD}}</td>
 					<td> {{publication.LanguagexCD}}</td>
 					<td>

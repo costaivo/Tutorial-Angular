@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+
 //required for back button
 import { Router } from '@angular/router';
 
