@@ -16,7 +16,7 @@
 				</tr>
 			</thead>
 			<tbody>
-				<tr *ngFor="let publication of publications; " (click)="onRowClick(publication)">
+				<tr *ngFor="let publication of publications; " >
 					<td><a [routerLink]="['/publication',publication.ID]">
 					 {{publication.Name}}
 					 </a>
