@@ -11,7 +11,7 @@ A _structural directive_ changes the appearance or bheaviour of an element. A st
 
 http://blog.angular-university.io/angular-2-ngfor/
 
-###  Directives
+### Directives
 
 #### ngIf
 
@@ -66,6 +66,7 @@ Follow the instructions below as your instructor explains during the presentatio
 
 ### **Start Demo 1** - ngFor
 * Using *ngFor demonstrate the use of binding a list of data
+* explain let i=index; let isEven=even;let isOdd=odd;trackBy publication?.id 
 
 ### **Start Demo 2** - ngIf
 * Using *ngIf demonstrate the use of hide/show data based on conditions

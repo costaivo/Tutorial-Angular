@@ -27,7 +27,7 @@ export class TodoService extends Init {
   addTodo(newTodo) {
     var todos = this.getTodosFromRepository();
 
-    //Add a new Todo item 
+    //Add a new Todo item
     todos.push(newTodo);
 
     //save in local storage

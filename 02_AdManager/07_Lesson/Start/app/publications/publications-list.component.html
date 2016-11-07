@@ -1,0 +1,33 @@
+<div class="panel panel-primary">
+	<div class="panel-heading">
+		<h3 class="panel-title">{{pageTitle}}</h3>
+	</div>
+
+	<div class="panel-body">
+		<am-active2Record [selectedPublication]='selectedPublication'></am-active2Record>
+		<table class="table table-hover table-striped" *ngIf="publications && publications.Length!==0">
+			<thead>
+				<tr>
+					<th>Name </th>
+					<th>Type </th>
+					<th>Language</th>
+					<th>Ratings</th>
+					<th>Active</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr *ngFor="let publication of publications; " (click)="onRowClick(publication)">
+					<td> {{publication.Name}}</td>
+					<td> {{publication.TypexCD}}</td>
+					<td> {{publication.LanguagexCD}}</td>
+					<td>
+						<ct-star [rating]='publication.Ratings' (ratingClicked)='onRatingClicked($event)'></ct-star>
+					</td>
+					<td>
+						<ct-activeRecord [isActiveRecord]='publication.IsActiveRecord'></ct-activeRecord>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>

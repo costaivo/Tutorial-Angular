@@ -1,0 +1,18 @@
+// Place your settings in this file to overwrite the default settings
+{
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 1000,
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.DS_Store": true,
+        "**/*.js":{"when":"$(basename).ts"},
+        "**/*.js.map":true,
+        "**/node_modules":true,
+         "**/typings":true,
+        "**/npm-debug.log.*":true
+    }
+,
+"typescript.check.tscVersion": false,
+"editor.fontFamily": "Consolas"
+}

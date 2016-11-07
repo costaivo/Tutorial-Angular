@@ -1,15 +1,26 @@
+#Ignore Folders
 node_modules
 .vscode
 typings
-*.js
-*.js.map
+node_modules
+jspm_packages
+bower_components
+bin
+obj
+packages
 
-
-# Logs
+#Logs
 logs
 *.log
-npm-debug.log*
+npm-debug.log.*
 
 
-#Custom files
-Instructions.md
+#Custom files to be ignored
+#Instructions.md
+
+
+#Exclude tsc generated files
+**/app/**/*.js
+**/app/**/*.map
+**/*.sou
+**/*.user
