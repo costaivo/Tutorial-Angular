@@ -10,7 +10,7 @@ import {IPublication} from './publication';
 })
 
 export class PublicationListComponent implements OnInit {
-    selectedPublication: IPublication;
+    
     pageTitle: string = "Publications";
     publications: IPublication[];
 
@@ -22,10 +22,7 @@ export class PublicationListComponent implements OnInit {
 		this.publications = this._publicationService.getAll();
     }
 
-    onRowClick(publication) {
-        console.log("Row clicked " + publication.Name);
-        this.selectedPublication = publication;
-    }
+   
 
     onRatingClicked(message: string): void {
         this.pageTitle = "Publications :" + message;
