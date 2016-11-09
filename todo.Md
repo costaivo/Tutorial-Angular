@@ -1,4 +1,4 @@
-THis has to be done. 
+CLEANED UP
 # Following changes need to done for all existing lessons
 
 1. Rename component isActive.component.ts to active-record.component.ts
