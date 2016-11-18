@@ -1,0 +1,12 @@
+<!--<span *ngIf="isActiveRecord" class='label label-success'>{{isActiveRecord}}</span>
+<span *ngIf="!isActiveRecord" class='label label-danger'>{{isActiveRecord}}</span>-->
+
+ <img *ngIf="isActiveRecord" src="./app/assets/images/active.png"
+                                    [title]='isActiveRecord'
+                                    [style.width.px]='imageWidth'
+                                    [style.margin.px]='imageMargin'>
+
+ <img *ngIf="!isActiveRecord" src="./app/assets/images/Inactive.png"
+                                    [title]='isActiveRecord'
+                                    [style.width.px]='imageWidth'
+                                    [style.margin.px]='imageMargin'>

@@ -1,0 +1,41 @@
+<div> 
+	<div class="panel panel-primary" *ngIf="selectedClient">
+		<div class="panel-heading">
+			{{pageTitle}} : {{selectedClient.FirstName}}
+		</div>
+		<div class="panel-body">
+			<div class='row'>
+				<div class='col-md-3'>First Name</div>
+				<div class='col-md-6'>{{selectedClient.FirstName}}</div>
+			</div>
+			<div class='row'>
+				<div class='col-md-3 strong'>Middle Name</div>
+				<div class='col-md-6'>{{selectedClient.MiddleName}}</div>
+			</div>
+			<div class='row'>
+				<div class='col-md-3'>LastName</div>
+				<div class='col-md-6'>{{selectedClient.LastName}}</div>
+			</div>
+			<div class='row'>
+				<div class='col-md-3'>Address</div>
+				<div class='col-md-6'>{{selectedClient.Address}}</div>
+			</div>
+			<div class='row'>
+				<div class='col-md-3'>Mobile Number</div>
+				<div class='col-md-6'>{{selectedClient.MobileNumber}}</div>
+			</div>
+			<div class='row'>
+				<div class='col-md-3'>Type</div>
+				<div class='col-md-6'>
+					{{selectedClient.TypexCD}}
+				</div>
+			</div>
+		</div>
+		<div class="panel-footer">
+			<a class="btn btn-primary" (click)='onBack()' style="width:80px">
+				<i class='glyphicon glyphicon-chevron-left'></i> Back
+			</a>
+		</div>
+	</div>
+</div>
+
