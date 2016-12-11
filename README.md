@@ -35,7 +35,7 @@ A tutorial on Learning Angular JS 2. With this tutorial we will be creating a fu
 
 <<---TODO--->>
 * [Lesson 0 -- Barrels](https://github.com/costaivo/AngularJs2-AdManager/tree/Dev/02_AdManager/07_Lesson/Start)
-
+--Start lesson on http this is two
 
 ### Level 2
 
