@@ -1,7 +1,6 @@
 
 # Following changes need to done for all existing lessons
-# Testing Git multiple commits xx
-# WHY changes are not saved???
+
 
 
 1. Rename component isActive.component.ts to active-record.component.ts
