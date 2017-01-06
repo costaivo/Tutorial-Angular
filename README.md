@@ -84,3 +84,5 @@ barrels
 
 https://github.com/pleerock/ng2-rating/blob/master/src/index.ts
 https://github.com/AngularClass/rating-stars/blob/master/src/star.ts
+
+Finish the tutorial before Jan 2017 end
