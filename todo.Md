@@ -1,4 +1,4 @@
-
+CLEANED UP
 # Following changes need to done for all existing lessons
 
 
@@ -32,3 +32,7 @@
 # [Lesson 06 -- Services](https://github.com/costaivo/AdManagerUI-AngularJs2/tree/Dev/02_AdManager/06_Lesson/Start)
 
 1. Rename publications-list to publication in all lessons. 
+
+
+ Research and learn 
+http://blog.mgechev.com/2016/06/26/tree-shaking-angular2-production-build-rollup-javascript/

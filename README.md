@@ -31,10 +31,11 @@ A tutorial on Learning Angular JS 2. With this tutorial we will be creating a fu
 * [Lesson 05 -- Create a Custom Component](https://github.com/costaivo/AngularJs2-AdManager/tree/Dev/02_AdManager/05_Lesson/Start)
 * [Lesson 06 -- Services](https://github.com/costaivo/AngularJs2-AdManager/tree/Dev/02_AdManager/06_Lesson/Start)
 * [Lesson 07 -- Routing](https://github.com/costaivo/AngularJs2-AdManager/tree/Dev/02_AdManager/07_Lesson/Start)
+* [Lesson 08 -- Http](https://github.com/costaivo/AngularJs2-AdManager/tree/Dev/02_AdManager/08_Lesson/Start)
 
 <<---TODO--->>
 * [Lesson 0 -- Barrels](https://github.com/costaivo/AngularJs2-AdManager/tree/Dev/02_AdManager/07_Lesson/Start)
-* [Lesson 0 -- Http](https://github.com/costaivo/AngularJs2-AdManager/tree/Dev/02_AdManager/07_Lesson/Start)
+--Start lesson on http this is two
 
 ### Level 2
 
@@ -83,3 +84,5 @@ barrels
 
 https://github.com/pleerock/ng2-rating/blob/master/src/index.ts
 https://github.com/AngularClass/rating-stars/blob/master/src/star.ts
+
+Finish the tutorial before Jan 2017 end

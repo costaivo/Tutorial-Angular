@@ -1,0 +1,33 @@
+<div class="panel panel-primary">
+	<div class="panel-heading">
+		<h3 class="panel-title">{{pageTitle}}</h3>
+	</div>
+
+	<div class="panel-body">
+		<table class="table table-hover table-striped" *ngIf="clients && clients.Length!==0">
+			<thead>
+				<tr>
+					<th>Name </th>
+					<th>Mobile</th>
+					<th>Type</th>
+					<th>Address</th>
+					<th>Active</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr *ngFor="let client of clients; " (click)="onRowClick(client)">
+					<td><a [routerLink]="['/client',client.ID]"> 
+							{{client.FirstName}} {{client.MiddleName}} {{client.LastName}}
+						</a>
+					</td>
+					<td> {{client.MobileNumber}}</td>
+					<td> {{client.TypexCD}}</td>
+					<td>{{client.Address}}</td>
+					<td>
+						<ct-activeRecord [isActiveRecord]='client.IsActiveRecord'></ct-activeRecord>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
