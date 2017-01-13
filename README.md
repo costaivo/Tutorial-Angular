@@ -33,56 +33,10 @@ A tutorial on Learning Angular JS 2. With this tutorial we will be creating a fu
 * [Lesson 07 -- Routing](https://github.com/costaivo/AngularJs2-AdManager/tree/Dev/02_AdManager/07_Lesson/Start)
 * [Lesson 08 -- Http](https://github.com/costaivo/AngularJs2-AdManager/tree/Dev/02_AdManager/08_Lesson/Start)
 
-<<---TODO--->>
-* [Lesson 0 -- Barrels](https://github.com/costaivo/AngularJs2-AdManager/tree/Dev/02_AdManager/07_Lesson/Start)
---Start lesson on http this is two
+
 
 ### Level 2
-
+* [Lesson 09 -- Barrels](https://github.com/costaivo/AngularJs2-AdManager/tree/Dev/02_AdManager/09_Lesson/Start)
 * [Sample App 1 -- Github Search Application](https://github.com/costaivo/AngularJs2-AdManager/tree/Dev/04_GithubApp)
 * [Sample App 2 -- ToDo Application](https://github.com/costaivo/AngularJs2-AdManager/tree/Dev/05_TodoApp)
 
-*** Rough notes *** 
-DataBinding
--One Way Data Binding
-Interpolation 
-Property Binding
-Event Binding
-Two Way Binding
-
-Routing
-
-Services  
-* Refactor code -- show how to use moduleid
-* Rename shared folder to core
-
-### 8 Main Parts in Angular Js 2 
-
-1. Module
-2. Component
-3. Template
-4. Metadata
-5. Data Binding
-6. Service
-7. Directive 
-8. Dependency Injection
-
-
-### Why Angular2 ?
-1. Cleaner Code
-2. More Powerful Applications
-3. Faster 
-4. Simpler
-
-
-Feature Testing..
-Test
-
-Topics to cover
-barrels
-
-
-https://github.com/pleerock/ng2-rating/blob/master/src/index.ts
-https://github.com/AngularClass/rating-stars/blob/master/src/star.ts
-
-Finish the tutorial before Jan 2017 end
