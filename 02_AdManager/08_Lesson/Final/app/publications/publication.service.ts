@@ -1,94 +1,59 @@
 import { Injectable } from '@angular/core';
+
+//required for http service
+import {Http,Response} from '@angular/http';
+
+//required for return type for http requests
+import {Observable} from 'rxjs/Observable';
+
+//Loads the library but does not import any modules
+import 'rxjs/add/operator/map';
+
+//Loads the do & Map operator 
+import 'rxjs/add/operator/do';
+import 'rxjs/add/operator/catch';
+
 import { IPublication } from './publication';
 
-@Injectable()
 
+@Injectable()
 export class PublicationService {
 
-    constructor() {
+    private _publicationUrl ='api/publications/publications.json';
+ 
+
+    //Inject the http service
+    constructor(private _http:Http) {
 
     }
-    getTotalCount(): number {
-        return this.getAll().length;
-    }
-    getPublication(id:string): IPublication {
-        return this.getAll().find(x => x.ID == id);
+
+    getTotalCount(): Observable<number> {
+    return this._http.get(this._publicationUrl)
+            //Map the response to IPublication array 
+            .map((response: Response)=>  (<IPublication[]>response.json()).length)
+            .do(data=> console.log('Count : '+JSON.stringify(data)))
+            .catch(this.handleError);
     }
 
-    getAll(): IPublication[] {
-        return [
-            {
-                "ID": "c7bd9a71-a1a4-4d39-ab91-be966512bd0e",
-                "IsActiveRecord": true,
-                "Name": "Herald",
-                "TypexCD": "Local",
-                "LanguagexCD": "English",
-                "CommissionRateForAdvertisments": 0.15,
-                "CommisionRateForClassifieds": 0.059,
-                "Ratings": 5
-            },
-            {
-                "ID": "c7bd9a71-a1a4-4d39-ab91-be966512bd0f",
-                "IsActiveRecord": true,
-                "Name": "Navind Times",
-                "TypexCD": "Local",
-                "LanguagexCD": "English",
-                "CommissionRateForAdvertisments": 0.15,
-                "CommisionRateForClassifieds": 0.059,
-                "Ratings": 4
-            },
-            {
-                "ID": "1806b70c-e47a-4c0b-835c-a88926d9723a",
-                "IsActiveRecord": true,
-                "Name": "Times of India (Goa Edition)",
-                "TypexCD": "National",
-                "LanguagexCD": "English",
-                "CommissionRateForAdvertisments": 0.25,
-                "CommisionRateForClassifieds": 0.050,
-                "Ratings": 3
-            },
-            {
-                "ID": "f42e2305-2c1e-4173-8e3b-b908283b57a6",
-                "IsActiveRecord": false,
-                "Name": "Times of India (Mumbai Edition)",
-                "TypexCD": "National",
-                "LanguagexCD": "English",
-                "CommissionRateForAdvertisments": 0.15,
-                "CommisionRateForClassifieds": 0.10,
-                "Ratings": 2
-            },
-            {
-                "ID": "f42e2305-2c1e-4173-8e3b-b908283b57a7",
-                "IsActiveRecord": true,
-                "Name": "Times of India (Bangalore Edition)",
-                "TypexCD": "National",
-                "LanguagexCD": "English",
-                "CommissionRateForAdvertisments": 0.15,
-                "CommisionRateForClassifieds": 0.10,
-                "Ratings": 1
-            },
-            {
-                "ID": "E1CAE59B-8662-4785-857F-B7395CD5E897",
-                "IsActiveRecord": true,
-                "Name": "Gomantak Times",
-                "TypexCD": "Local",
-                "LanguagexCD": "English",
-                "CommissionRateForAdvertisments": 0.15,
-                "CommisionRateForClassifieds": 0.15,
-                "Ratings": 2
-            }
-            ,
-            {
-                "ID": "E1CAE59B-8662-4785-857F-B7395CD5E897",
-                "IsActiveRecord": true,
-                "Name": "Tarun Bharat",
-                "TypexCD": "Local",
-                "LanguagexCD": "Marathi",
-                "CommissionRateForAdvertisments": 0.20,
-                "CommisionRateForClassifieds": 0.20,
-                "Ratings": 3
-            }
-        ];
+    getPublication(id:string): Observable<IPublication> {
+      return this._http.get(this._publicationUrl)
+            //Map the response to IPublication array 
+            .map((response: Response)=>  (<IPublication[]>response.json()).find(x=>x.ID==id))
+            .do(data=> console.log('publication : '+JSON.stringify(data)))
+            .catch(this.handleError);
+    }
+
+    getAll(): Observable<IPublication[]> {
+            return this._http.get(this._publicationUrl)
+            //Map the response to IPublication array 
+            .map((response: Response)=> <IPublication[]> response.json())
+            .do(data=> console.log('All : '+JSON.stringify(data)))
+            .catch(this.handleError);
+    }
+
+    private handleError(error:Response){
+        console.error(error);
+        return Observable.throw(error.json().error || 'Server error');
     }
 }
 
