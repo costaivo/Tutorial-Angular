@@ -41,6 +41,7 @@ export class PublicationDetailsComponent {
 
                 if (this.selectedPublication == null) {
                     alert('Publication not found in db with supplied id');
+                    //TODO: Redirection not working. find solution for this to work. 
                     this._router.navigate['/publications'];
                 }
             } );
