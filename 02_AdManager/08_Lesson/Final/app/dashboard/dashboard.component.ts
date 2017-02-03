@@ -18,8 +18,14 @@ export class DasboardComponent implements OnInit {
     }
 
     ngOnInit() {
-        this._publicationService.getTotalCount().subscribe(result=>this.publicationCount= result);
-        this.clientCount = this._clientService.getTotalCount();
+        this._publicationService
+            .getTotalCount()
+            .subscribe(result => this.publicationCount = result);
+
+        this._clientService
+            .getTotalCount()
+            .subscribe(result => this.clientCount = result);
+
     }
 
 }
