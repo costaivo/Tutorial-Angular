@@ -10,22 +10,25 @@ import {FormsModule} from '@angular/forms';
 //required for routing
 import {RouterModule} from '@angular/router';
 
+//required for http
+import {HttpModule} from '@angular/http';
+
 //import our root component
 import { AppComponent }   from './app.component';
 
-//Publication 
+//Publication Components
 import {PublicationListComponent} from './publications/publications-list.component';
 import {PublicationDetailsComponent} from './publications/publication-details.component';
 import {PublicationService} from './publications/publication.service';
 
-//Client 
+//Client Components
 import {ClientListComponent} from './clients/client-list.component';
 import {ClientDetailsComponent} from './clients/client-details.component';
 import {ClientService} from './clients/client.service';
 
 import {ClientDetailsGaurd} from './clients/client-details-gaurd.service';
 
-//dashboard
+//Dashboard Components
 import {DasboardComponent} from './dashboard/dashboard.component';
 
 //Core Components
@@ -39,6 +42,7 @@ import {StarComponent} from './core/star/star.component';
     imports:      [ 
         BrowserModule,
         FormsModule,
+        HttpModule,
         RouterModule.forRoot([
             {path:'publications',component:PublicationListComponent},
             {path:'publication/:id',component:PublicationDetailsComponent},

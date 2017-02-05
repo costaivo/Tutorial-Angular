@@ -4,6 +4,7 @@ import { ActivatedRoute } from '@angular/router';
 //required for back button
 import { Router } from '@angular/router';
 
+//Client 
 import { ClientService } from './client.service';
 import { IClient } from './client';
 
@@ -12,6 +13,8 @@ import { IClient } from './client';
     selector: 'am-clientDetail',
     templateUrl: 'client-details.component.html'
 })
+
+
 export class ClientDetailsComponent implements OnInit {
 
     pageTitle: string = "Client Details";
@@ -27,9 +30,17 @@ export class ClientDetailsComponent implements OnInit {
     ngOnInit() {
         //Snapshot method to load the 
         let id = this._route.snapshot.params['id'];
-        this.selectedClient = this._clientService.getClient(id);
-        if (this.selectedClient == null)
-            alert('Client not found in db');
+
+        //Load the client from the id passed in parameter
+        this._clientService.getClient(id)
+        .subscribe(client=>{
+            this.selectedClient = client;
+
+            if(this.selectedClient == null){
+                alert('Publication not found in db with supplied id');
+                this._router.navigate['/clients'];
+            }
+        });
     }
 
     onBack(): void {

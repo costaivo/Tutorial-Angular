@@ -27,7 +27,7 @@ export class PublicationDetailsComponent {
 
     constructor(private _route: ActivatedRoute, private _router: Router,
         private _publicationService: PublicationService) {
-		console.log('PublicationDetailsComponent --Constructor Called')
+        console.log('PublicationDetailsComponent --Constructor Called')
     }
 
     ngOnInit() {
@@ -35,15 +35,20 @@ export class PublicationDetailsComponent {
         let id = this._route.snapshot.params['id'];
 
         //Load the publication from the id passed in parameter
-        this.selectedPublication = this._publicationService.getPublication(id);
+        this._publicationService.getPublication(id)
+            .subscribe(publication => {
+                this.selectedPublication = publication;
 
-        if (this.selectedPublication == null) {
-            alert('Publication not found in db with supplied id');
-            this._router.navigate['/publications'];
-        }
+                if (this.selectedPublication == null) {
+                    alert('Publication not found in db with supplied id');
+                    //TODO: Redirection not working. find solution for this to work. 
+                    this._router.navigate['/publications'];
+                }
+            } );
+
     }
 
-    onBack():void{
+    onBack(): void {
         this._router.navigate(['/publications']);
     }
 }
