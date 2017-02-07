@@ -35,12 +35,13 @@
 
 #### Two way Binding
 
-import FormsModule in `app.modules.ts` file
+import FormsModule in `app.modules.ts` 
+
 ``` typescript
      <input [(ngModel)]="publication" placeholder="Publication Name"/>
 ```
 
-## **DEMO **
+## DEMO
 
 Follow the instructions below as your instructor explains during the presentation. 
 
