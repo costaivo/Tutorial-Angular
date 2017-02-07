@@ -110,7 +110,7 @@ An Angular Module is a class decorated with @NgModule metadata.
 * Add `main.ts` file in the app folder.
 
 ```typescript
-// import bootstrap 
+// import bootstrap
 import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
         
 // import our root module
@@ -148,6 +148,10 @@ Open a command prompt in the project's root directory
 
 Open the browser and navigate to port http://localhost:3000/
 ![Digital Ads Splash](https://snag.gy/QJHSW9.jpg "Final Output Screen")
+
+## Summary
+
+* All AngularJS 2 Apps have an Root Component & Root Module
 
 
 [:arrow_left: Previous] (<https://github.com/costaivo/AdManagerUI-AngularJs2/tree/Dev/01_QuickStart>)  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
