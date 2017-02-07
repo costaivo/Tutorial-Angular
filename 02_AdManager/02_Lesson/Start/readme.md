@@ -35,6 +35,30 @@ So lets get started.
 
 ### Explanations - Component
 
+A components consists of Template , Class and Metadata 
+
+> Component = Template + Class + Metadata
+
+
+#### Template
+
+* View - HTML Markup
+
+
+#### Class
+
+* Methods
+* Properties
+* Code to interact with the view
+
+
+#### Metadata
+
+* instructs angular how to construct and use this component
+* defined with a decorator
+
+Contents of Component class code explained in detail below
+
 #### Import
 
 `import {Component} from '@angular2/core';`
@@ -151,6 +175,7 @@ Open the browser and navigate to port http://localhost:3000/
 
 ### Summary
 
+* What is a component
 * All AngularJS 2 Apps have an Root Component & Root Module
 
 
