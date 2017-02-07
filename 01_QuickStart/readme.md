@@ -7,6 +7,7 @@
 1. Selecting an Language
 1. Selecting Editor for development
 1. Running AngularJs 2 Application
+1. Angular-CLI tooling
 
 ### 1. Development Environment Setup
 
@@ -35,6 +36,22 @@ Open a command prompt in the project's root directory  (AngularJs2-AdManager\01_
  This installs the dependencies as defined in the package.json file.
 
 - Type: `npm start`
+
+### 5. Angular-cli
+
+Install angular-cli using the command
+
+`npm install -g angular-cli@1.0.0-beta.24`
+
+Creating a new project using angular-cli
+
+`ng new angular2-Hello-World`
+
+Running the application using angular-cli
+
+`ng serve`
+
+
 
 This launches the TypeScript compiler (tsc) to compile the application and wait for changes.
 It also starts the lite-server and launches the browser to run the application.
