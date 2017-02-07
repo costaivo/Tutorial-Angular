@@ -126,7 +126,7 @@ platform.bootstrapModule(AppModule);
 The code in main.ts file initializes the platform that the application runs in, then it uses the platform to 
 bootstrap the AppModule.
 
-#### 4. Invoking the directive in Html file
+### 4. Invoking the directive in Html file
 
 * Call the `am-app` selector in html page
 
@@ -149,7 +149,7 @@ Open a command prompt in the project's root directory
 Open the browser and navigate to port http://localhost:3000/
 ![Digital Ads Splash](https://snag.gy/QJHSW9.jpg "Final Output Screen")
 
-## Summary
+### Summary
 
 * All AngularJS 2 Apps have an Root Component & Root Module
 
