@@ -1,6 +1,6 @@
 #Ignore Folders
 node_modules
-#.vscode
+.vscode
 typings
 node_modules
 jspm_packages
