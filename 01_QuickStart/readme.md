@@ -39,24 +39,24 @@ Open a command prompt in the project's root directory  (AngularJs2-AdManager\01_
 
 ### 5. Angular-cli
 
-* Install angular-cli using the command
+- Install angular-cli using the command
 
-`npm install -g angular-cli@1.0.0-beta.24`
+  `npm install -g angular-cli@1.0.0-beta.24`
 
-* Creating a new project using angular-cli
+- Creating a new project using angular-cli
 
-`ng new angular2-Hello-World`
+  `ng new angular2-Hello-World`
 
-* Running the application using angular-cli
+- Running the application using angular-cli
 
-`ng serve`
+  `ng serve`
 
 This launches the TypeScript compiler (tsc) to compile the application and wait for changes.
 It also starts the lite-server and launches the browser to run the application.
 
-* Generate new component using angular-cli
+- Generate new component using angular-cli
 
-`ng generate component hello-world`
+  `ng generate component hello-world`
 
 
 
