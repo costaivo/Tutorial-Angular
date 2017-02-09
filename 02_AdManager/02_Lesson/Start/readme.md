@@ -63,9 +63,12 @@ Contents of Component class code explained in detail below
 
 `import {Component} from '@angular2/core';`
 > when we need something from a module or library, it has to be imported using the import statement.
-> In the current example we have imported the **Angular 2 core** so that our component code can have access to the @Component  decorator. 
+> In the current example we have imported the **Angular 2 core** so that our component code can have access to the @Component  decorator.
 
-#### @Component
+_Syntax_
+`import {stuff} from somewhere`
+
+#### Component Annotations
 
 ``` typescript
  @Component({
