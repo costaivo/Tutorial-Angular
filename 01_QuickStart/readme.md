@@ -51,6 +51,10 @@ Running the application using angular-cli
 
 `ng serve`
 
+Generate new component using angular-cli
+
+`ng generate component hello-world`
+
 
 
 This launches the TypeScript compiler (tsc) to compile the application and wait for changes.
