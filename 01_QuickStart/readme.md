@@ -39,26 +39,28 @@ Open a command prompt in the project's root directory  (AngularJs2-AdManager\01_
 
 ### 5. Angular-cli
 
-Install angular-cli using the command
+* Install angular-cli using the command
 
 `npm install -g angular-cli@1.0.0-beta.24`
 
-Creating a new project using angular-cli
+* Creating a new project using angular-cli
 
 `ng new angular2-Hello-World`
 
-Running the application using angular-cli
+* Running the application using angular-cli
 
 `ng serve`
 
-Generate new component using angular-cli
+This launches the TypeScript compiler (tsc) to compile the application and wait for changes.
+It also starts the lite-server and launches the browser to run the application.
+
+* Generate new component using angular-cli
 
 `ng generate component hello-world`
 
 
 
-This launches the TypeScript compiler (tsc) to compile the application and wait for changes.
-It also starts the lite-server and launches the browser to run the application.
+
 
 [:arrow_left: Previous](https://github.com/costaivo/AngularJs2-AdManager/tree/Dev)  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 [:1234: Index](<https://github.com/costaivo/AdManagerUI-AngularJs2/tree/Dev>) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
