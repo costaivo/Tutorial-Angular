@@ -2,8 +2,8 @@
 
 ## Lesson Contents
 
-1. Adding  first Component (AppComponent)
-1. Adding first  Module  (AppModule)
+1. Component
+1. Module
 1. Bootstrap the application
 1. Invoking the directive in Html file
 1. Running the application
@@ -13,27 +13,7 @@
 In this lesson we are going to create an angualarJs App. The base code we wil be using from the *Start* folder. 
 So lets get started.
 
-## 1.  Adding  first Component (AppComponent)
-
-* Add `app.component.ts` file in the app folder
-
-``` typescript
-    //import Component from angular core
-    import {Component} from '@angular/core';
-
-    //define the metadata for the component using decorator
-    @Component({
-        selector:'am-app',
-        template:`<div ><h1> {{pageTitle}} : Ad Manager</h1>
-        </div>`
-    })
-    //create class for the component
-    export class AppComponent{
-        pageTitle:string = "Digital Ads ";
-    }
-```
-
-### Explanations - Component
+## 1. Component
 
 A components consists of Template , Class and Metadata 
 
@@ -57,7 +37,30 @@ A components consists of Template , Class and Metadata
 * instructs angular how to construct and use this component
 * defined with a decorator
 
-Contents of Component class code explained in detail below
+
+
+### Adding  first Component (AppComponent) 
+
+* Add `app.component.ts` file in the app folder
+
+``` typescript
+
+    //import Component from angular core
+    import {Component} from '@angular/core';
+
+    //define the metadata for the component using decorator
+    @Component({
+        selector:'am-app',
+        template:`<div ><h1> {{pageTitle}} : Ad Manager</h1>
+        </div>`
+    })
+    //create class for the component
+    export class AppComponent{
+        pageTitle:string = "Digital Ads ";
+    }
+```
+
+* Contents of Component class code explained in detail below
 
 #### Import
 
@@ -92,7 +95,20 @@ export class AppComponent{
 }
 ```
 
-## 2. Adding first  Module  (AppModule)
+## 2. Module
+
+Every application has minimum one module,the root module is usually named as AppModule. 
+Modules allow organizing the application, they contain related components,directives and pipes which work togther.
+
+An Angular Module is a class decorated with @NgModule metadata.
+
+* list the components,directives and pipes contained in the module.
+* provide services at the application level that any component can use. 
+* import external modules which might be needed by components in this module.
+* make some of those classes public so that other components templates can use them. 
+
+
+### Adding first  Module  (AppModule)
 
 * Add `app.module.ts` file in the app folder
 
@@ -116,23 +132,15 @@ import { AppComponent }   from './app.component';
 })
 
 //create class for the module
-export class AppModule { }
+export class AppModule {
+    }
+
 ```
 
-### Explanations - Module
-
-Every application has minimum one module,the root module is usually named as AppModule. 
-Modules allow organizing the application, they contain related components,directives and pipes which work togther.
-
-An Angular Module is a class decorated with @NgModule metadata.
-
-* list the components,directives and pipes contained in the module.
-* provide services at the application level that any component can use. 
-* import external modules which might be needed by components in this module.
-* make some of those classes public so that other components templates can use them. 
-
-
 #### 2. Bootstrap the application
+
+The code in main.ts file initializes the platform that the application runs in, then it uses the platform to
+bootstrap the AppModule.
 
 * Add `main.ts` file in the app folder.
 
@@ -147,11 +155,6 @@ import {AppModule} from './app.module';
 const platform = platformBrowserDynamic();
 platform.bootstrapModule(AppModule);
 ```
-
-### Explanations - Bootstrap
-
-The code in main.ts file initializes the platform that the application runs in, then it uses the platform to 
-bootstrap the AppModule.
 
 ### 4. Invoking the directive in Html file
 
