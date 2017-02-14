@@ -19,6 +19,7 @@ A components consists of Template , Class and Metadata
 
 > Component = Template + Class + Metadata
 
+### Contents of a Component
 
 #### Template
 
@@ -39,7 +40,7 @@ A components consists of Template , Class and Metadata
 
 
 
-### Adding  first Component (AppComponent) 
+### Adding  first Component (AppComponent)
 
 * Add `app.component.ts` file in the app folder
 
@@ -60,7 +61,7 @@ A components consists of Template , Class and Metadata
     }
 ```
 
-* Contents of Component class code explained in detail below
+### Contents of Component class code explained in detail
 
 #### Import
 
@@ -137,7 +138,7 @@ export class AppModule {
 
 ```
 
-#### 2. Bootstrap the application
+## 3. Bootstrap the application
 
 The code in main.ts file initializes the platform that the application runs in, then it uses the platform to
 bootstrap the AppModule.
@@ -168,7 +169,7 @@ platform.bootstrapModule(AppModule);
 ```
 
 
-### 5. Running the application
+## 4. Running the application
 
 Open a command prompt in the project's root directory
 
@@ -179,10 +180,11 @@ Open a command prompt in the project's root directory
 Open the browser and navigate to port http://localhost:3000/
 ![Digital Ads Splash](https://snag.gy/QJHSW9.jpg "Final Output Screen")
 
-### Summary
+## 5. Summary
 
 * What is a component
-* All AngularJS 2 Apps have an Root Component & Root Module
+* What is a Module
+* Bootstrap an Angular 2 app
 
 
 [:arrow_left: Previous] (<https://github.com/costaivo/AdManagerUI-AngularJs2/tree/Dev/01_QuickStart>)  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
