@@ -1,6 +1,6 @@
 <div>
-	<h1> {{pageTitle}}</h1>
-	<hr>
+    <h1> {{pageTitle}}</h1>
+    <hr>
 </div>
 <label>Publication : </label>
 <span [style.color]="fontColor"> {{publication.Name}}</span>
@@ -9,20 +9,20 @@
 <br/>
 <label>Publication List</label>
 <div>
-	<table>
-		<thead>
-			<tr>
-				<th>Name </th>
-				<th>Type </th>
-				<th>Language </th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<td>{{publication.Name}}</td>
-				<td>| {{publication.TypexCD}}</td>
-				<td>| {{publication.LanguagexCD}}</td>
-			</tr>
-		</tbody>
-	</table>
+    <table>
+        <thead>
+            <tr>
+                <th>Name </th>
+                <th>Type </th>
+                <th>Language </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr (click)="onRowClick(publication)">
+                <td>{{publication.Name}}</td>
+                <td>| {{publication.TypexCD}}</td>
+                <td>| {{publication.LanguagexCD}}</td>
+            </tr>
+        </tbody>
+    </table>
 </div>

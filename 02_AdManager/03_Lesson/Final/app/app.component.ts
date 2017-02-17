@@ -24,4 +24,8 @@ export class AppComponent{
         "CommisionRateForClassifieds": 0.059
     };
 
+onRowClick(publication){
+    console.log("Row clicked "+publication.Name);  
+}
+
 }
