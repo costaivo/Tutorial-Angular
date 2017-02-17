@@ -49,7 +49,14 @@ Follow the instructions below as your instructor explains during the presentatio
 
 ### **Demo 1** - TypeScript,interpolation,Template('',``) & Styles
 
+* TypeScript
+* Interpolation
+* Template ('',``)
+* Styles
+
 ### **Demo 2** - Property Binding,Two way Binding.
+
+* Two way data binding
 
 ### **Demo 3** - Binding Publication data to a grid
 
@@ -62,6 +69,7 @@ Follow the instructions below as your instructor explains during the presentatio
 * use _templareUrl_
 * use _styleUrls_
 
+> [Code Snippets for the Demo](https://gist.github.com/costaivo/896941f7ef08fe0a7cc671bd95ac3e1f)
 
 ### Summary
 
