@@ -35,11 +35,26 @@
 
 #### Two way Binding
 
-import FormsModule in `app.modules.ts` 
+import FormsModule in `app.modules.ts`
 
 ``` typescript
      <input [(ngModel)]="publication" placeholder="Publication Name"/>
 ```
+
+#### Event Binding
+
+
+``` html
+
+            <tr (click)="onRowClick()">
+```
+
+``` typescript
+
+    onRowClick(){
+        console.log("Row clicked");
+    }
+ ```
 
 ## DEMO
 
