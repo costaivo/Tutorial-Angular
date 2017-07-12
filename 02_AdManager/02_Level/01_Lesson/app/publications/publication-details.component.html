@@ -1,0 +1,40 @@
+<div>
+	<div class="panel panel-primary" *ngIf="selectedPublication">
+		<div class="panel-heading">
+			{{pageTitle}} : {{selectedPublication.Name}}
+		</div>
+		<div class="panel-body">
+			<div class='row'>
+				<div class='col-md-3'>Name</div>
+				<div class='col-md-6'>{{selectedPublication.Name}}</div>
+			</div>
+			<div class='row'>
+				<div class='col-md-3 strong'>Publication Type</div>
+				<div class='col-md-6'>{{selectedPublication.TypexCD}}</div>
+			</div>
+			<div class='row'>
+				<div class='col-md-3'>Publication Language</div>
+				<div class='col-md-6'>{{selectedPublication.LanguagexCD}}</div>
+			</div>
+			<div class='row'>
+				<div class='col-md-3'>Commission Rate For Advertisments</div>
+				<div class='col-md-6'>{{selectedPublication.CommissionRateForAdvertisments}}</div>
+			</div>
+			<div class='row'>
+				<div class='col-md-3'>Commision Rate For Classifieds</div>
+				<div class='col-md-6'>{{selectedPublication.CommisionRateForClassifieds}}</div>
+			</div>
+			<div class='row'>
+				<div class='col-md-3'>Ratings</div>
+				<div class='col-md-6'>
+					<ct-star [rating]='selectedPublication.Ratings' ></ct-star>
+				</div>
+			</div>
+		</div>
+		<div class="panel-footer">
+			<a class="btn btn-primary" (click)='onBack()' style="width:80px">
+				<i class='glyphicon glyphicon-chevron-left'></i> Back
+			</a>
+		</div>
+	</div>
+</div>
