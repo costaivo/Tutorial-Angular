@@ -1,4 +1,4 @@
-# Lesson 08 -- Services
+# Lesson 01 -- Barrels
 ----------
 ## Lesson Contents
 

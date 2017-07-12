@@ -22,5 +22,7 @@ npm-debug.log.*
 #Exclude tsc generated files
 **/app/**/*.js
 **/app/**/*.map
+**/src/**/*.js
+**/src/**/*.map
 **/*.sou
 **/*.user
