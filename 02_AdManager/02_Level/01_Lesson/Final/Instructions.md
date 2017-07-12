@@ -1,6 +1,8 @@
-# Instructions for Lesson 04
+# Instructions for Lesson 01 - Barrels 
 
 ## Main Points to be explained
+
+## Rough Notes -- Need to reedit them 
 
 
 ## Demos
