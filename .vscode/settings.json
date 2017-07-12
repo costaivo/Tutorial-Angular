@@ -6,13 +6,12 @@
         "**/.git": true,
         "**/.svn": true,
         "**/.DS_Store": true,
-        "**/*.js":{"when":"$(basename).ts"},
-        "**/*.js.map":true,
-        "**/node_modules":true,
-         "**/typings":true,
-        "**/npm-debug.log.*":true
-    }
-,
-"typescript.check.tscVersion": false,
-"editor.fontFamily": "Consolas"
+        "**/*.js": { "when": "$(basename).ts" },
+        "**/*.js.map": true,
+        "**/node_modules": true,
+        "**/typings": true,
+        "**/npm-debug.log.*": true
+    },
+    "typescript.check.tscVersion": false,
+    "editor.fontFamily": "Consolas"
 }
