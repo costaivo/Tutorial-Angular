@@ -1,14 +1,14 @@
-import { AngularclidemoPage } from './app.po';
+import { GithubAppPage } from './app.po';
 
-describe('angularclidemo App', function() {
-  let page: AngularclidemoPage;
+describe('github-app App', () => {
+  let page: GithubAppPage;
 
   beforeEach(() => {
-    page = new AngularclidemoPage();
+    page = new GithubAppPage();
   });
 
-  it('should display message saying app works', () => {
+  it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('app works!');
+    expect(page.getParagraphText()).toEqual('Welcome to app!');
   });
 });
