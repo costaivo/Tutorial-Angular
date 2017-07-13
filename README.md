@@ -1,13 +1,15 @@
 # AngularJs2-AdManager
 
-A tutorial on Learning Angular JS 2. With this tutorial we will be creating a full working application using AngularJs 2
+A tutorial on Learning Angular JS 2.
+With this tutorial we will be creating a full working application using AngularJs 2 as we learn new concepts step-by-step.
+
 
 ## Sample Applications we will be developing during this tutorial
 
 * _**AdManager Application**_
 
   * Learn AngularJS 2 Fundamentals using this Course.
-  * The backend application we will be consuming has already been developed and can be found at the following link 
+  * The backend application we will be consuming has already been developed and can be found at the following link
    [NodeJS-AdManager](https://github.com/costaivo/NodeJS-AdManager)
 
 * _**ToDo Application**_
@@ -36,7 +38,11 @@ A tutorial on Learning Angular JS 2. With this tutorial we will be creating a fu
 
 
 ### Level 2
+
 * [Lesson 09 -- Barrels](https://github.com/costaivo/AngularJs2-AdManager/tree/Dev/02_AdManager/09_Lesson/Start)
+
+### Sample Apps
+
 * [Sample App 1 -- Github Search Application](https://github.com/costaivo/AngularJs2-AdManager/tree/Dev/04_GithubApp)
 * [Sample App 2 -- ToDo Application](https://github.com/costaivo/AngularJs2-AdManager/tree/Dev/05_TodoApp)
 

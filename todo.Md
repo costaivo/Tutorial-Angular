@@ -83,3 +83,9 @@ barrels
 
 https://github.com/pleerock/ng2-rating/blob/master/src/index.ts
 https://github.com/AngularClass/rating-stars/blob/master/src/star.ts
+
+
+Angular CLI notes
+Generate component `ng generate component hello-world`
+
+

@@ -2,7 +2,7 @@
 
 ## Main Points to be explained
 
-1. Introduce the concept of barrels
+1. Introduce the concept of barrels  [TODO: Move this to seperate lesson]
   * Rename app folder to src
   * Create a new folder under src named as app
   * Move all the files related to app component into app folder. 
