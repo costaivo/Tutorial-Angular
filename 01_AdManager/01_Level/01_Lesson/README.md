@@ -66,7 +66,7 @@ It also starts the lite-server and launches the browser to run the application.
 
   `ng generate component hello-world`
 
-- Generate new service usig angular-cli
+- Generate new service using angular-cli
 
 
 [:arrow_left: Previous](https://github.com/costaivo/AngularJs2-AdManager/tree/Dev)  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
