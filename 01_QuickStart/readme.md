@@ -1,6 +1,5 @@
 # Lesson 01 -- Running an AngularJs 2 Application
 
-
 ## Lesson Contents
 
 1. Development Environment Setup
@@ -57,10 +56,6 @@ It also starts the lite-server and launches the browser to run the application.
 - Generate new component using angular-cli
 
   `ng generate component hello-world`
-
-
-
-
 
 [:arrow_left: Previous](https://github.com/costaivo/AngularJs2-AdManager/tree/Dev)  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 [:1234: Index](<https://github.com/costaivo/AdManagerUI-AngularJs2/tree/Dev>) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
