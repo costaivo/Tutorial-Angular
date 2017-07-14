@@ -43,13 +43,19 @@ Creating the initall setup for an Angular JS application is very time consuming 
 
 - Install angular-cli using the command
 
-  `npm install -g angular-cli@latest`
+  `npm install -g @angular/cli@latest`
 
 - Creating a new project using angular-cli
 
-  `ng new angular2-Hello-World`
+``` dos
+    ng new hello-World
+    cd hello-World
+    ng serve
+```
 
-- Running the application using angular-cli
+- Running the application using angular-cli.
+
+Navigate to the application folder then execute the below command
 
   `ng serve`
 
