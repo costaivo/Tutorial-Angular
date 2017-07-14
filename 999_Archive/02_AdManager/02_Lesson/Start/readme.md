@@ -10,7 +10,7 @@
 
 > Tip: To grasp the concepts properly, It is **strongly** recommended that you type out all the code instead of copy + pasting it. 
 
-In this lesson we are going to create an angualarJs App. The base code we wil be using from the *Start* folder. 
+In this lesson we are going to create an angualarJs App. The base code we wil be using from the *Start* folder.
 So lets get started.
 
 ## 1. Component
@@ -82,11 +82,12 @@ _Syntax_
        </div>`
      })
 ```
-> Component is a decorator function that takes metadata object as argument. The main objective of it is to add meta-data to the application that will tell **Angular 2** how to process a class. 
+
+> Component is a decorator function that takes metadata object as argument. The main objective of it is to add meta-data to the application that will tell **Angular 2** how to process a class.
 
 > **selector :** defines the name of the HTML tag. whenever Angular encouters a `am-app` it will create and display an instance of AppComponent.
 
-> **template :** this part defines the html template. It tells Angular how to render the component view. 
+> **template :** this part defines the html template. It tells Angular how to render the component view.
 
 #### Component Class
 

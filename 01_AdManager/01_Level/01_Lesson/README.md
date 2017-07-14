@@ -40,7 +40,6 @@ Open a command prompt in the project's root directory  (AngularJs2-AdManager\01_
 
 Creating the initall setup for an Angular JS application is very time consuming and deters many first timers from learning Angular. Angular-CLI provides the bootstrap code for starting with Angular JS developement. All the initial plumbing work is already taken care of by Angular-CLI
 
-
 - Install angular-cli using the command
 
   `npm install -g @angular/cli@latest`
@@ -48,7 +47,7 @@ Creating the initall setup for an Angular JS application is very time consuming 
 - Creating a new project using angular-cli
 
 ``` dos
-    ng new hello-World
+    ng new ad-manager-app
     cd hello-World
     ng serve
 ```
@@ -64,10 +63,17 @@ It also starts the lite-server and launches the browser to run the application.
 
 - Generate new component using angular-cli
 
-  `ng generate component hello-world`
+  `ng generate component dashboard`
 
 - Generate new service using angular-cli
 
+  `ng generate component dashboard.service`
+
+### 6. Adding Bootstrap to Angular Project
+
+To add bootstrap to the angular project use npm to add the bootstrap package
+
+  `npm install bootstrap --save`
 
 [:arrow_left: Previous](https://github.com/costaivo/AngularJs2-AdManager/tree/Dev)  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 [:1234: Index](<https://github.com/costaivo/AdManagerUI-AngularJs2/tree/Dev>) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
