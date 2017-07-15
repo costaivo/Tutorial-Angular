@@ -8,7 +8,7 @@
 1. Invoking the directive in Html file
 1. Running the application
 1. Live Demo
-    1. Creating Custom Component for Course Contents Page
+    1. Creating Custom Components
 
 > Tip: To grasp the concepts properly, It is **strongly** recommended that you type out all the code instead of copy + pasting it. 
 
@@ -180,7 +180,21 @@ Open a command prompt in the project's root directory
 Open the browser and navigate to port http://localhost:3000/
 ![Digital Ads Splash](https://snag.gy/QJHSW9.jpg "Final Output Screen")
 
-## 5. Summary
+## 5. Demo
+
+### Creating a Custom Component - NavBar
+
+* Create a navbar component using Angular-cli command
+  `ng generate component navbar`
+
+* Create an folder **Shared** under **app** folder
+* Move the folder navbar to the shared folder, since this is component that will be shared
+* Copy the code snippets related to navbar from the app.component into the navbar.component.html file
+* Register the NavBarComponent in the Root Module. Folder path will be required to be changed since we moved the component files.
+* add the line to render the navbar component in the app.component.html file 
+``
+
+## 6. Summary
 
 * What is a component?
 * What is a Module?
