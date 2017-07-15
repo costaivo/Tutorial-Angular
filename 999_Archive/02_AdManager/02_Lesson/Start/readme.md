@@ -32,13 +32,10 @@ A components consists of Template , Class and Metadata
 * Properties
 * Code to interact with the view
 
-
 #### Metadata
 
 * instructs angular how to construct and use this component
 * defined with a decorator
-
-
 
 ### Adding  first Component (AppComponent)
 
@@ -183,13 +180,12 @@ Open the browser and navigate to port http://localhost:3000/
 
 ## 5. Summary
 
-* What is a component
-* What is a Module
-* Bootstrap an Angular 2 app
+* What is a component?
+* What is a Module?
+* How to Bootstrap an Angular 2 app?
+* What is the compositon of an Angular 2 App?
 
 
 [:arrow_left: Previous](<https://github.com/costaivo/AdManagerUI-AngularJs2/tree/Dev/01_QuickStart>)  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 [:1234: Index](<https://github.com/costaivo/AdManagerUI-AngularJs2/tree/Dev>) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 [:arrow_right: Next](<https://github.com/costaivo/AngularJs2-AdManager/tree/Dev/02_AdManager/03_Lesson/Start>)
-
-
