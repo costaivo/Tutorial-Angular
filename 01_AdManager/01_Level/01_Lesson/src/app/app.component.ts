@@ -14,8 +14,3 @@ export class AppComponent {
   title = 'Angular JS 4 Training Course ';
 }
 
-/****************************************
-* FREE GYAAN
-****************************************
-- A Component consists of Class + View + MetaData
-
