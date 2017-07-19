@@ -1,6 +1,6 @@
 {
     "name": "ad-manager-app",
-    "version": "0.1.2"
+    "version": "0.1.2",
     "license": "MIT",
     "scripts": {
         "ng": "ng",
