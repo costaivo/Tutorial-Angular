@@ -9,6 +9,7 @@ import { AppComponent } from './app.component';
 
 // Import Shared Components
 import {NavbarComponent} from './shared/navbar/navbar.component';
+import { CourseComponent } from './course/course.component';
 
 // @NgModule takes a metadata object that tells Angular how to compile and run module code. 
 // It identifies the module's own components, directives and pipes, making some of them public so external 
@@ -18,7 +19,8 @@ import {NavbarComponent} from './shared/navbar/navbar.component';
   declarations:
   [
     AppComponent,
-    NavbarComponent
+    NavbarComponent,
+    CourseComponent
   ],
   // Using Imports we add reference to the external modules
   imports:
