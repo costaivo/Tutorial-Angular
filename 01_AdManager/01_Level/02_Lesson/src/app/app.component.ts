@@ -11,5 +11,5 @@ import { Component } from '@angular/core';
 
 //create class for the AppComponent
 export class AppComponent {
-  title = 'Angular JS 4 Training Course ';
+  title = 'Angular JS 4';
 }
