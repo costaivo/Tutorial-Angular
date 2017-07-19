@@ -10,6 +10,7 @@
 1. Live Demo
     1. Creating Custom Components
 
+> Tip: To grasp the concepts properly, It is **strongly** recommended that you type out all the code instead of copy + pasting it.
 
 In this lesson we are going to understand the contents an angualarJs App. The base code we wil be using from the [*Start*](https://github.com/costaivo/AdManagerUI-AngularJs2/tree/master/01_Level/01_Lesson) folder.
 So lets get started.
@@ -122,7 +123,8 @@ import { BrowserModule } from '@angular/platform-browser';
 //import our root component
 import { AppComponent }   from './app.component';
 
-//It identifies the module's own components, directives and pipes, making some of them public 
+//@NgModule takes a metadata object that tells Angular how to compile and run module code.
+//It identifies the module's own components, directives and pipes, making some of them public
 //so external components can use them. It may add service providers to the application dependency injectors.
 @NgModule({
     imports:      [ BrowserModule ],
@@ -146,7 +148,6 @@ bootstrap the AppModule.
 ```typescript
 // import bootstrap
 import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
-        
 
 // import our root module
 import {AppModule} from './app.module';
