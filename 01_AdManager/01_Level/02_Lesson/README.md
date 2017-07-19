@@ -17,7 +17,7 @@ So lets get started.
 
 ## 1. Component
 
-A components consists of Template , Class and Metadata 
+A components consists of Template , Class and Metadata
 
 > Component = Template + Class + Metadata
 
@@ -191,8 +191,10 @@ Open the browser and navigate to port http://localhost:3000/
 * Move the folder navbar to the shared folder, since this is component that will be shared
 * Copy the code snippets related to navbar from the app.component into the navbar.component.html file
 * Register the NavBarComponent in the Root Module. Folder path will be required to be changed since we moved the component files.
-* add the line to render the navbar component in the app.component.html file 
-``
+* add the line to render the navbar component in the app.component.html file
+
+    `ng generate component navbar`
+
 
 ## 6. Summary
 
