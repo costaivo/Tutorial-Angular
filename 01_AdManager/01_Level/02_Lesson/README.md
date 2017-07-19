@@ -191,10 +191,13 @@ Open the browser and navigate to port http://localhost:3000/
 * Move the folder navbar to the shared folder, since this is component that will be shared
 * Copy the code snippets related to navbar from the app.component into the navbar.component.html file
 * Register the NavBarComponent in the Root Module. Folder path will be required to be changed since we moved the component files.
-* add the line to render the navbar component in the app.component.html file
+* add the line to render the navbar component in the _app.component.html_ file
 
-    `ng generate component navbar`
+    `<am-navbar></am-navbar>`
 
+### Creating a Custom Component - Course
+
+Create a component course uisng angular-cli command to encapsulate the code below navbar tag in the _app.component.html_
 
 ## 6. Summary
 
