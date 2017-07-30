@@ -79,12 +79,27 @@ Follow the instructions below as your instructor explains during the presentatio
 
 TODO : Seperate the gist code.
 
-### **Demo 3** - Binding Publication data to a grid
+### **Demo 3** - Moving Lesson Contents into typescript file
 
-* Copy the Publications json array from api/Publications/publication.json file
-* Add publication property in the app.component.ts
-* Bind the Name,Type and Language columns to the grid
+* Create a JSON object 
+ lesson1 = {
+      "id": "01",
+      "title": "Running an AngularJS 2 Application",
+      "isCompleted":"true",
+      "link":""
+    };
+* Bind the content using interpolation on the view file
+{{lesson1.id}} {{lesson1.title}}
 
+* Instead of using seperate objects for each lesson. Lets convert it into an array
+level1 :any[]=[{
+      "id": "01",
+      "title": "Running an AngularJS 2 Application",
+      "isCompleted":"true",
+      "link":""
+    }]
+
+    
 ### **Demo 4** - Refactoring Data
 
 * use _templareUrl_
@@ -100,11 +115,11 @@ TODO : Seperate the gist code.
 * Code Re-Sturucting using templareUrl,styleUrls
 
 
+[:arrow_left: Previous](<https://github.com/costaivo/AngularJs2-AdManager/tree/Dev/02_AdManager/02_Lesson/Start>)
 
 
-[:arrow_left: Previous](https://github.com/costaivo/AngularJs2-AdManager/tree/Dev/02_AdManager/02_Lesson/Start)  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-[:1234: Index] (https://github.com/costaivo/AdManagerUI-AngularJs2/tree/Dev) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-[:arrow_right: Next] (https://github.com/costaivo/AngularJs2-AdManager/tree/Dev/02_AdManager/04_Lesson/Start)
+[:1234: Index](<https://github.com/costaivo/AdManagerUI-AngularJs2/tree/Dev>)
 
+[:arrow_right: Next] (<https://github.com/costaivo/AngularJs2-AdManager/tree/Dev/02_AdManager/04_Lesson/Start>)
 
 
