@@ -1,14 +1,20 @@
-# AngularJs2-AdManager
+# Advertisment Manager
 
-A tutorial on Learning Angular JS 2.
+A tutorial on Learning Angular JS 4.
 With this tutorial we will be creating a full working application using AngularJs 2 as we learn new concepts step-by-step.
 
+
+## Software Requirements
+
+* NodeJS 
+* AngularJs 4.3.1 and above
+* AngularCli 
 
 ## Sample Applications we will be developing during this tutorial
 
 * _**AdManager Application**_
 
-  * Learn AngularJS 2 Fundamentals using this Course.
+  * Learn AngularJS 4 Fundamentals using this Course.
   * The backend application we will be consuming has already been developed and can be found at the following link
    [NodeJS-AdManager](https://github.com/costaivo/NodeJS-AdManager)
 
