@@ -62,16 +62,22 @@ Follow the instructions below as your instructor explains during the presentatio
 
 > Note this course is structured in collaboration with a trainer. Without a trainer you might loose some details which were not mentioned in the instructions below. 
 
-### **Demo 1** - TypeScript,interpolation,Template('',``) & Styles
+### **Demo 1** - TypeScript,Template('',``) & Styles
 
 * TypeScript
-* Interpolation
+
 * Template ('',``)
 * Styles
 
-### **Demo 2** - Property Binding,Two way Binding.
+### **Demo 2** - interpolation, Property Binding,  Two way Binding.
 
-* Two way data binding
+* Interpolation - {{}}
+* Property Binding - []
+* Event binding = ()
+* Two way data binding - [()]
+
+
+TODO : Seperate the gist code.
 
 ### **Demo 3** - Binding Publication data to a grid
 

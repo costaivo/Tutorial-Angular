@@ -1,14 +1,14 @@
-import { TodoAppPage } from './app.po';
+import { ToDoAppPage } from './app.po';
 
-describe('todo-app App', function() {
-  let page: TodoAppPage;
+describe('to-do-app App', () => {
+  let page: ToDoAppPage;
 
   beforeEach(() => {
-    page = new TodoAppPage();
+    page = new ToDoAppPage();
   });
 
-  it('should display message saying app works', () => {
+  it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('app works!');
+    expect(page.getParagraphText()).toEqual('Welcome to app!!');
   });
 });

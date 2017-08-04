@@ -1,4 +1,4 @@
-# Lesson 000 -- XXXXXXXXXXXXXXXXX
+# Lesson 08 -- Services
 ----------
 ## Lesson Contents
 

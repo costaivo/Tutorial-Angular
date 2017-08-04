@@ -1,0 +1,6 @@
+<div  [title]='rating' (click)='onClick()'> 
+	<span *ngFor="let star of stars;">
+       <span class="glyphicon glyphicon-star" [ngClass]="{'inactive':star>rating}" ></span>
+	</span>
+</div>
+
