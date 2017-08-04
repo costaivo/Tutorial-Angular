@@ -98,7 +98,9 @@ level1 :any[]=[{
       "isCompleted":"true",
       "link":""
     }]
-
+* Replace the html code to list the topics from the array
+ <a target="_blank" href="">Lesson {{lvlOne_Lessons[0].ID}} -- {{lvlOne_Lessons[0].title}}</a>
+ 
     
 ### **Demo 4** - Refactoring Data
 

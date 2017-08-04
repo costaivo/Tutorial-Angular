@@ -16,23 +16,48 @@ export class CourseComponent implements OnInit {
       "link":""
     },
     {
-      "ID": "02",
-      "Title": "Building your first Component and Module",
+      "id": "02",
+      "title": "Building your first Component and Module",
        "isCompleted":"true",
           "link":""
     },
       {
-      "ID": "03",
-      "Title": "Component & DataBinding",
+      "id": "03",
+      "title": "Component & DataBinding",
        "isCompleted":"true",
           "link":""
     },
        {
-      "ID": "04",
-      "Title": "Structural Directives",
+      "id": "04",
+      "title": "Structural Directives",
        "isCompleted":"true",
           "link":""
     },
+       {
+      "id": "05",
+      "title": "Create a Custom Component",
+       "isCompleted":"true",
+          "link":""
+    },
+       {
+      "id": "06",
+      "title": "Services",
+       "isCompleted":"true",
+          "link":""
+    },
+       {
+      "id": "07",
+      "title": "Routing",
+       "isCompleted":"true",
+          "link":""
+    },
+     {
+      "id": "05",
+      "title": "Http",
+       "isCompleted":"true",
+          "link":""
+    },
+    
   ];
 
   constructor() { }
