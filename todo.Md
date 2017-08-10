@@ -1,3 +1,12 @@
+# Todo's 15 July 2017
+
+1. Make the Course content page resposive
+1. Show a marker against the course as the course moves to next lesson to indicate that the lesson is completed.
+1. Make lesson content dynamically loaded instead of html 
+
+
+### Below are older Notes and Todo's, need to check if they are still relevant
+
 CLEANED UP
 # Following changes need to done for all existing lessons
 

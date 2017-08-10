@@ -51,4 +51,3 @@ With this tutorial we will be creating a full working application using AngularJ
 
 * [Sample App 1 -- Github Search Application](https://github.com/costaivo/AngularJs2-AdManager/tree/Dev/04_GithubApp)
 * [Sample App 2 -- ToDo Application](https://github.com/costaivo/AngularJs2-AdManager/tree/Dev/05_TodoApp)
-
