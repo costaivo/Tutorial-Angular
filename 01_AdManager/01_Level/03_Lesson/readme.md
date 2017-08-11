@@ -29,7 +29,7 @@
 
 #### Property Binding
 
-``` typescript
+``` html
     <div [style.backcolor]="backcolor">{{pageTitle}}</div>
 ```
 
@@ -37,12 +37,11 @@
 
 import FormsModule in `app.modules.ts`
 
-``` typescript
+``` html
      <input [(ngModel)]="publication" placeholder="Publication Name"/>
 ```
 
 #### Event Binding
-
 
 ``` html
 
@@ -92,12 +91,18 @@ Follow the instructions below as your instructor explains during the presentatio
 {{lesson1.id}} {{lesson1.title}}
 
 * Instead of using seperate objects for each lesson. Lets convert it into an array
+
+``` JSON
+
 level1 :any[]=[{
       "id": "01",
       "title": "Running an AngularJS 2 Application",
       "isCompleted":"true",
       "link":""
     }]
+
+```
+
 [:memo: code](https://gist.github.com/costaivo/d4bf4a2497064de1b5aea5c313eff974#file-json-lesson-array)
 
 * Replace the html code to list the topics from the array
@@ -107,13 +112,6 @@ level1 :any[]=[{
  ```
  
  [:memo: code](https://gist.github.com/costaivo/d4bf4a2497064de1b5aea5c313eff974#file-html-course-component-html)
-    
-### **Demo 4** - Refactoring Data
-
-* use _templareUrl_
-* use _styleUrls_
-
-> [Code Snippets for the Demo](https://gist.github.com/costaivo/896941f7ef08fe0a7cc671bd95ac3e1f)
 
 ### Summary
 
