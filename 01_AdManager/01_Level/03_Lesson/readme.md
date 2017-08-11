@@ -77,17 +77,17 @@ Follow the instructions below as your instructor explains during the presentatio
 * Two way data binding - [()]
 
 
-TODO : Seperate the gist code.
-
 ### **Demo 3** - Moving Lesson Contents into typescript file
 
-* Create a JSON object 
+* Create a JSON object named lesson1 in `course.component.ts`
  lesson1 = {
       "id": "01",
       "title": "Running an AngularJS 2 Application",
       "isCompleted":"true",
       "link":""
     };
+[:memo: code](https://gist.github.com/costaivo/d4bf4a2497064de1b5aea5c313eff974#file-json-lesson-object)
+
 * Bind the content using interpolation on the view file
 {{lesson1.id}} {{lesson1.title}}
 
@@ -98,9 +98,15 @@ level1 :any[]=[{
       "isCompleted":"true",
       "link":""
     }]
+[:memo: code](https://gist.github.com/costaivo/d4bf4a2497064de1b5aea5c313eff974#file-json-lesson-array)
+
 * Replace the html code to list the topics from the array
+
+ ``` HTML
  <a target="_blank" href="">Lesson {{lvlOne_Lessons[0].ID}} -- {{lvlOne_Lessons[0].title}}</a>
+ ```
  
+ [:memo: code](https://gist.github.com/costaivo/d4bf4a2497064de1b5aea5c313eff974#file-html-course-component-html)
     
 ### **Demo 4** - Refactoring Data
 
