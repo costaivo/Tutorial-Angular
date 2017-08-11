@@ -79,12 +79,18 @@ Follow the instructions below as your instructor explains during the presentatio
 ### **Demo 3** - Moving Lesson Contents into typescript file
 
 * Create a JSON object named lesson1 in `course.component.ts`
+
+``` JSON
+
  lesson1 = {
       "id": "01",
       "title": "Running an AngularJS 2 Application",
       "isCompleted":"true",
       "link":""
     };
+
+```
+
 [:memo: code](https://gist.github.com/costaivo/d4bf4a2497064de1b5aea5c313eff974#file-json-lesson-object)
 
 * Bind the content using interpolation on the view file
