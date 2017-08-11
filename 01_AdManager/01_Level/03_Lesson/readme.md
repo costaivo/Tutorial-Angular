@@ -119,6 +119,18 @@ level1 :any[]=[{
  
  [:memo: code](https://gist.github.com/costaivo/d4bf4a2497064de1b5aea5c313eff974#file-html-course-component-html)
 
+* Create an interface lesson to define the lesson schema
+``` typescript
+
+export interface ILesson {
+    id: string;
+    title: string;
+    isCompleted: boolean;
+    link: string;
+}
+
+```
+
 ### Summary
 
 

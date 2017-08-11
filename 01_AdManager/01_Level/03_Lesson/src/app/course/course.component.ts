@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { ILesson } from './lesson';
+
 @Component({
   selector: 'am-course',
   templateUrl: './course.component.html',
@@ -8,7 +10,7 @@ import { Component, OnInit } from '@angular/core';
 export class CourseComponent implements OnInit {
   title = 'Angular JS 4';
 
-  lvlOne_Lessons: any[] = [
+  lvlOne_Lessons: ILesson[] = [
     {
       'id': '01',
       'title': 'Running an AngularJS 2 Application',
