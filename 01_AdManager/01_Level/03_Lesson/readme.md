@@ -127,11 +127,9 @@ level1 :any[]=[{
 * Code Re-Sturucting using templareUrl,styleUrls
 
 
-[:arrow_left: Previous](<https://github.com/costaivo/AngularJs2-AdManager/tree/Dev/02_AdManager/02_Lesson/Start>)
+[:arrow_left: Previous](<https://github.com/costaivo/AdManagerUI-AngularJs/tree/master/01_AdManager/01_Level/02_Lesson>)&nbsp;&nbsp;
+[:1234: Index](<https://github.com/costaivo/AdManagerUI-AngularJs/tree/master>)&nbsp;&nbsp;
+[:arrow_right: Next](<https://github.com/costaivo/AdManagerUI-AngularJs/tree/master/01_AdManager/01_Level/04_Lesson>)
 
-
-[:1234: Index](<https://github.com/costaivo/AdManagerUI-AngularJs2/tree/Dev>)
-
-[:arrow_right: Next] (<https://github.com/costaivo/AngularJs2-AdManager/tree/Dev/02_AdManager/04_Lesson/Start>)
 
 

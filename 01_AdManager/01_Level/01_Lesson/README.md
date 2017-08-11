@@ -75,6 +75,6 @@ To add bootstrap to the angular project use npm to add the bootstrap package
 
   `npm install bootstrap --save`
 
-[:arrow_left: Previous](https://github.com/costaivo/AngularJs2-AdManager/tree/Dev)  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-[:1234: Index](<https://github.com/costaivo/AdManagerUI-AngularJs2/tree/Dev>) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-[:arrow_right: Next](https://github.com/costaivo/AngularJs2-AdManager/tree/Dev/02_AdManager/02_Lesson/Start) 
+[:arrow_left: Previous](<https://github.com/costaivo/AdManagerUI-AngularJs/tree/master>)&nbsp;&nbsp;
+[:1234: Index](<https://github.com/costaivo/AdManagerUI-AngularJs/tree/master>)&nbsp;&nbsp;
+[:arrow_right: Next](<https://github.com/costaivo/AdManagerUI-AngularJs/tree/master/01_AdManager/01_Level/02_Lesson>)
