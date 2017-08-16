@@ -42,7 +42,6 @@ testem.log
 Thumbs.db
 
 #Ignore enviroments file
-environment.local.ts
-environment.ts
-environment.prod.ts
+/environments
+
 
