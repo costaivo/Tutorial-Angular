@@ -1,6 +1,4 @@
 import { Component } from '@angular/core';
-import { FirebaseListObservable, AngularFireDatabase } from 'angularfire2/database';
-
 
 @Component({
   selector: 'app-root',
@@ -10,11 +8,9 @@ import { FirebaseListObservable, AngularFireDatabase } from 'angularfire2/databa
 
 export class AppComponent {
   title = 'ToDo App';
-  items: FirebaseListObservable<any[]>;
 
 
-  constructor(private db: AngularFireDatabase) {
-    this.items = db.list('/items');
+  constructor() {
     console.log('AppComponent Initialized');
   }
 }

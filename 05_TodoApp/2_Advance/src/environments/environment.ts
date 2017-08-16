@@ -7,10 +7,11 @@ export const environment = {
   production: false,
 
   firebaseConfig: {
-    apiKey: '',
-    authDomain: '',
-    databaseURL: '',
+    apiKey: 'AIzaSyDxVBLIugz-fDlllu9i8Klm3RlLo5DGGZU',
+    authDomain: 'todo-34d46.firebaseapp.com',
+    databaseURL: 'https://todo-34d46.firebaseio.com',
+    projectId: 'todo-34d46',
     storageBucket: '',
-    messagingSenderId: ''
+    messagingSenderId: '851342318591'
   }
 };

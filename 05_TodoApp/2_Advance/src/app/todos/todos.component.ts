@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import {TodoService} from '../todo.service';
+import { TodoService } from '../todo.service';
 
 @Component({
   selector: 'app-todos',
@@ -11,51 +11,44 @@ export class TodosComponent implements OnInit {
 
   todos;
   text;
+  selectedItemkey;
   appState = 'default';
   oldText;
 
-  constructor(private _todoservice: TodoService) { }
+  constructor(private _todoService: TodoService) { }
 
   ngOnInit() {
-    console.log("Init TodosComponent");
-    this.todos = this._todoservice.getTodos();
+    console.log('Init TodosComponent');
+    this.todos = this._todoService.getTodos();
   }
 
   addTodo() {
-    console.log(this.text);
-    var newTodo = {
-      text: this.text
-    }
+    console.log('adding new todo:' + this.text);
 
-    this.todos.push(newTodo);
-    //Clear the value
-    this.text ="";
-    this._todoservice.addTodo(newTodo);
+    this._todoService.addTodo(this.text);
+
+    // Clear the value
+    this.text = '';
   }
 
-  deleteTodo(todoText: string) {
-    console.log("Deleting Todo's :" + todoText);
-    for (var i = 0; i < this.todos.length; i++) {
-      if (this.todos[i].text == todoText) {
-        this.todos.splice(i, 1);
-      }
-    }
-    this._todoservice.deleteTodo(todoText);
+  deleteTodo(key: string) {
+    console.log('Deleting Todos :' + key);
+    this._todoService.deleteTodo(key);
   }
 
-  editTodo(todo){
-    this.appState="edit";
-    this.text = todo.text;
-    this.oldText = todo.text;
+  editTodo(key, text) {
+    console.log('Entering edit mode :' + key + ' text :' + text);
+    this.appState = 'edit';
+    this.text = text;
+    this.selectedItemkey = key;
+    this.oldText = text;
   }
 
-  updateTodo(){
-     for (var i = 0; i < this.todos.length; i++) {
-      if (this.todos[i].text == this.oldText) {
-        this.todos[i].text = this.text;
-      }
-    }
-    this._todoservice.updateTodo(this.oldText,this.text);
+  updateTodo() {
+    console.log('Updating todo ' + this.selectedItemkey + ' text to :' + this.text);
+    this._todoService.updateTodo(this.selectedItemkey, this.text);
+    this.text = '';
+    this.selectedItemkey = '';
   }
 }
 
