@@ -3,10 +3,20 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
+// 3-rd Party Vendors
+import { AngularFireModule } from 'angularfire2';
+
 import { AppComponent } from './app.component';
 import { TodosComponent } from './todos/todos.component';
-import {TodoService} from './todo.service';
+import { TodoService } from './todo.service';
 
+export const firebaseConfig = {
+  apiKey: '',
+  authDomain: '',
+  databaseURL: '',
+  storageBucket: '',
+  messagingSenderId: ''
+};
 @NgModule({
   declarations: [
     AppComponent, TodosComponent
@@ -20,7 +30,7 @@ import {TodoService} from './todo.service';
   bootstrap: [AppComponent]
 })
 export class AppModule {
-  constructor(){
-    console.log("App Module Initialized");
+  constructor() {
+    console.log('App Module Initialized');
   }
 }
