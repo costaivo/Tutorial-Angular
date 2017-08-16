@@ -9,22 +9,17 @@ import { AngularFireModule } from 'angularfire2';
 import { AppComponent } from './app.component';
 import { TodosComponent } from './todos/todos.component';
 import { TodoService } from './todo.service';
+import { environment} from '../environments/environment';
 
-export const firebaseConfig = {
-  apiKey: '',
-  authDomain: '',
-  databaseURL: '',
-  storageBucket: '',
-  messagingSenderId: ''
-};
 @NgModule({
   declarations: [
     AppComponent, TodosComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule,
-    HttpModule
+    FormsModule,d
+    HttpModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig)
   ],
   providers: [TodoService],
   bootstrap: [AppComponent]
