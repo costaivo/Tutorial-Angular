@@ -42,7 +42,7 @@ testem.log
 Thumbs.db
 
 #Ignore enviroments file
-/src/environments/*
+/src/environments/*.ts
 
 
 
