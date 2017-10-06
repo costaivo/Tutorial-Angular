@@ -29,7 +29,7 @@
 
 #### Property Binding
 
-``` typescript
+``` html
     <div [style.backcolor]="backcolor">{{pageTitle}}</div>
 ```
 
@@ -37,12 +37,11 @@
 
 import FormsModule in `app.modules.ts`
 
-``` typescript
+``` html
      <input [(ngModel)]="publication" placeholder="Publication Name"/>
 ```
 
 #### Event Binding
-
 
 ``` html
 
@@ -77,37 +76,60 @@ Follow the instructions below as your instructor explains during the presentatio
 * Two way data binding - [()]
 
 
-TODO : Seperate the gist code.
-
 ### **Demo 3** - Moving Lesson Contents into typescript file
 
-* Create a JSON object 
+* Create a JSON object named lesson1 in `course.component.ts`
+
+``` JSON
+
  lesson1 = {
       "id": "01",
       "title": "Running an AngularJS 2 Application",
       "isCompleted":"true",
       "link":""
     };
+
+```
+
+[:memo: code](https://gist.github.com/costaivo/d4bf4a2497064de1b5aea5c313eff974#file-json-lesson-object)
+
 * Bind the content using interpolation on the view file
 {{lesson1.id}} {{lesson1.title}}
 
 * Instead of using seperate objects for each lesson. Lets convert it into an array
+
+``` JSON
+
 level1 :any[]=[{
       "id": "01",
       "title": "Running an AngularJS 2 Application",
       "isCompleted":"true",
       "link":""
     }]
+
+```
+
+[:memo: code](https://gist.github.com/costaivo/d4bf4a2497064de1b5aea5c313eff974#file-json-lesson-array)
+
 * Replace the html code to list the topics from the array
+
+ ``` HTML
  <a target="_blank" href="">Lesson {{lvlOne_Lessons[0].ID}} -- {{lvlOne_Lessons[0].title}}</a>
+ ```
  
-    
-### **Demo 4** - Refactoring Data
+ [:memo: code](https://gist.github.com/costaivo/d4bf4a2497064de1b5aea5c313eff974#file-html-course-component-html)
 
-* use _templareUrl_
-* use _styleUrls_
+* Create an interface lesson to define the lesson schema
+``` typescript
 
-> [Code Snippets for the Demo](https://gist.github.com/costaivo/896941f7ef08fe0a7cc671bd95ac3e1f)
+export interface ILesson {
+    id: string;
+    title: string;
+    isCompleted: boolean;
+    link: string;
+}
+
+```
 
 ### Summary
 
@@ -117,11 +139,9 @@ level1 :any[]=[{
 * Code Re-Sturucting using templareUrl,styleUrls
 
 
-[:arrow_left: Previous](<https://github.com/costaivo/AngularJs2-AdManager/tree/Dev/02_AdManager/02_Lesson/Start>)
+[:arrow_left: Previous](<https://github.com/costaivo/AdManagerUI-AngularJs/tree/master/01_AdManager/01_Level/02_Lesson>)&nbsp;&nbsp;
+[:1234: Index](<https://github.com/costaivo/AdManagerUI-AngularJs/tree/master>)&nbsp;&nbsp;
+[:arrow_right: Next](<https://github.com/costaivo/AdManagerUI-AngularJs/tree/master/01_AdManager/01_Level/04_Lesson>)
 
-
-[:1234: Index](<https://github.com/costaivo/AdManagerUI-AngularJs2/tree/Dev>)
-
-[:arrow_right: Next] (<https://github.com/costaivo/AngularJs2-AdManager/tree/Dev/02_AdManager/04_Lesson/Start>)
 
 

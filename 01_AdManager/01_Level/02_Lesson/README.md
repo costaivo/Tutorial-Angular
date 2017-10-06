@@ -207,6 +207,6 @@ Create a component course uisng angular-cli command to encapsulate the code belo
 * What is the compositon of an Angular 2 App?
 
 
-[:arrow_left: Previous](<https://github.com/costaivo/AdManagerUI-AngularJs2/tree/Dev/01_QuickStart>)  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-[:1234: Index](<https://github.com/costaivo/AdManagerUI-AngularJs2/tree/Dev>) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-[:arrow_right: Next](<https://github.com/costaivo/AngularJs2-AdManager/tree/Dev/02_AdManager/03_Lesson/Start>)
+[:arrow_left: Previous](<https://github.com/costaivo/AdManagerUI-AngularJs/tree/master/01_AdManager/01_Level/01_Lesson>)&nbsp;&nbsp;
+[:1234: Index](<https://github.com/costaivo/AdManagerUI-AngularJs/tree/master>)&nbsp;&nbsp;
+[:arrow_right: Next](<https://github.com/costaivo/AdManagerUI-AngularJs/tree/master/01_AdManager/01_Level/03_Lesson>)
