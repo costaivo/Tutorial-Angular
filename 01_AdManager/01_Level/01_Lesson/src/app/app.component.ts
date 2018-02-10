@@ -1,4 +1,4 @@
-//import Component decorator from angular core
+// import Component decorator from angular core
 import { Component } from '@angular/core';
 
 
@@ -9,7 +9,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 
-//create class for the AppComponent
+// create class for the AppComponent
 export class AppComponent {
   title = 'Angular JS 5';
 }
