@@ -7,7 +7,7 @@ With this tutorial we will be creating a full working application using Angular 
 ## Software Requirements
 
 * NodeJS 
-* AngularJs 4.3.1 and above
+* AngularJs 6.3.1 and above
 * AngularCli 
 
 ## Sample Applications we will be developing during this tutorial
