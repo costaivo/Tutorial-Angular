@@ -1,7 +1,7 @@
 # Advertisment Manager
 
-A tutorial on Learning Angular JS 4.
-With this tutorial we will be creating a full working application using AngularJs 2 as we learn new concepts step-by-step.
+A tutorial on Learning Angular.
+With this tutorial we will be creating a full working application using Angular as we learn new concepts step-by-step.
 
 
 ## Software Requirements
