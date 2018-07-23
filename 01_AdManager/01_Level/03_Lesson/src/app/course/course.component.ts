@@ -9,6 +9,8 @@ import { ILesson } from './lesson';
 })
 export class CourseComponent implements OnInit {
   title = 'Angular JS 4';
+  lvlOne_Title: string = 'Level 1 : Understanding Angular JS 4 Fundamentals';
+  lvlTwo_Title: string = 'Level 2 : Advance Angular JS 4 concepts';
 
   lvlOne_Lessons: ILesson[] = [
     {

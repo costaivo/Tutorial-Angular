@@ -5,47 +5,52 @@
     </h1>
 </div>
 <div class="container">
-    <h3>Level 1 : Understanding Angular JS 4 Fundamentals</h3>
+    <h3>{{lvlOne_Title}}</h3>
     <ul>
         <li>
             <h4>
                 <a target="_blank" href="">Lesson {{lvlOne_Lessons[0].id}} -- {{lvlOne_Lessons[0].title}}</a>
-                <span class="glyphicon glyphicon-ok text-success"></span>
+                <span *ngIf='lvlOne_Lessons[0].isCompleted' class="glyphicon glyphicon-ok text-success"></span>
             </h4>
         </li>
         <li>
             <h4>
                 <a target="_blank" href="">Lesson {{lvlOne_Lessons[1].id}} -- {{lvlOne_Lessons[1].title}}</a>
-                <span class="glyphicon glyphicon-ok text-success"></span>
+                <span *ngIf='lvlOne_Lessons[1].isCompleted' class="glyphicon glyphicon-ok text-success"></span>
             </h4>
         </li>
         <li class="alert alert-success">
             <h4>
                 <a target="_blank" href="">Lesson {{lvlOne_Lessons[2].id}} -- {{lvlOne_Lessons[2].title}}</a>
+                <span *ngIf='lvlOne_Lessons[2].isCompleted' class="glyphicon glyphicon-ok text-success"></span>
             </h4>
         </li>
         <li>
             <h4>
                 <a target="_blank" href="">Lesson {{lvlOne_Lessons[3].id}} -- {{lvlOne_Lessons[3].title}}</a>
+                <span *ngIf='lvlOne_Lessons[3].isCompleted' class="glyphicon glyphicon-ok text-success"></span>
             </h4>
         </li>
         <li>
             <h4>
                 <a target="_blank" href="">Lesson {{lvlOne_Lessons[4].id}} -- {{lvlOne_Lessons[4].title}}</a>
+                <span *ngIf='lvlOne_Lessons[4].isCompleted' class="glyphicon glyphicon-ok text-success"></span>
             </h4>
         </li>
         <li>
             <h4>
                 <a target="_blank" href="">Lesson {{lvlOne_Lessons[5].id}} -- {{lvlOne_Lessons[5].title}}</a>
+                <span *ngIf='lvlOne_Lessons[5].isCompleted' class="glyphicon glyphicon-ok text-success"></span>
             </h4>
         </li>
         <li>
             <h4>
                 <a target="_blank" href="">Lesson {{lvlOne_Lessons[6].id}} -- {{lvlOne_Lessons[6].title}}</a>
+                <span *ngIf='lvlOne_Lessons[6].isCompleted' class="glyphicon glyphicon-ok text-success"></span>
             </h4>
         </li>
     </ul>
-    <h3>Level 2 : Advance Angular JS 4 concepts</h3>
+    <h3>{{lvlTwo_Title}}</h3>
     <ul>
         <li>
             <h4>
