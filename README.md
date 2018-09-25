@@ -13,7 +13,7 @@ With this tutorial we will be creating a full working application using Angular 
 
 - _**AdManager Application**_
 
-  - Learn AngularJS 4 Fundamentals using this Course.
+  - Learn Angular Fundamentals using this Course.
   - The backend application we will be consuming has already been developed and can be found at the following link
     [NodeJS-AdManager](https://github.com/costaivo/NodeJS-AdManager)
 
